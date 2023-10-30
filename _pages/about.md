@@ -12,8 +12,3 @@ I'm a mathematician specialized in data science currently pursuing a PhD in Quan
 
 
 Before starting my journey in quantum computing I've worked as an IT consultant and as a data scientist. I have working experience in modeling (biology, physics, statistics), bioinformatics, data analysis (machine learning, deep learning), cybersecurity (cryptography), optimization and software development. I enjoy multidisciplinarity, working both independently and in groups. More generally, I am passionate about participating in innovative projects that contribute to the improvement of society and the environment. Here I share some parts of my work as well as those projects I carry out in my free time and which are helping me grow, both personally and professionally.
-
-This is my personal website
-======
-
-Here I share my academic work ([talks](https://leonardolavagna.github.io/talks/) and [teaching experiences](https://leonardolavagna.github.io/teaching/)), my [publications](https://leonardolavagna.github.io/publications/), some [non-commercial projects](https://leonardolavagna.github.io/portfolio/) I have been involved with etc... This webpage is associated to the non-technical italian blog [geometrino](https://geometrino.wordpress.com/).
