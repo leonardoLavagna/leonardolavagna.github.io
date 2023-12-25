@@ -24,7 +24,7 @@ My education started with a degree in Pure Mathematics, then I specialized in Da
     - **Stage INFN-LNF** summer stage at [Laboratori Nazionali di Frascati](https://w3.lnf.infn.it/?lang=en) working on Plank's constant measurements apparatuses.
   * **Degree in Mathematics** with a thesis on a mathematical model in fluidodynamics under the supervision of Prof. Paolo Buttà at Sapienza University of Rome. My thesis (in italian) is available [here](https://geometrino.files.wordpress.com/2022/03/modello_onde.pdf).
       - **Erasmus** one semester at the [Johannes Gutenberg University of Mainz](https://homepage.uni-mainz.de/) (Germany) focusing on probability theory, complex geometry and analytical mechanics.
-  * **Master of Science in Data Science** With a thesis on a [novel quantum approximate optimization algorithm](https://github.com/leonardoLavagna/Layerwise_MA-QAOA), under the supervision of Prof. Massimo Panella and Andrea Ceschini, at Sapienza University or Rome.
+  * **Master of Science in Data Science** With a thesis on a novel variant of the Quantum Approximate Optimization Algorithm, under the supervision of Prof. Massimo Panella and Andrea Ceschini, at Sapienza University or Rome.
       - **Leonardo Labs Training camp** focusing on [Image Classification with real world Data Distributions](https://github.com/leonardoLavagna/Leonardo-Labs-Competition).
       - **AWS Training camp** focusing on High-performance cloud computing.
    * **Pursuing a PhD in Information and Communication Technologies (ICT)** at the Department of Information Engineering, Electronics and Telecommunications (DIET) of Sapienza University of Rome in the NESYA multidisciplinary lab, under the supervision of Prof. Massimo Panella.
