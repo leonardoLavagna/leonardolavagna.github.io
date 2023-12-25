@@ -30,7 +30,7 @@ My education started with a degree in Pure Mathematics, then I specialized in Da
    * **Pursuing a PhD in Information and Communication Technologies (ICT)** at the Department of Information Engineering, Electronics and Telecommunications (DIET) of Sapienza University of Rome in the NESYA multidisciplinary lab, under the supervision of Prof. Massimo Panella.
 
 ## Foreign Languages
-My motherlanguage is Italian, I am fluent in English, and I have a basic knowledge of German. Currently I'm studying Chinese and trying to remember the Franch I've learnt in School. 
+My motherlanguage is Italian, I am fluent in English, and I have a basic knowledge of German. Currently I'm studying Chinese and trying to remember the Franch I've learnt in school. 
   * **Cambridge English: Proficiency (level C2)**
   * **B1 Deutch Prüfung**
 
