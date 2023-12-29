@@ -14,7 +14,7 @@ My name is [Leonardo](https://pronouncenames.com/search?name=leonardo) and my su
 
 ## Working Experience
 I have worked as Data Analyst and Researcher in consulting firms active in the field of biotechnologies, chemistry and related fields. I've some experience as a developer (also with cloud technologies) and occasionally I've worked as a consultant in the field of cybersecurity. 
-  * **2020-2023 Data Analyst and Researcher** at Unilab
+  * **2020-2023 Data Analyst and Researcher** at Unilab 
   * **2023-present PhD candidate** at Sapienza University of Rome.
 
 ## Education
