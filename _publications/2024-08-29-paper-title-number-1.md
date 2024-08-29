@@ -1,7 +1,7 @@
 ---
 title: "On the Effects of Small Graph Perturbations in the MaxCut Problem by QAOA"
 collection: publications
-permalink: /publication/2024-08-29-paper-1
+permalink: /publication/2024-08-29-SYM-QAOA
 excerpt: 'This paper is about symmetries and QAOA and has its companion blog post [here](https://lavagnaleo.wordpress.com/2024/08/29/on-the-effects-of-small-graph-perturbations-in-themaxcut-problem-by-qaoa/).'
 date: 2024-08-29
 venue: 'Arxiv preprint 2408.15413'
