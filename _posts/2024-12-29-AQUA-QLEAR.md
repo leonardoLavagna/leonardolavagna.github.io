@@ -6,4 +6,4 @@ tags:
   - Research Call 2024-2005
 ---
 
-[@NESYA](https://github.com/NesyaLab) we Andrea Ceschini and I have won a ~5k€ [Sapienza Research Call](https://www.uniroma1.it/en/pagina/sapienza-research-calls) "AQUA-QLEAR: Achieving Quantum Utility and Advantage through Quantum Learning for Enhanced and Accelerated Results".
+[@NESYA](https://github.com/NesyaLab) Andrea Ceschini and I have won a ~5k€ [Sapienza Research Call](https://www.uniroma1.it/en/pagina/sapienza-research-calls) "AQUA-QLEAR: Achieving Quantum Utility and Advantage through Quantum Learning for Enhanced and Accelerated Results".
