@@ -4,6 +4,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+A complete list with all my scientific contributions can be found <a href="https://scholar.google.com/citations?user=XUq2IX4AAAAJ">here.</a>
 
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
