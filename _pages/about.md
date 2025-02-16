@@ -23,6 +23,7 @@ I like to carry out some side projects in collaboration with someone outside my 
 - [Blaise Pascal Quantum Challenge](https://www.agorize.com/en/challenges/blaisepascalquantumchallenge2025?lang=en). Prized contest issued by [Pasqal](https://www.pasqal.com/]) 💵 🧑🏻‍💻 👎🏻 🚫.
 - Development of a Machine Learning Tool for a CMO 💼 💵 🧑🏻‍💻.
 
-**Legend**  💼 Require a formal contract | 💵 Paid | 👍🏻 Done | 👎🏻 Not done | 🚫 Closed | 🔎 Research | 🧑🏻‍💻 Coding 
+**Legend:**
+💼 Require a formal contract | 💵 Paid | 👍🏻 Done | 👎🏻 Not done | 🚫 Closed | 🔎 Research | 🧑🏻‍💻 Coding 
 
 Further details about this kind of collaborative projects are available [here on my GitHub page](https://github.com/leonardoLavagna/Collaborations).
