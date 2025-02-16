@@ -24,6 +24,6 @@ I like to carry out some side projects in collaboration with someone outside my 
 - Development of a Machine Learning Tool for a CMO 💼 💵 🧑🏻‍💻.
 
 Some collaborations are simple coding tasks, other are paied contests or research topics, in particular: 
-        💼 Require a formal contract | 💵 Is paid | 👍🏻 Is Done | 👎🏻 Is not done | 🚫 Is closed | 🔎 Is research | 🧑🏻‍💻 Is coding 
+        💼 Require a formal contract | 💵 Is paid | 👍🏻 Is done | 👎🏻 Is not done | 🚫 Is closed | 🔎 Is research | 🧑🏻‍💻 Is coding 
 
-Further details about this kind of collaborative projects are available [here on my GitHub page](https://github.com/leonardoLavagna/Collaborations).
+Further details about this kind of collaborative projects are available [on my GitHub page](https://github.com/leonardoLavagna/Collaborations).
