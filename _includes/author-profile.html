@@ -68,7 +68,11 @@
         <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       {% endif %}
       {% if author.kaggle %}
-        <li><a href="{{ author.kaggle }}"><i class="fas fa-fw fa-database" aria-hidden="true"></i> Kaggle</a></li>
+        <li>
+          <a href="{{ author.kaggle }}">
+            <i class="fas fa-fw fa-k" style="font-style: normal; font-weight: bold;">K</i> Kaggle
+          </a>
+        </li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
