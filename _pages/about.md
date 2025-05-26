@@ -27,6 +27,12 @@ You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take a
 </div>
 {% endraw %}
 
+## Recent Blog Posts
+
+<div id="recent-posts">
+  Loading latest posts from [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/)...
+</div>
+
 
 ## Collaborations
 I like to carry out some side projects in collaboration with someone outside my workplace or outside my close academic network. The main idea is to connect with interesting people in the field of data science, have fun, and improve our soft and hard skills. Typically I try to work on one or two projects each year with some data enthusiast like me. Most of this projects are either reviews on specific topics, challenges (prized and unprized), exchange of opinions and collaborative coding. Sometimes I can propose collaborations on paid specialized consultancies. This year I have the following project in mind, if you are interested contact me.
