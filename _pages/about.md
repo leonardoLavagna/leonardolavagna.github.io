@@ -12,7 +12,9 @@ I'm a mathematician specialized in Data Science currently pursuing a PhD in Quan
 
 
 # About
-This is my personal website where I share my research and other work-related activities: from my [CV](https://leonardolavagna.github.io/cv/) to my [publications](https://leonardolavagna.github.io/publications/) and [talks](https://leonardolavagna.github.io/talks/) as well as [news or updates](https://leonardolavagna.github.io/year-archive/). This website is associated to technical blog [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/) and to the italian non-technical blog [geometrino.wordpress.com](https://geometrino.wordpress.com/).
+This is my personal website where I share my research and other work-related activities: from my [CV](https://leonardolavagna.github.io/cv/) to my [publications](https://leonardolavagna.github.io/publications/) and [talks](https://leonardolavagna.github.io/talks/) as well as [news or updates](https://leonardolavagna.github.io/year-archive/). 
+
+This website is associated to technical blog [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/) and to the italian non-technical blog [geometrino.wordpress.com](https://geometrino.wordpress.com/).
 
 ### Contacts 
 You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take an appointment via e-mail first!) in [via Eudossiana 18 Building B first floor](https://diet.web.uniroma1.it/en/how-reach-us) room 111.
