@@ -17,7 +17,7 @@ This is my personal website where I share my research and other work-related act
 **Contacts** You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take an appointment via e-mail first!) in [via Eudossiana 18 Building B first floor](https://diet.web.uniroma1.it/en/how-reach-us) room 111.
 
 
-## Activity Box
+**Activity Box**
 <!-- Embed GitHub Gist -->
 {% raw %}
 <div>
@@ -25,7 +25,7 @@ This is my personal website where I share my research and other work-related act
 </div>
 {% endraw %}
 
-## Recent Blog Posts
+**Recent Blog Posts**
 <div id="recent-posts">
   Loading latest posts from [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/)...
 </div>
