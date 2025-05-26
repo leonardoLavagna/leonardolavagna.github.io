@@ -30,6 +30,8 @@ Further details about this kind of collaborative projects are available [on my G
 
 ## Activity Box
 <!-- Embed GitHub Gist -->
+{% raw %}
 <div>
   <script src="https://gist.github.com/leonardoLavagna/bbe7488660d73bf07d95dbf060ab6ba4.js"></script>
 </div>
+{% endraw %}
