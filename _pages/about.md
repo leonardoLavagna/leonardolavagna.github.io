@@ -12,12 +12,14 @@ I'm a mathematician specialized in Data Science currently pursuing a PhD in Quan
 
 
 ## About
-This is my personal website where I share my research and other work-related activities. This website is associated to technical blog [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/) and to the italian non-technical blog [geometrino.wordpress.com](https://geometrino.wordpress.com/).
+This is my personal website where I share my research and other work-related activities: from my [CV](https://leonardolavagna.github.io/cv/) to my [publications](https://leonardolavagna.github.io/publications/) and [talks](https://leonardolavagna.github.io/talks/) as well as [news or updates](https://leonardolavagna.github.io/year-archive/). This website is associated to technical blog [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/) and to the italian non-technical blog [geometrino.wordpress.com](https://geometrino.wordpress.com/).
 
-**Contacts** You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take an appointment via e-mail first!) in [via Eudossiana 18 Building B first floor](https://diet.web.uniroma1.it/en/how-reach-us) room 111.
+#### Contacts 
+You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take an appointment via e-mail first!) in [via Eudossiana 18 Building B first floor](https://diet.web.uniroma1.it/en/how-reach-us) room 111.
 
+#### Activity Box
+A summary of how much I'm busy (I don't take more than 3 projects and 1 collaboration at a time), the conferences I will attend, the periods when I'm out of office (O.O.O.) etc...
 
-**Activity Box**
 <!-- Embed GitHub Gist -->
 {% raw %}
 <div>
@@ -25,11 +27,10 @@ This is my personal website where I share my research and other work-related act
 </div>
 {% endraw %}
 
-**Recent Blog Posts**
+#### Recent Blog Posts
 <div id="recent-posts">
   Loading latest posts from [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/)...
 </div>
-
 
 ## Collaborations
 I like to carry out some side projects in collaboration with someone outside my workplace or outside my close academic network. The main idea is to connect with interesting people in the field of data science, have fun, and improve our soft and hard skills. Typically I try to work on one or two projects each year with some data enthusiast like me. Most of this projects are either reviews on specific topics, challenges (prized and unprized), exchange of opinions and collaborative coding. Sometimes I can propose collaborations on paid specialized consultancies. This year I have the following project in mind, if you are interested contact me.
