@@ -14,9 +14,7 @@ I'm a mathematician specialized in Data Science currently pursuing a PhD in Quan
 ## About
 This is my personal website where I share my research and other work-related activities. This website is associated to technical blog [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/) and to the italian non-technical blog [geometrino.wordpress.com](https://geometrino.wordpress.com/).
 
-
-## Contacts
-You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take an appointment via e-mail first!) in [via Eudossiana 18 Building B first floor](https://diet.web.uniroma1.it/en/how-reach-us) room 111.
+**Contacts** You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take an appointment via e-mail first!) in [via Eudossiana 18 Building B first floor](https://diet.web.uniroma1.it/en/how-reach-us) room 111.
 
 
 ## Activity Box
@@ -28,7 +26,6 @@ You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take a
 {% endraw %}
 
 ## Recent Blog Posts
-
 <div id="recent-posts">
   Loading latest posts from [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/)...
 </div>
