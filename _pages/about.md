@@ -27,3 +27,9 @@ Some collaborations are simple coding tasks, other are paied contests or researc
         💼 Require a formal contract | 💵 Is paid | 👍🏻 Is done | 👎🏻 Is not done | 🚫 Is closed | 🔎 Is research | 🧑🏻‍💻 Is coding 
 
 Further details about this kind of collaborative projects are available [on my GitHub page](https://github.com/leonardoLavagna/Collaborations).
+
+## Activity Box
+<!-- Embed GitHub Gist -->
+<div>
+  <script src="https://gist.github.com/leonardoLavagna/bbe7488660d73bf07d95dbf060ab6ba4.js"></script>
+</div>
