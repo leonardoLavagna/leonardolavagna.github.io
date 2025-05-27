@@ -34,7 +34,7 @@ My motherlanguage is Italian, I am fluent in English, and I have a basic knowled
   * **B1 Deutch Prüfung**
 
 ## Information Technologies
-I have a working knowledge of Python, R, C, MatLab and affine languages, moreover I'm used to work with Mac OS X, Unix and Linux, as well as developing environments such as Anaconda. I have some experience working with SQL databases (MySQL) and with MongoDB, and with the Office suite for Mac. I have limited experience with the AWS cloud platform. I have a good understanding of Cryptograpy and Blockchain technologies, Protocols such as TCP/IP, LAN, etc...
+I have a working knowledge of Python, R, C, MatLab and affine languages, moreover I'm used to work with Mac OS X, Unix and Linux, as well as developing environments such as Anaconda. I have some experience working with SQL databases (MySQL) and with MongoDB, and with the Office suite for Mac. I have limited experience with the AWS cloud platform. I have a good understanding of Cryptography and Blockchain technologies, Protocols such as TCP/IP, LAN, etc...
   * **Selection of Programming Lenguages** C, C++, Python, MatLab, Java, R
   * **Selection of operating systems** Mac Os X, Unix, Linux
   * **Selection of Developing environments and platforms** Anaconda, Git, Github, Heroku, Streamlit, Wordpress
