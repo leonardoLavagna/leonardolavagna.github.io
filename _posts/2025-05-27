@@ -1,0 +1,13 @@
+---
+title: 'Materials related to the 2025 IEEE International Symposium on Circuits and Systems'
+date: 2025-05-27
+permalink: /posts/2025/5/materials-ISCAS2025/
+tags:
+  - https://2025.ieee-iscas.org/
+---
+
+I've presented our work at the 2025 IEEE International Symposium on Circuits and Systems and had very interesting 
+discussions about post-quantum cryptography. Thanks to the orgaizers for the amazing work. You can chek my slides 
+[here](../assets/files/iscas2025.pdf) and [here](https://lavagnaleo.wordpress.com/2025/02/28/hellmans-construction-and-quantum-cryptography/)
+you can find a blog post that summarizes the motivation and context of our results. As soon as the proceedings of the conference will
+be published I will also share more details about our findings.
