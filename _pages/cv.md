@@ -42,7 +42,6 @@ I have a working knowledge of Python, R, C, MatLab and affine languages, moreove
   * **Databases** SQL with MySQL, no-SQL with MongoDB
   * **Other** Cryptography, penetration testing and network analysis, LAN, simple electronical circuits, basic computer architectures, basic web design skills (HTML, CSS).
 
-### Things I code with
 [![My Skills](https://skillicons.dev/icons?i=linux,py,pytorch,tensorflow,r,c,cpp,html,java,matlab,octave,latex,md,mysql,mongodb,wordpress,git,github,vscode,docker,aws,heroku,anaconda,notion,arduino,apple&perline=16)](https://skillicons.dev)
 
 ## Other Informations
