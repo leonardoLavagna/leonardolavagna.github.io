@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-## Personal Informations
+## Personal Information
 My name is [Leonardo](https://pronouncenames.com/search?name=leonardo) and my surname is [Lavagna](https://pronouncenames.com/pronounce/lavagna). I was born in [Cagliari](https://en.wikipedia.org/wiki/Cagliari) and I live in [Rome](https://en.wikipedia.org/wiki/Rome). I'm a matematician specialized in data science, with working experience in the fields of bioinformatics, statistics, machine learning and affine areas. Currently I'm pursuing a PhD in quantum computing a [Sapienza University of Rome](https://www.uniroma1.it/en/pagina-strutturale/home) in the [NESYA](https://sites.google.com/view/nesya?authuser=0) multidisciplinary lab in the [Department of Information Engineering, Electronics and Telecommunications (DIET)](https://web.uniroma1.it/dip_diet/en).
 
 ## Working Experience
