@@ -18,7 +18,7 @@ This is my personal website where I share my research and other work-related act
 You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please take an appointment via e-mail first!) in [via Eudossiana 18 Building B first floor](https://diet.web.uniroma1.it/en/how-reach-us) room 110 (if I'm not there try room 111).
 
 ## Activity Box
-A summary of how much I'm busy (I don't take more than 3 projects and 1 collaboration at a time), the conferences I will attend, the periods when I'm out of office (O.O.O.) etc...
+A summary of how much I'm busy (I usually don't take more than 2 projects and 1 collaboration at a time), the conferences I will attend, the periods when I'm out of office (O.O.O.) etc...
 
 <!-- Embed GitHub Gist -->
 {% raw %}
