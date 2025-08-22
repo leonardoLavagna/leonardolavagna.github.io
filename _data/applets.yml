@@ -1,4 +1,4 @@
 - title: "Quantum Optimization App"
-  url: "https://quantum-optimization-app.streamlit.app/"
+  url: "https://quantum-optimization-app.streamlit.app/?embed=true"
   height: 800
   description: "MaxCut Problem Solver with QAOA."
