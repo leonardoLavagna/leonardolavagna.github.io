@@ -2,3 +2,23 @@
   url: "https://quantum-optimization-app.streamlit.app/?embed=true"
   height: 800
   description: "MaxCut Problem Solver with QAOA."
+
+- title: "Decadimento AudioAttivo"
+  url: "https://decadimendo-audioattivo.streamlit.app/?embed=true"
+  height: 800
+  description: "Conway's look and say game."
+
+- title: "Perturbative Methods in Action"
+  url: "https://perturbative-methods-in-action.streamlit.app/?embed=true"
+  height: 800
+  description: "Explore perturbative solution techniques in quantum mechanics."
+
+- title: "Nucleotide Count"
+  url: "https://nucleotidecount.streamlit.app/?embed=true"
+  height: 800
+  description: "Count and visualize nucleotide frequencies in DNA sequences."
+
+- title: "Molecule Solubility Prediction"
+  url: "https://moleculesolubilityprediction.streamlit.app/?embed=true"
+  height: 800
+  description: "Predict molecular solubility using machine learning models."
