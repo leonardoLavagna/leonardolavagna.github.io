@@ -5,7 +5,7 @@ permalink: /applets/
 toc: false
 ---
 
-Below is an interactive app. It loads from its hosting provider and runs fully in your browser.
+This is a curated collection of experimental projects spanning mathematics, machine learning, games, and quantum computing. Over the years, I’ve developed—or supervised the development of—these interactive tools, simulations, and apps to explore complex ideas through hands-on experimentation. Each project represents a fusion of curiosity and computation, aimed at making advanced concepts more intuitive, engaging, and accessible.
 
 <div class="applets">
   {% assign apps = site.data.applets | default: empty %}
