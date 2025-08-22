@@ -6,7 +6,7 @@
 - title: "Perturbative Methods in Action"
   url: "https://perturbative-methods-in-action.streamlit.app/?embed=true"
   height: 800
-  description: "Explore perturbative solution techniques in quantum mechanics."
+  description: "Explore perturbative solution techniques in quantum mechanics. Click the menu above (symbol >>) to see different problems and solutions."
 
 - title: "Nucleotide Count"
   url: "https://nucleotidecount.streamlit.app/?embed=true"
@@ -16,9 +16,9 @@
 - title: "Molecule Solubility Prediction"
   url: "https://moleculesolubilityprediction.streamlit.app/?embed=true"
   height: 800
-  description: "Predict molecular solubility using machine learning models."
+  description: "Predict molecular solubility using machine learning models. Click the menu above (symbol >>) to interactively use this tool."
 
 - title: "Decadimento AudioAttivo"
   url: "https://decadimendo-audioattivo.streamlit.app/?embed=true"
   height: 800
-  description: "Conway's look and say game (in Italian)."
+  description: "Conway's look and say game (in Italian). Click the menu above (symbol >>) to play"
