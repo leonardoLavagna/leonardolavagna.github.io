@@ -44,7 +44,7 @@ I have a working knowledge of Python, R, C, MATLAB, and affine languages. Moreov
   * **Databases** SQL with MySQL, no-SQL with MongoDB
   * **Other** Cryptography, penetration testing and network analysis, LANs, simple electronical circuits, basic computer architectures, basic web design skills (HTML, CSS).
 
-[![My Skills](https://skillicons.dev/icons?i=linux,py,pytorch,tensorflow,r,c,cpp,html,java,matlab,octave,latex,md,mysql,mongodb,wordpress,git,github,vscode,docker,aws,heroku,anaconda,notion,raspberrypi,arduino,apple&perline=16)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=linux,apple,py,pytorch,tensorflow,sklearn,r,c,cpp,html,java,matlab,octave,latex,md,mysql,mongodb,wordpress,git,github,vscode,docker,aws,heroku,anaconda,notion,raspberrypi,arduino,apple&perline=16)](https://skillicons.dev)
 
 ## Other
 I've studied piano and composition at [Santa Cecilia conservatory of Rome](https://conservatoriosantacecilia.it/). I've also playied tennis at a semi-professional level, but then I had to choose between my music passion, studying mathematics, and sports... music & math won, and for some time I had the "pleasure" of being piano accompanist to some singers... Nonetheless I became a [certified FIT tennis teacher](https://www.fitp.it/Istituto-di-formazione/Insegnanti/I-livelli-di-qualifica) and sports director. I'm also a certified Rescue Padi Diver, and I enjoy the occasional Dive. More importantly, I like the occasional sail. 
