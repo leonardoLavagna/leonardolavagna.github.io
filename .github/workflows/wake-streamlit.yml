@@ -1,0 +1,77 @@
+name: Wake Streamlit apps (from _data/applets.yml)
+
+on:
+  schedule:
+    # Every 20 minutes (GitHub uses UTC)
+    - cron: "*/20 * * * *"
+  workflow_dispatch: {}  # manual "Run workflow" button in GitHub UI
+
+concurrency:
+  group: wake-streamlit
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install parser deps
+        run: pip install pyyaml
+
+      - name: Extract app URLs from _data/applets.yml
+        run: |
+          python - << 'PY'
+          import yaml, urllib.parse, sys, pathlib
+          p = pathlib.Path('_data/applets.yml')
+          if not p.exists():
+              print("::error::_data/applets.yml not found")
+              sys.exit(1)
+          data = yaml.safe_load(p.read_text())
+          urls = []
+          for app in (data or []):
+              url = (app or {}).get('url', '').strip()
+              if not url: 
+                  continue
+              # Remove ?embed=true or &embed=true
+              u = urllib.parse.urlparse(url)
+              qs = urllib.parse.parse_qsl(u.query, keep_blank_values=True)
+              qs = [(k,v) for (k,v) in qs if not (k == 'embed' and v == 'true')]
+              new_query = urllib.parse.urlencode(qs)
+              new_url = urllib.parse.urlunparse(u._replace(query=new_query))
+              if new_url.endswith('?'):
+                  new_url = new_url[:-1]
+              urls.append(new_url)
+          urls = sorted(set(u for u in urls if u))
+          if not urls:
+              print("::warning::No URLs found in _data/applets.yml")
+          print("Found URLs:")
+          print("\n".join(urls))
+          pathlib.Path('urls.txt').write_text("\n".join(urls))
+          PY
+
+      - name: Wake each app
+        run: |
+          set -e
+          if [ ! -s urls.txt ]; then
+            echo "::warning::No URLs to ping."
+            exit 0
+          fi
+          while IFS= read -r url; do
+            [ -z "$url" ] && continue
+            echo "Waking: $url"
+            code=$(curl -sSL -o /dev/null -w "%{http_code}" \
+              -A "keepalive-bot/1.0 (+github actions)" \
+              --max-time 300 --retry 2 --retry-delay 10 "$url")
+            echo "HTTP $code from $url"
+            if [ "$code" -ge 500 ]; then
+              echo "::warning::Wake likely failed for $url (HTTP $code)"
+            fi
+          done < urls.txt
