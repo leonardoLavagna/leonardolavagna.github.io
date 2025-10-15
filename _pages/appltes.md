@@ -9,6 +9,8 @@ This is a curated collection of experimental projects spanning mathematics, mach
  
 These are embedded interactive apps you should be able to run directly in this website. If you experience problems try to clear the cookies and disable your adblock. If the problems persist you can also try changing browser or check the apps directly in [my GitHub profile](https://github.com/leonardoLavagna/leonardoLavagna).
 
+**Remark.** Since the embedded wake-up button provided by streamlit can be unstable, if an app is in "sleep mode" try to "wake it up" in a new page clicking the corresponding button.
+
 <div class="applets">
   {% assign apps = site.data.applets | default: empty %}
   {% if apps and apps.size > 0 %}
