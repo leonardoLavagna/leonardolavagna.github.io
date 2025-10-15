@@ -2,7 +2,7 @@ name: Wake Streamlit apps (from _data/applets.yml)
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 20 minutes (UTC)
+    - cron: "*/20 * * * *"   # every 20 minutes (UTC)
   workflow_dispatch: {}       # allow manual runs
 
 concurrency:
@@ -17,17 +17,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Extract direct app URLs from _data/applets.yml without Python
       - name: Extract app URLs
         run: |
           if [ ! -f "_data/applets.yml" ]; then
             echo "::error::_data/applets.yml not found"
             exit 1
           fi
-          # get lines like: url: https://... and strip leading key + any ?embed=true/&embed=true
+
+          # 1) Grab `url:` lines
+          # 2) Drop the leading 'url: '
+          # 3) Strip ?embed=true / &embed=true
+          # 4) Remove surrounding double quotes
+          # 5) Trim trailing whitespace
           grep -E '^\s*url:\s*' _data/applets.yml \
             | sed -E 's/^\s*url:\s*//' \
             | sed -E 's/[?&]embed=true//g' \
+            | sed -E 's/^"(.*)"$/\1/' \
             | sed -E 's/\s+$//' \
             > urls.txt
 
@@ -52,7 +57,7 @@ jobs:
             fi
 
             echo "Waking: $url"
-            # follow redirects, limit to avoid loops; log exit + final code/url
+            # follow redirects (cap at 10), retry a bit for cold starts
             http_and_effective=$(curl -sS -L -o /dev/null \
               -w "code=%{http_code} effective=%{url_effective}" \
               -A "keepalive-bot/1.1 (+github actions)" \
@@ -69,6 +74,7 @@ jobs:
             fi
 
             code=$(printf "%s" "$http_and_effective" | sed -n 's/.*code=\([0-9][0-9][0-9]\).*/\1/p')
+            # Treat <500 as OK; cold starts can return 200/302/403 while spinning up
             if [ -z "$code" ] || [ "$code" -ge 500 ]; then
               echo "::warning::Wake likely failed for $url (HTTP ${code:-unknown})"
             fi
