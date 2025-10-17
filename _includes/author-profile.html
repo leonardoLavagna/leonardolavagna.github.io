@@ -67,6 +67,13 @@
       {% if author.github %}
         <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       {% endif %}
+      {% if author.hackerrank %}
+        <li>
+          <a href="{{ author.hackerrank }}" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-hackerrank" aria-hidden="true"></i> HackerRank
+          </a>
+          </li>
+      {% endif %}
       {% if author.kaggle %}
         <li>
           <a href="{{ author.kaggle }}">
