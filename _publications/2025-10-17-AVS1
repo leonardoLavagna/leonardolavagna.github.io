@@ -1,0 +1,14 @@
+---
+title: "On the Effects of Small Graph Perturbations in the MaxCut Problem by QAOA"
+collection: publications
+permalink: /publication/2025-10-17-AVS1
+excerpt: 'In this article we investigate the Maximum Cut (MaxCut) problem on different graph classes with the quantum approximate optimization algorithm (QAOA) using symmetries. In particular, heuristics on the relationship between graph symmetries and the approximation ratio achieved by a QAOA simulation are considered'
+date: 2025-10-17
+venue: 'AVS Quantum Science'
+paperurl: 'https://www.researchgate.net/publication/396483291_Small_graph_perturbations_QAOA_and_the_MaxCut_problem'
+citation: 'L. Lavagna, S. Piperno, A. Ceschini and M. Panella, "On the Effects of Small Graph Perturbations in the MaxCut Problem by QAOA
+," 2025 AVS Quantum Science 7(4), doi: 10.1116/5.0253160.'
+---
+We investigate the Maximum Cut (MaxCut) problem on different graph classes with the quantum approximate optimization algorithm (QAOA) using symmetries. In particular, heuristics on the relationship between graph symmetries and the approximation ratio achieved by a QAOA simulation are considered. To do so, we first solve the MaxCut problem on well-known graphs, then we consider simple and controllable perturbations of the graph and find again the approximate MaxCut with the QAOA. Through an analysis of the spectrum of the graphs and their perturbations, as well as a careful study of the associated automorphism groups, we aim to extract valuable insight into how symmetry impacts the performance of QAOA. These insights can then be leveraged to heuristically reduce the quantum circuit complexity, the number of training steps, or the number of parameters involved, thus enhancing the efficiency and effectiveness of QAOA-based solutions.
+
+Code available [here](https://github.com/leonardoLavagna/Arxiv2408.15413).
