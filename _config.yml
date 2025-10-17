@@ -8,6 +8,7 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Leo's Home"
+site_theme               : default   # or: air
 title_separator          : "-"
 name                     : &name "Leonardo Lavagna"
 description              : &description "personal description"
