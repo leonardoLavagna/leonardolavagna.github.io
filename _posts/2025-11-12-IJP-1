@@ -1,0 +1,12 @@
+---
+title: 'Machine Learning-Guided microfluidic optimization of clinically inspired liposomes for nanomedicine applications'
+date: 2025-11-12
+permalink: /posts/2025/10/IJP1/
+tags:
+  - IJP1
+---
+
+[@NESYA](https://sites.google.com/view/nesya), in collaboration with the [Department of Chemistry and Technologies of Drugs](https://dctf.web.uniroma1.it/en) 
+and with [BSP Pharmaceuticals](https://www.bsppharmaceuticals.com/), we have published an [article](https://www.sciencedirect.com/science/article/pii/S0378517325011998)
+about the simulation capabilities of a machine learning [mixture of experts model](https://en.wikipedia.org/wiki/Mixture_of_experts) in the production of [liposomes](https://en.wikipedia.org/wiki/Liposome).
+Code available [here](https://github.com/leonardoLavagna/Intelligent-Control-of-Microfluidic-Systems), with a user-friendly application [here](https://smart-microfluidics.streamlit.app/).
