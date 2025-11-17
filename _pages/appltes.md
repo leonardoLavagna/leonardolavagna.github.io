@@ -7,7 +7,6 @@ toc: false
 
 This is a curated collection of experimental projects spanning mathematics, machine learning, games, and quantum computing. Over the years, I’ve developed—or supervised the development of—these interactive tools, simulations, datasets, and apps to explore complex ideas through hands-on experimentation. Each project represents a fusion of curiosity and computation, aimed at making advanced concepts more intuitive, engaging, and accessible.
 
-<div style="transform: scale(1.15); transform-origin: top left;">
   
 | 🚀 **Apps** | 📊 **Datasets** |  🤖 **Automations** |
 | -------- | ------- | ------- |
@@ -17,5 +16,3 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | [DNA Sequence Explorer](https://nucleotidecount.streamlit.app/)  |  |  |
 | [Look-and-Say Game (Italian version)](https://decadimendo-audioattivo.streamlit.app/) — based on [Conway’s classic](https://en.wikipedia.org/wiki/Look-and-say_sequence)   |   |  |
 | [Smart Microfluidics Toolkit](https://smart-microfluidics.streamlit.app/)  |  |  |
-
-</div>
