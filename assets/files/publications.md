@@ -26,6 +26,18 @@
 
 ## Conference Papers
 
+- **Lavagna, L., Ceschini, A., Rosato, A., & Panella, M.**  
+  *Novel Quantum Approaches to Hyperdimensional Computing for Neural Networks.*  
+  In *Proceedings of the International Joint Conference on Neural Networks (IJCNN 2025)*, Rome, Italy, IEEE, pp. 1–8, 2025.  
+  https://doi.org/10.1109/IJCNN64981.2025.11229083  
+  *Keywords:* Hands; quantum computing; accuracy; computational modeling; neural networks; machine learning; computer architecture; computational efficiency; quantum circuit; testing.
+
+- **Casalbore, M., Lavagna, L., Rosato, A., & Panella, M.**  
+  *Hybrid Quantum-Classical Framework for Anomaly Detection in Time Series with QUBO formulation and QAOA.*  
+  In *Proceedings of the International Joint Conference on Neural Networks (IJCNN 2025)*, Rome, Italy, IEEE, pp. 1–8, 2025.  
+  https://doi.org/10.1109/IJCNN64981.2025.11228152  
+  *Keywords:* statistical analysis; time series analysis; pipelines; qubit; noise; computer architecture; quantum circuit; anomaly detection; optimization; tuning.
+
 - **Ceschini, A., Lavagna, L., De Falco, F., Rosato, A., & Panella, M.**  
   *Convergenza e generalizzazione nelle reti neurali quantistiche.*  
   In *Memorie ET2024*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2024.
