@@ -17,8 +17,3 @@
   url: "https://moleculesolubilityprediction.streamlit.app/?embed=true"
   height: 800
   description: "Predict molecular solubility using machine learning models."
-
-- title: "Decadimento AudioAttivo"
-  url: "https://decadimendo-audioattivo.streamlit.app/?embed=true"
-  height: 800
-  description: "Conway's look and say game (in Italian)."
