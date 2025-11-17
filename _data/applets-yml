@@ -1,0 +1,63 @@
+- title: "Quantum Optimization App"
+  url: "https://quantum-optimization-app.streamlit.app/?embed=true"
+  height: 800
+  description: "MaxCut Problem Solver with QAOA."
+
+- title: "Perturbative Methods in Action"
+  url: "https://perturbative-methods-in-action.streamlit.app/?embed=true"
+  height: 800
+  description: "Explore perturbative solution techniques in quantum mechanics."
+
+- title: "Nucleotide Count"
+  url: "https://nucleotidecount.streamlit.app/?embed=true"
+  height: 800
+  description: "Count and visualize nucleotide frequencies in DNA sequences."
+
+- title: "Molecule Solubility Prediction"
+  url: "https://moleculesolubilityprediction.streamlit.app/?embed=true"
+  height: 800
+  description: "Predict molecular solubility using machine learning models."
+before in applets
+%Below a selection of applets you can run on Streaamlit.
+%
+%<div class="applets">
+  {% assign apps = site.data.applets | default: empty %}
+  {% if apps and apps.size > 0 %}
+    {% for app in apps %}
+      <section class="applet" style="margin-bottom: 2rem;">
+        <h2>{{ app.title }}</h2>
+        {% if app.description %}
+          <p>{{ app.description }}</p>
+        {% endif %}
+        <a
+          href="{{ app.url | replace: '?embed=true','' | replace: '&embed=true','' }}"
+          target="_blank"
+          rel="noopener"
+          class="btn btn--primary"
+        >
+          🚀 Open App
+        </a>
+      </section>
+    {% endfor %}
+  {% else %}
+    <p>No applets listed yet.</p>
+  {% endif %}
+</div>
+
+<style>
+.applets .btn {
+  display: inline-block;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .2s;
+}
+.applets .btn.btn--primary {
+  background: var(--mm-btn-primary-bg, #2a7ae2);
+  color: #fff;
+}
+.applets .btn.btn--primary:hover {
+  background: #1f5fb8;
+}
+</style>
