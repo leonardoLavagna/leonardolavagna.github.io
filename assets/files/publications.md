@@ -91,7 +91,7 @@
   *Convergenza e generalizzazione nelle reti neurali quantistiche.*  
   In *Memorie ET2024*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2024.
 
-  - **Lavagna, L., De Falco, F., Piperno, S., Ceschini, A., Rosato, A., & Panella, M.**  
+- **Lavagna, L., De Falco, F., Piperno, S., Ceschini, A., Rosato, A., & Panella, M.**  
   *Quantum Generative Modeling via Straightforward State Preparation.*  
   In *Proceedings of Quantum Techniques in Machine Learning (QTML 2024)*, University of Melbourne, Melbourne, Australia, pp. 1–1, 2024.
 
