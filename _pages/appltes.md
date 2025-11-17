@@ -7,7 +7,7 @@ toc: false
 
 This is a curated collection of experimental projects spanning mathematics, machine learning, games, and quantum computing. Over the years, I’ve developed—or supervised the development of—these interactive tools, simulations, datasets, and apps to explore complex ideas through hands-on experimentation. Each project represents a fusion of curiosity and computation, aimed at making advanced concepts more intuitive, engaging, and accessible.
 
-<div style="font-size: 1.3em;">
+<div style="width: 120%; transform: scale(1.1); transform-origin: top left;">
   
 | 🚀 **Apps** | 📊 **Datasets** |  🤖 **Automations** |
 | -------- | ------- | ------- |
