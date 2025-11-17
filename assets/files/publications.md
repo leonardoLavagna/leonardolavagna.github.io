@@ -38,7 +38,6 @@
   https://doi.org/10.1109/IJCNN64981.2025.11228152  
   *Keywords:* statistical analysis; time series analysis; pipelines; qubit; noise; computer architecture; quantum circuit; anomaly detection; optimization; tuning.
 
-
 - **De Falco, F., Lavagna, L., Ceschini, A., Rosato, A., & Panella, M.**  
   *Evolving hybrid quantum-classical GRU architectures for multivariate time series.*  
   In *IEEE International Workshop on Machine Learning for Signal Processing (MLSP 2024)*, IEEE Computer Society, pp. 1–6, 2024.  
@@ -76,7 +75,7 @@
   *Is the QAOA the Ultimate Solution for the MaxCut problem?*  
   In *Proceedings of Quantum Techniques in Machine Learning (QTML 2025)*, pp. 1–1, 2025.
 
-  - **Ceschini, A., Lavagna, L., De Falco, F., Rosato, A., & Panella, M.**  
+- **Ceschini, A., Lavagna, L., De Falco, F., Rosato, A., & Panella, M.**  
   *Circuiti neurali quantistici per il processamento di grafi, immagini e serie temporali.*  
   In *Memorie ET2025*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2025.
 
