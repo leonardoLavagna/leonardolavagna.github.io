@@ -38,9 +38,6 @@
   https://doi.org/10.1109/IJCNN64981.2025.11228152  
   *Keywords:* statistical analysis; time series analysis; pipelines; qubit; noise; computer architecture; quantum circuit; anomaly detection; optimization; tuning.
 
-- **Ceschini, A., Lavagna, L., De Falco, F., Rosato, A., & Panella, M.**  
-  *Convergenza e generalizzazione nelle reti neurali quantistiche.*  
-  In *Memorie ET2024*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2024.
 
 - **De Falco, F., Lavagna, L., Ceschini, A., Rosato, A., & Panella, M.**  
   *Evolving hybrid quantum-classical GRU architectures for multivariate time series.*  
@@ -58,31 +55,14 @@
   [https://doi.org/10.1109/IJCNN60899.2024.10650075](https://doi.org/10.1109/IJCNN60899.2024.10650075)  
   *Keywords:* quantum approximate optimization algorithm; layerwise-multi-angle approach; quantum computing.
 
-- **Lavagna, L., De Falco, F., Piperno, S., Ceschini, A., Rosato, A., & Panella, M.**  
-  *Quantum Generative Modeling via Straightforward State Preparation.*  
-  In *Proceedings of Quantum Techniques in Machine Learning (QTML 2024)*, University of Melbourne, Melbourne, Australia, pp. 1–1, 2024.
-
-- **Piperno, S., Lavagna, L., De Falco, F., Ceschini, A., Rosato, A., Windridge, D., & Panella, M.**  
-  *Quantum Enhanced Knowledge Distillation.*  
-  In *Proceedings of Quantum Techniques in Machine Learning (QTML 2024)*, University of Melbourne, Melbourne, Australia, pp. 1–1, 2024.
-
-- **Ceschini, A., Lavagna, L., De Falco, F., Rosato, A., & Panella, M.**  
-  *Circuiti neurali quantistici per il processamento di grafi, immagini e serie temporali.*  
-  In *Memorie ET2025*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2025.
-
-- **Lavagna, L., Ceschini, A., Piperno, S., Casalbore, M., Rosato, A., & Panella, M.**  
-  *Soluzioni quantistico-classiche per ottimizzazione e rilevamento di anomalie.*  
-  In *Memorie ET2025*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2025.
-
-- **Rosato, A., Lavagna, L., & Panella, M.**  
-  *Integrazione del calcolo iperdimensionale nei circuiti digitali, nelle reti neurali e nelle architetture computazionali quantistiche.*  
-  In *Memorie ET2025*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2025.
-
 - **Lavagna, L., De Falco, F., Ceschini, A., Rosato, A., & Panella, M.**  
   *Trade-offs in Cryptosystems by Boolean and Quantum Circuits.*  
   In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2025)*, IEEE, pp. 1–5, 2025.  
   [https://doi.org/10.1109/ISCAS56072.2025.11043205](https://doi.org/10.1109/ISCAS56072.2025.11043205)  
   *Keywords:* fault tolerance; circuits and systems; encryption; quantum mechanics; circuit theory.
+
+
+## Other
 
 - **Lavagna, L., De Falco, F., & Panella, M.**  
   *Quantum Hyperdimensional Computing for Pattern Completion.*  
@@ -95,3 +75,27 @@
 - **Lavagna, L., De Falco, F., & Panella, M.**  
   *Is the QAOA the Ultimate Solution for the MaxCut problem?*  
   In *Proceedings of Quantum Techniques in Machine Learning (QTML 2025)*, pp. 1–1, 2025.
+
+  - **Ceschini, A., Lavagna, L., De Falco, F., Rosato, A., & Panella, M.**  
+  *Circuiti neurali quantistici per il processamento di grafi, immagini e serie temporali.*  
+  In *Memorie ET2025*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2025.
+
+- **Lavagna, L., Ceschini, A., Piperno, S., Casalbore, M., Rosato, A., & Panella, M.**  
+  *Soluzioni quantistico-classiche per ottimizzazione e rilevamento di anomalie.*  
+  In *Memorie ET2025*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2025.
+
+- **Rosato, A., Lavagna, L., & Panella, M.**  
+  *Integrazione del calcolo iperdimensionale nei circuiti digitali, nelle reti neurali e nelle architetture computazionali quantistiche.*  
+  In *Memorie ET2025*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2025.
+  
+- **Ceschini, A., Lavagna, L., De Falco, F., Rosato, A., & Panella, M.**  
+  *Convergenza e generalizzazione nelle reti neurali quantistiche.*  
+  In *Memorie ET2024*, Gruppo Nazionale Ricercatori di Elettrotecnica, Italia, pp. 1–2, 2024.
+
+  - **Lavagna, L., De Falco, F., Piperno, S., Ceschini, A., Rosato, A., & Panella, M.**  
+  *Quantum Generative Modeling via Straightforward State Preparation.*  
+  In *Proceedings of Quantum Techniques in Machine Learning (QTML 2024)*, University of Melbourne, Melbourne, Australia, pp. 1–1, 2024.
+
+- **Piperno, S., Lavagna, L., De Falco, F., Ceschini, A., Rosato, A., Windridge, D., & Panella, M.**  
+  *Quantum Enhanced Knowledge Distillation.*  
+  In *Proceedings of Quantum Techniques in Machine Learning (QTML 2024)*, University of Melbourne, Melbourne, Australia, pp. 1–1, 2024.
