@@ -1,19 +1,25 @@
-/* Make the Applets table wider and increase its text size */
+/* Make the Applets table visually larger */
 .applets-table table {
     width: 100% !important;
     table-layout: fixed;
-    font-size: 1.08rem;   /* slightly bigger text */
+    font-size: 1.20rem !important;   /* bigger text */
+    border-collapse: collapse;
+}
+
+.applets-table th, 
+.applets-table td {
+    padding: 14px 16px;               /* larger cells */
 }
 
 .applets-table th {
-    font-size: 1.18rem;   /* larger header text */
-    font-weight: 600;
+    font-size: 1.30rem !important;    /* larger header text */
+    font-weight: 700;
+}
+
+.applets-table a {
+    font-size: 1.20rem !important;    /* larger link text */
 }
 
 .applets-table td {
     vertical-align: top;
-}
-
-.applets-table a {
-    font-size: 1.08rem;
 }
