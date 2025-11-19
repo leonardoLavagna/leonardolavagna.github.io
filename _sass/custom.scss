@@ -16,3 +16,8 @@
     padding: 10px 14px !important;   /* comfortable spacing */
     vertical-align: top;
 }
+
+.applets-table th:nth-child(3),
+.applets-table td:nth-child(3) {
+    width: 22%;     /* adjust until it fits on one line */
+}
