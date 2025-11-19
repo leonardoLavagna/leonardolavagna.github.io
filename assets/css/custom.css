@@ -2,7 +2,8 @@
 .applets-table table {
     width: 100% !important;
     table-layout: fixed;
-    font-size: 1.20rem !important;   /* bigger text */
+    font-size: 1.3rem;
+    padding: 18px 22px;   /* bigger text */
     border-collapse: collapse;
 }
 
