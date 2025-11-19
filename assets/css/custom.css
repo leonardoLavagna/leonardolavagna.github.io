@@ -1,25 +1,17 @@
-/* Make the Applets table visually larger */
-.applets-table table {
-    width: 100% !important;
-    table-layout: fixed;
-    font-size: 1.3rem; /* bigger text */
-    border-collapse: collapse;
+/* Force larger fonts for this table */
+.applets-table table,
+.applets-table th,
+.applets-table td,
+.applets-table a {
+    font-size: 1.35rem !important;
 }
 
 .applets-table th, 
 .applets-table td {
-    padding: 14px 16px;               /* larger cells */
+    padding: 18px 22px !important;
+    vertical-align: top;
 }
 
 .applets-table th {
-    font-size: 1.30rem !important;    /* larger header text */
     font-weight: 700;
-}
-
-.applets-table a {
-    font-size: 1.20rem !important;    /* larger link text */
-}
-
-.applets-table td {
-    vertical-align: top;
 }
