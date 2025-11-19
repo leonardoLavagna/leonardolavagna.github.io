@@ -3,6 +3,7 @@ layout: single
 title: "Applets"
 permalink: /applets/
 toc: false
+classes: wide
 ---
 
 This is a curated collection of experimental projects spanning mathematics, machine learning, games, and quantum computing. Over the years, I’ve developed—or supervised the development of—these interactive tools, simulations, datasets, and apps to explore complex ideas through hands-on experimentation. Each project represents a fusion of curiosity and computation, aimed at making advanced concepts more intuitive, engaging, and accessible.
