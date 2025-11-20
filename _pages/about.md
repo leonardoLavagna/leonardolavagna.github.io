@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a mathematician specialized in Data Science currently pursuing a PhD in Quantum Computing at [Sapienza University of Rome](https://www.uniroma1.it/en/pagina-strutturale/home) at the [Department of Information Engineering, Electronics and Telecommunications (DIET)](https://web.uniroma1.it/dip_diet/en) in the [Neural Network Systems & Applications Laboratory (NESYA)](https://sites.google.com/view/nesya) (official academic webpage available [here](https://phd.uniroma1.it/web/LEONARDO-LAVAGNA_nP1650170_IT.aspx)). Before starting my journey in quantum computing I've worked as an IT consultant and as a data scientist. I am passionate about participating in innovative projects that contribute to the improvement of society and the environment. 
+I'm a [mathematician](https://www.youtube.com/watch?v=SeZ_gbBPUw0) specialized in [Data Science](https://www.youtube.com/watch?v=tN5KIUNfYGA&t=1s) currently [pursuing a PhD](https://www.youtube.com/shorts/Fc-xwG7BRO0) in [Quantum Computing](https://www.youtube.com/watch?v=RQWpF2Gb-gU) at [Sapienza University of Rome](https://www.uniroma1.it/en/pagina-strutturale/home) at the [Department of Information Engineering, Electronics and Telecommunications (DIET)](https://web.uniroma1.it/dip_diet/en) in the [Neural Network Systems & Applications Laboratory (NESYA)](https://sites.google.com/view/nesya) (official academic webpage available [here](https://phd.uniroma1.it/web/LEONARDO-LAVAGNA_nP1650170_IT.aspx)). Before starting my journey in quantum computing I've worked as an IT consultant and as a data scientist. I am passionate about participating in innovative projects that contribute to the improvement of society and the environment. 
 
 
 # About
