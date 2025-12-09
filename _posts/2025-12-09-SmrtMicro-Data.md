@@ -1,6 +1,6 @@
 ---
 title: 'New Dataset available on Zenodo!'
-date: 2025-05-11
+date: 2025-12-09
 permalink: /posts/2025/5/SmartMicrofluidicsDataset/
 tags:
   - ZENODO
