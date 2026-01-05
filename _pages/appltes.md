@@ -13,7 +13,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | 🚀 **Apps** | 📊 **Datasets** |  🤖 **Automations** |
 | -------- | ------- | ------- |
 | [Quantum Optimization](https://quantum-optimization-app.streamlit.app/)  | [Island dataset](https://www.kaggle.com/datasets/leolavagna/islands) extracted with [Google Earth Engine](https://earthengine.google.com/), tailored for renewable energy policy analysis.   | [Random and quantum walks with Arduino](https://github.com/leonardoLavagna/open_diet)   |
-| [Perturbative methods in quantum mechanics](https://perturbative-methods-in-action.streamlit.app/)  |  [Smart Microfluidics](https://zenodo.org/records/17867478): a curated dataset of microfluidic liposome formulations with cross-laboratory validation for machine-learning applications |  |
+| [Perturbative methods in quantum mechanics](https://perturbative-methods-in-action.streamlit.app/)  |  [Smart Microfluidics](https://zenodo.org/records/17867478): a curated dataset of microfluidic liposome formulations with cross-laboratory validation for machine-learning applications. A simplified version of this dataset is available also [here](https://www.kaggle.com/datasets/leolavagna/ml-ready-clinically-inspired-liposome-data) |  |
 | [Molecular Solubility Predictor](https://moleculesolubilityprediction.streamlit.app/)  |  |  |
 | [DNA Sequence Explorer](https://nucleotidecount.streamlit.app/)  |  |  |
 | [Look-and-Say Game (Italian version)](https://decadimendo-audioattivo.streamlit.app/) — based on [Conway’s classic](https://en.wikipedia.org/wiki/Look-and-say_sequence)   |   |  |
