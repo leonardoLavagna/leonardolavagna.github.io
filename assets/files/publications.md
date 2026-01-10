@@ -59,7 +59,7 @@
 
 ## Other
 
-- **Cacioppo, A., De Falco, F., Di Luzio, F., Giagu, S., Lavagna, L. & Panella, M.**
+- **Cacioppo, A., De Falco, F., Di Luzio, F., Giagu, S., Lavagna, L. & Panella, M.**  
   *Quantum-Enhanced Fraud Detection: A Comparative Study on Real-World Financial Data*
   In *3rd Workshop on Quantum Computing @ INFN Milano, Italia* (02/2026).
 
