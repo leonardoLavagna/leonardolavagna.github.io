@@ -1,6 +1,6 @@
 ---
 title: 'Simplified Zenodo Dataset on Kaggle!'
-date: 2026-05-01
+date: 2026-01-05
 permalink: /posts/2026/1/IJPDataset/
 tags:
   - KAGGLE
