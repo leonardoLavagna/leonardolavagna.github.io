@@ -3,6 +3,12 @@
 
 ## Journal Papers
 
+- **Lavagna, G. Buttitta, S. Bonacorsi, C. Barbarito, M. Moliterno, G. Saito, I. Oddone, G. Verdone, S. Raimondi & Panella, M.**  
+  *Smart Microfluidics: a curated dataset of microfluidic liposome formulations with cross-laboratory validation for machine-learning applications*  
+  *Data in Brief*, **112667**, 2026.  
+  [https://doi.org/10.1016/j.dib.2026.112667](https://doi.org/10.1016/j.dib.2026.112667)  
+  *Keywords:* Drug delivery, Nanoparticles, Dynamic light scattering, Machine learning.
+
 - **Lavagna, L., Carillo, S., & Panella, M.**  
   *A topical review on time-independent perturbation theory in one-dimensional quantum systems.*  
   *Physica Scripta*, **100** (10), 1–33, 2025.  
