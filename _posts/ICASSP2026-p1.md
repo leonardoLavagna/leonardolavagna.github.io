@@ -1,0 +1,16 @@
+---
+title: 'Enhancing QAOA Ansatz via Multi-Parameterized Layer and Blockwise Optimization'
+date: 2026-03-12
+permalink: /posts/2026/5/ICASSPp1/
+tags:
+  - ICASSP2026
+---
+
+The contribution about QAOA in the conference ICASSP 2026 (see [this previous post](https://leonardolavagna.github.io/posts/2026/3/ICASSP/)) has been published [here](https://ieeexplore.ieee.org/document/11461345).
+I've also updated the blog, with a [brief discussion abut the main ideas behind the paper](https://lavagnaleo.wordpress.com/2026/04/11/some-considerations-on-possible-enhancements-of-the-qaoa-ansatz-via-agnostic-multi-parameterized-layers-and-advanced-parameters-update/).
+In particular, in this paper we focuse on multi-parameterized layers and advanced parameters’ update, in particular on the effect that an extra layer at the end of a standard
+QAOA circuit has, and on possible (blockwise) optimizations of the parameters of the extended circuit, including ablation studies. Concretely, 
+applied to the MaxCut problem across diverse graph families, the proposed architecture achieves, with an order of magnitude smaller circuit depth, 
+approximation ratios comparable to QAOA, using a single cost–mixer layer, thus reducing gate counts by up to fivefold.
+Moreover, ablation studies prove that blockwise fine-tuning is crucial to deliver higher-quality solutions at shallower depth, 
+offering a practical, quantum hardware-efficient alternative for signal processing applications. Most of the code is an adaptation of [this repository](https://github.com/leonardoLavagna/qaoa).
