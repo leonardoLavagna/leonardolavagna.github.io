@@ -32,16 +32,22 @@
 
 ## Conference Papers
 
+- **F. De Falco, L. Lavagna, A. Ceschini, & M. Panella**
+  *Enhancing QAOA Ansatz via Multi-Parameterized Layer and Blockwise Optimization*
+  In *Proceedings of the 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2026)*. Barcelona, Spain, 2026, pp. 20417-20421,
+  [https://doi.org/10.1109/ICASSP55912.2026.11461345](https://doi.org/10.1109/ICASSP55912.2026.11461345)
+  *Keywords:* quantum approximate optimization algorithm; quantum computing.
+
 - **Lavagna, L., Ceschini, A., Rosato, A., & Panella, M.**  
   *Novel Quantum Approaches to Hyperdimensional Computing for Neural Networks.*  
   In *Proceedings of the International Joint Conference on Neural Networks (IJCNN 2025)*, Rome, Italy, IEEE, pp. 1–8, 2025.  
-  https://doi.org/10.1109/IJCNN64981.2025.11229083  
-  *Keywords:* Hands; quantum computing; accuracy; computational modeling; neural networks; machine learning; computer architecture; computational efficiency; quantum circuit; testing.
+  [https://doi.org/10.1109/IJCNN64981.2025.11229083](https://doi.org/10.1109/IJCNN64981.2025.11229083)  
+  *Keywords:* quantum computing; accuracy; computational modeling; neural networks; machine learning; computer architecture; computational efficiency; quantum circuit; testing.
 
 - **Casalbore, M., Lavagna, L., Rosato, A., & Panella, M.**  
   *Hybrid Quantum-Classical Framework for Anomaly Detection in Time Series with QUBO formulation and QAOA.*  
   In *Proceedings of the International Joint Conference on Neural Networks (IJCNN 2025)*, Rome, Italy, IEEE, pp. 1–8, 2025.  
-  https://doi.org/10.1109/IJCNN64981.2025.11228152  
+  [https://doi.org/10.1109/IJCNN64981.2025.11228152](https://doi.org/10.1109/IJCNN64981.2025.11228152)  
   *Keywords:* statistical analysis; time series analysis; pipelines; qubit; noise; computer architecture; quantum circuit; anomaly detection; optimization; tuning.
 
 - **De Falco, F., Lavagna, L., Ceschini, A., Rosato, A., & Panella, M.**  
