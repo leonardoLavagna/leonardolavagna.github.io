@@ -1,6 +1,6 @@
 ---
 title: 'Enhancing QAOA Ansatz via Multi-Parameterized Layer and Blockwise Optimization'
-date: 2026-03-12
+date: 2026-05-06
 permalink: /posts/2026/5/ICASSPp1/
 tags:
   - ICASSP2026
