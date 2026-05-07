@@ -17,8 +17,9 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | [Molecular Solubility Predictor](https://moleculesolubilityprediction.streamlit.app/)  |  |  |
 | [DNA Sequence Explorer](https://nucleotidecount.streamlit.app/)  |  |  |
 | [Smart Microfluidics Toolkit](https://smart-microfluidics.streamlit.app/)  |  |  |
+</div>
 
-
+<div class="applets-table" markdown="1">
 | 👾 **Games** | 🤖 **Automations** |
 | -------- | ------- | ------- |
 | [Look-and-Say Game (Italian version)](https://decadimendo-audioattivo.streamlit.app/) — based on [Conway’s classic](https://en.wikipedia.org/wiki/Look-and-say_sequence) | [Random and quantum walks with Arduino](https://github.com/leonardoLavagna/open_diet)   |
