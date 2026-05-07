@@ -13,10 +13,10 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | 🚀 **Apps** | 📊 **Datasets** |  
 | -------- | ------- | 
 | [Quantum Optimization](https://quantum-optimization-app.streamlit.app/)  | [Island dataset](https://www.kaggle.com/datasets/leolavagna/islands) extracted with [Google Earth Engine](https://earthengine.google.com/), tailored for renewable energy policy analysis.   | 
-| [Perturbative methods in quantum mechanics](https://perturbative-methods-in-action.streamlit.app/)  |  [Smart Microfluidics](https://zenodo.org/records/17867478): a curated dataset of microfluidic liposome formulations with cross-laboratory validation for machine-learning applications. A simplified version of this dataset is available also [here](https://www.kaggle.com/datasets/leolavagna/ml-ready-clinically-inspired-liposome-data) |  |
-| [Molecular Solubility Predictor](https://moleculesolubilityprediction.streamlit.app/)  |  |  |
-| [DNA Sequence Explorer](https://nucleotidecount.streamlit.app/)  |  |  |
-| [Smart Microfluidics Toolkit](https://smart-microfluidics.streamlit.app/)  |  |  |
+| [Perturbative methods in quantum mechanics](https://perturbative-methods-in-action.streamlit.app/)  |  [Smart Microfluidics](https://zenodo.org/records/17867478): a curated dataset of microfluidic liposome formulations with cross-laboratory validation for machine-learning applications. A simplified version of this dataset is available also [here](https://www.kaggle.com/datasets/leolavagna/ml-ready-clinically-inspired-liposome-data) | |  
+| [Molecular Solubility Predictor](https://moleculesolubilityprediction.streamlit.app/)  |  |  
+| [DNA Sequence Explorer](https://nucleotidecount.streamlit.app/)  |  |  
+| [Smart Microfluidics Toolkit](https://smart-microfluidics.streamlit.app/)  |  |  
 
 
 ### Games and automations
@@ -30,11 +30,11 @@ This is a curated collection of experimental projects spanning mathematics, mach
 
 
 ### Databases and Cryptography
-| 🗒️ **Databases** | 🔐 **Cryptography** |  
-| -------- | ------- |
-| [Covid19-Cases](https://github.com/leonardoLavagna/Databases/tree/main/Covid19_data_analysis): an SQL database for the analysis of some Covid-19 Data. There are some visualizations available for interesting queries: [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CovidProjectDashboardv1_1/Dashboard1?publish=yes) and [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CoronavirusCOVID-19Cases_16489085239110/COVID-19GlobalView). More information [here](https://github.com/leonardoLavagna/Databases/blob/main/Covid19_data_analysis/documentation.md). |  [Some classical ciphers](https://github.com/leonardoLavagna/Cryptography/tree/main/Classical_ciphers): implementations of the Cesar's cipher and Vigenere cipher. You can run them [here](https://www.onlinegdb.com/gBSX6kuJ0) and [here](https://www.onlinegdb.com/Dx-lPhhhW). More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/Classical_ciphers/documentation.md). |
-|   | [RSA](https://github.com/leonardoLavagna/Cryptography/tree/main/RSA): You can run it [here](https://www.onlinegdb.com/sjXC-t22a). More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/RSA/documentation.md).  |
-|   | [AES s-box](https://github.com/leonardoLavagna/Cryptography/tree/main/Rijndael_sbox): To run it you need a (local) copy of the [corresponding Jupyter notebook](https://github.com/leonardoLavagna/Cryptography/blob/main/Rijndael_sbox/Rijndael_S_Box.ipynb) or, simply click on the Open In Colab button at the beginning of the notebook. More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/Rijndael_sbox/documentation.md).  |
+| 🗒️ **Databases** | 🔐 **Cryptography** |   
+| -------- | ------- |  
+| [Covid19-Cases](https://github.com/leonardoLavagna/Databases/tree/main/Covid19_data_analysis): an SQL database for the analysis of some Covid-19 Data. There are some visualizations available for interesting queries: [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CovidProjectDashboardv1_1/Dashboard1?publish=yes) and [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CoronavirusCOVID-19Cases_16489085239110/COVID-19GlobalView). More information [here](https://github.com/leonardoLavagna/Databases/blob/main/Covid19_data_analysis/documentation.md). |  [Some classical ciphers](https://github.com/leonardoLavagna/Cryptography/tree/main/Classical_ciphers): implementations of the Cesar's cipher and Vigenere cipher. You can run them [here](https://www.onlinegdb.com/gBSX6kuJ0) and [here](https://www.onlinegdb.com/Dx-lPhhhW). More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/Classical_ciphers/documentation.md). |  
+|   | [RSA](https://github.com/leonardoLavagna/Cryptography/tree/main/RSA): You can run it [here](https://www.onlinegdb.com/sjXC-t22a). More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/RSA/documentation.md).  |  
+|   | [AES s-box](https://github.com/leonardoLavagna/Cryptography/tree/main/Rijndael_sbox): To run it you need a (local) copy of the [corresponding Jupyter notebook](https://github.com/leonardoLavagna/Cryptography/blob/main/Rijndael_sbox/Rijndael_S_Box.ipynb) or, simply click on the Open In Colab button at the beginning of the notebook. More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/Rijndael_sbox/documentation.md).  |  
 
 ### Other
 
