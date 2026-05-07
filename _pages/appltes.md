@@ -13,7 +13,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | 🚀 **Apps** | 📊 **Datasets** |  
 | -------- | ------- | 
 | [Quantum Optimization](https://quantum-optimization-app.streamlit.app/)  | [Island dataset](https://www.kaggle.com/datasets/leolavagna/islands) extracted with [Google Earth Engine](https://earthengine.google.com/), tailored for renewable energy policy analysis.   | 
-| [Perturbative methods in quantum mechanics](https://perturbative-methods-in-action.streamlit.app/)  |  [Smart Microfluidics](https://zenodo.org/records/17867478): a curated dataset of microfluidic liposome formulations with cross-laboratory validation for machine-learning applications. A simplified version of this dataset is available also [here](https://www.kaggle.com/datasets/leolavagna/ml-ready-clinically-inspired-liposome-data) |  |  
+| [Perturbative methods in quantum mechanics](https://perturbative-methods-in-action.streamlit.app/)  |  [Smart Microfluidics](https://zenodo.org/records/17867478): a curated dataset of microfluidic liposome formulations with cross-laboratory validation for machine-learning applications. A simplified version of this dataset is available also [here](https://www.kaggle.com/datasets/leolavagna/ml-ready-clinically-inspired-liposome-data) |    
 | [Molecular Solubility Predictor](https://moleculesolubilityprediction.streamlit.app/)  |  |  
 | [DNA Sequence Explorer](https://nucleotidecount.streamlit.app/)  |  |  
 | [Smart Microfluidics Toolkit](https://smart-microfluidics.streamlit.app/)  |  |  
