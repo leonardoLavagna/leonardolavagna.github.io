@@ -24,7 +24,8 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | 👾 **Games** | 🤖 **Automations** |  
 | -------- | ------- |
 | [Look-and-Say Game (Italian version)](https://decadimendo-audioattivo.streamlit.app/) — based on [Conway’s classic](https://en.wikipedia.org/wiki/Look-and-say_sequence) | [Random and quantum walks with Arduino](https://github.com/leonardoLavagna/open_diet)   |  
-| [C-based chess](https://github.com/leonardoLavagna/Games/tree/main/chess): implementation, from scratch, of the game of chess in C++. To run it you need a local copy of the code. More information [here](https://github.com/leonardoLavagna/Games/blob/main/chess/documentation.md).
+| [C-based chess](https://github.com/leonardoLavagna/Games/tree/main/chess): implementation, from scratch, of the game of chess in C++. To run it you need a local copy of the code. More information [here](https://github.com/leonardoLavagna/Games/blob/main/chess/documentation.md). |  |
+| Other classic games (mostly in C): [hangman](https://github.com/leonardoLavagna/Games/tree/main/hangman), [nim](https://github.com/leonardoLavagna/Games/tree/main/nim), [tic-tac-toe](https://github.com/leonardoLavagna/Games/tree/main/tic_tac_toe) and others... More information [here](https://github.com/leonardoLavagna/Games/tree/main). 
 
 
 ### Databases and Cryptography
