@@ -30,6 +30,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 
 
 ### Databases and Cryptography
+
 | 🗒️ **Databases** | 🔐 **Cryptography** |   
 | -------- | ------- |
 | [Covid19-Cases](https://github.com/leonardoLavagna/Databases/tree/main/Covid19_data_analysis): an SQL database for the analysis of some Covid-19 Data. There are some visualizations available for interesting queries: [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CovidProjectDashboardv1_1/Dashboard1?publish=yes) and [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CoronavirusCOVID-19Cases_16489085239110/COVID-19GlobalView). More information [here](https://github.com/leonardoLavagna/Databases/blob/main/Covid19_data_analysis/documentation.md). |  [Some classical ciphers](https://github.com/leonardoLavagna/Cryptography/tree/main/Classical_ciphers): implementations of the Cesar's cipher and Vigenere cipher. You can run them [here](https://www.onlinegdb.com/gBSX6kuJ0) and [here](https://www.onlinegdb.com/Dx-lPhhhW). More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/Classical_ciphers/documentation.md). |  
@@ -42,4 +43,6 @@ All my (public) coding projects are available on my [GitHub profile](https://git
 - [Some comupter vision tools](https://github.com/leonardoLavagna/Computer-Vision): An image blurer used to blur car's plates
 a face detection system, an image reconstruction method based on Matrix Completion (Alternating Least Square method) and a complete image classification system based on filters, convolution, and color histograms.
 - [Automatic note estraction](https://github.com/leonardoLavagna/Notes-Extraction-Tool/): basic signal processing tachniques (e.g. audio filtering and FFT) to transform an audio track into playable sheet (text) music.
+- [Socket programming](https://github.com/leonardoLavagna/Socket-Programming): basic implementations of a web server, a UDP pinger, a Mail Client and a Web Proxy.
+- [Waves simulation tools](https://github.com/leonardoLavagna/Waves-Simulation): a variety of tools to approach some problems related to wave equations (with applications mainly in seismology). 
 
