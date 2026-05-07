@@ -18,7 +18,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | [Smart Microfluidics Toolkit](https://smart-microfluidics.streamlit.app/)  |  |  |
 
 | 👾 **Games** | 🤖 **Automations** |  
-| -------- | ------- | ------- |  
+| -------- | ------- |
 | [Look-and-Say Game (Italian version)](https://decadimendo-audioattivo.streamlit.app/) — based on [Conway’s classic](https://en.wikipedia.org/wiki/Look-and-say_sequence) | [Random and quantum walks with Arduino](https://github.com/leonardoLavagna/open_diet)   |
 
 
