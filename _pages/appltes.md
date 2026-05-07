@@ -27,7 +27,9 @@ This is a curated collection of experimental projects spanning mathematics, mach
 
 
 ### Databases and Cryptography
-
+| 🗒️ **Databases** | 🔐 **Cryptography** |  
+| -------- | ------- |
+| [Covid19-Cases](https://github.com/leonardoLavagna/Databases/tree/main/Covid19_data_analysis): an SQL database for the analysis of some Covid-19 Data. There are some visualizations available for interesting queries: [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CovidProjectDashboardv1_1/Dashboard1?publish=yes) and [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CoronavirusCOVID-19Cases_16489085239110/COVID-19GlobalView). More information [here](https://github.com/leonardoLavagna/Databases/blob/main/Covid19_data_analysis/documentation.md). |   |
 
 ### Other
 
