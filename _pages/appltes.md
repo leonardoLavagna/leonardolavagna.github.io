@@ -30,6 +30,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | 🗒️ **Databases** | 🔐 **Cryptography** |  
 | -------- | ------- |
 | [Covid19-Cases](https://github.com/leonardoLavagna/Databases/tree/main/Covid19_data_analysis): an SQL database for the analysis of some Covid-19 Data. There are some visualizations available for interesting queries: [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CovidProjectDashboardv1_1/Dashboard1?publish=yes) and [here](https://public.tableau.com/app/profile/leonardo.lavagna/viz/CoronavirusCOVID-19Cases_16489085239110/COVID-19GlobalView). More information [here](https://github.com/leonardoLavagna/Databases/blob/main/Covid19_data_analysis/documentation.md). |  [Some classical ciphers](https://github.com/leonardoLavagna/Cryptography/tree/main/Classical_ciphers): implementations of the Cesar's cipher and Vigenere cipher. You can run them [here](https://www.onlinegdb.com/gBSX6kuJ0) and [here](https://www.onlinegdb.com/Dx-lPhhhW). More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/Classical_ciphers/documentation.md). |
+|   | [RSA](https://github.com/leonardoLavagna/Cryptography/tree/main/RSA): You can run it [here](https://www.onlinegdb.com/sjXC-t22a). More information [here](https://github.com/leonardoLavagna/Cryptography/blob/main/RSA/documentation.md).  |
 
 ### Other
 
