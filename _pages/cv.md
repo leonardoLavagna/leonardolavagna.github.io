@@ -14,7 +14,7 @@ My name is [Leonardo](https://pronouncenames.com/search?name=leonardo) and my su
 
 ## Working Experience
 I have worked as Data Analyst and Researcher in consulting firms active in biotechnologies, chemistry and related areas. I've some experience as a developer (also with cloud technologies) and occasionally I've worked as a consultant in the field of cybersecurity. More recently, I co-founded a start-up with my friend and colleague, [Giorgio](https://research.uniroma1.it/researcher/8746df53b026e680e84f1858fd0e24ede56010ff1aff812a0ea415ea), specializing in the development of innovative IT solutions. We focus on automation, digitization, and process optimization using technologies such as AI and cloud computing. While we primarily serve the pharmaceutical sector, we also work across various industries, offering custom software, data analysis, IT consulting, and IoT solutions.
-  * **2025 Co-founder & CEO** [LittleBulb s.r.l.](https://www.littlebulb.it/)
+  * **2025-present Co-founder & CEO** [LittleBulb s.r.l.](https://www.littlebulb.it/)
   * **2023-present PhD candidate** at [Sapienza University](https://www.uniroma1.it/en/pagina-strutturale/home) of Rome.
   * **2021-2023 Data Scientist** Unilab - Italy.
 
