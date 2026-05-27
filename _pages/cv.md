@@ -28,7 +28,7 @@ My education started with a degree in Pure Mathematics, then I specialized in Da
       - **Leonardo Labs Training camp** focusing on [Image Classification with real world Data Distributions](https://github.com/leonardoLavagna/Leonardo-Labs-Competition).
       - **AWS Training camp** focusing on High-performance cloud computing.
    * **Pursuing a PhD in Information and Communication Technologies (ICT)** at the Department of Information Engineering, Electronics and Telecommunications (DIET) of Sapienza University of Rome in the NESYA multidisciplinary lab, under the supervision of Prof. Massimo Panella.
-     - **Visiting [@CERN](https://en.wikipedia.org/wiki/CERN) (3 months)**. I have been associated to the [ATLAS experiment](https://en.wikipedia.org/wiki/ATLAS_experiment) and worked in the [Quantum Technology Initiative](https://quantum.cern/) to develop quantum-enhanced algorithms for experimental data analysis. 
+     - **Visiting [@CERN](https://en.wikipedia.org/wiki/CERN) (3 months)**. I have been associated with the [ATLAS experiment](https://en.wikipedia.org/wiki/ATLAS_experiment) and worked in the [Quantum Technology Initiative](https://quantum.cern/) to develop quantum-enhanced algorithms for experimental data analysis. 
 
 ## Foreign Languages
 My motherlanguage is Italian, I am fluent in English, and I have a basic knowledge of German. Currently I'm studying Chinese and trying to remember the Franch I've learnt in school. 
