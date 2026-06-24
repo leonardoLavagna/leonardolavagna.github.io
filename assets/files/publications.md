@@ -32,13 +32,13 @@
 
 ## Conference Papers
 
--**L. Lavagna, G. Vittori, A. Rosato & M. Panella**
+- **L. Lavagna, G. Vittori, A. Rosato & M. Panella**
  *Additive Resource Scaling in Quantum Circuits for Search in Cryptanalysis*
  In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2026)*, IEEE, pp. 2758-2762, 2026.  
  [https://doi.org/10.1109/ISCAS66217.2026.11562218](https://doi.org/10.1109/ISCAS66217.2026.11562218)
  *Keywords:* circuits and systems; quantum cryptography.
 
--**L. Lavagna, G. Vittori, A. Rosato & M. Panella**
+- **L. Lavagna, G. Vittori, A. Rosato & M. Panella**
  *A Unified Quantum Circuit Framework for Grover Search and Quantum Walks in NISQ Cryptanalysis*
  In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2026)*, IEEE, pp. 837-841, 2026.  
  [https://doi.org/10.1109/ISCAS66217.2026.11562366](https://doi.org/10.1109/ISCAS66217.2026.11562366)
