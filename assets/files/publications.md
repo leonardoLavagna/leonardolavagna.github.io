@@ -32,6 +32,19 @@
 
 ## Conference Papers
 
+-**L. Lavagna, G. Vittori, A. Rosato & M. Panella**
+ *Additive Resource Scaling in Quantum Circuits for Search in Cryptanalysis*
+ In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2026)*, IEEE, pp. 2758-2762, 2026.  
+ [https://doi.org/10.1109/ISCAS66217.2026.11562218](https://doi.org/10.1109/ISCAS66217.2026.11562218)
+ *Keywords:* circuits and systems; quantum cryptography.
+
+-**L. Lavagna, G. Vittori, A. Rosato & M. Panella**
+ *A Unified Quantum Circuit Framework for Grover Search and Quantum Walks in NISQ Cryptanalysis*
+ In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2026)*, IEEE, pp. 837-841, 2026.  
+ [https://doi.org/10.1109/ISCAS66217.2026.11562366](https://doi.org/10.1109/ISCAS66217.2026.11562366)
+ *Keywords:* circuits and systems; quantum cryptography.
+
+
 - **F. De Falco, L. Lavagna, A. Ceschini, & M. Panella**
   *Enhancing QAOA Ansatz via Multi-Parameterized Layer and Blockwise Optimization*
   In *Proceedings of the 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2026)*. Barcelona, Spain, 2026, pp. 20417-20421,
@@ -50,6 +63,12 @@
   [https://doi.org/10.1109/IJCNN64981.2025.11228152](https://doi.org/10.1109/IJCNN64981.2025.11228152)  
   *Keywords:* statistical analysis; time series analysis; pipelines; qubit; noise; computer architecture; quantum circuit; anomaly detection; optimization; tuning.
 
+- **Lavagna, L., De Falco, F., Ceschini, A., Rosato, A., & Panella, M.**  
+  *Trade-offs in Cryptosystems by Boolean and Quantum Circuits.*  
+  In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2025)*, IEEE, pp. 1–5, 2025.  
+  [https://doi.org/10.1109/ISCAS56072.2025.11043205](https://doi.org/10.1109/ISCAS56072.2025.11043205)  
+  *Keywords:* fault tolerance; circuits and systems; encryption; quantum mechanics; circuit theory.
+
 - **De Falco, F., Lavagna, L., Ceschini, A., Rosato, A., & Panella, M.**  
   *Evolving hybrid quantum-classical GRU architectures for multivariate time series.*  
   In *IEEE International Workshop on Machine Learning for Signal Processing (MLSP 2024)*, IEEE Computer Society, pp. 1–6, 2024.  
@@ -61,12 +80,6 @@
   In *Proceedings of the International Joint Conference on Neural Networks (IJCNN 2024)*, IEEE, pp. 1–6, 2024.  
   [https://doi.org/10.1109/IJCNN60899.2024.10650075](https://doi.org/10.1109/IJCNN60899.2024.10650075)  
   *Keywords:* quantum approximate optimization algorithm; layerwise-multi-angle approach; quantum computing.
-
-- **Lavagna, L., De Falco, F., Ceschini, A., Rosato, A., & Panella, M.**  
-  *Trade-offs in Cryptosystems by Boolean and Quantum Circuits.*  
-  In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2025)*, IEEE, pp. 1–5, 2025.  
-  [https://doi.org/10.1109/ISCAS56072.2025.11043205](https://doi.org/10.1109/ISCAS56072.2025.11043205)  
-  *Keywords:* fault tolerance; circuits and systems; encryption; quantum mechanics; circuit theory.
 
 
 ## Other
