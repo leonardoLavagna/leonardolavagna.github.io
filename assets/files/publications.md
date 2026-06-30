@@ -32,28 +32,28 @@
 
 ## Conference Papers
 
-- **L. Lavagna, G. Vittori, A. Rosato & M. Panella**
- *Additive Resource Scaling in Quantum Circuits for Search in Cryptanalysis*
+- **L. Lavagna, G. Vittori, A. Rosato & M. Panella**  
+ *Additive Resource Scaling in Quantum Circuits for Search in Cryptanalysis*  
  In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2026)*, IEEE, pp. 2758-2762, 2026.  
  [https://doi.org/10.1109/ISCAS66217.2026.11562218](https://doi.org/10.1109/ISCAS66217.2026.11562218)
  *Keywords:* circuits and systems; quantum cryptography.
 
-- **L. Lavagna, G. Vittori, A. Rosato & M. Panella**
- *A Unified Quantum Circuit Framework for Grover Search and Quantum Walks in NISQ Cryptanalysis*
- In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2026)*, IEEE, pp. 837-841, 2026.  
- [https://doi.org/10.1109/ISCAS66217.2026.11562366](https://doi.org/10.1109/ISCAS66217.2026.11562366)
+- **L. Lavagna, G. Vittori, A. Rosato & M. Panella**  
+ *A Unified Quantum Circuit Framework for Grover Search and Quantum Walks in NISQ Cryptanalysis*  
+ In *Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS 2026)*,  IEEE, pp. 837-841, 2026.  
+ [https://doi.org/10.1109/ISCAS66217.2026.11562366](https://doi.org/10.1109/ISCAS66217.2026.11562366)  
  *Keywords:* circuits and systems; quantum cryptography.
 
-- **M. Casalbore, L. Lavagna, A. Rosato and M. Panella**
-  *Time Series Anomaly Detection with Quantum Variational Methods and Set Covering*  
-  In *Proceedings of the 2026 IEEE International Conference on Acoustics, Speech and Signal  Processing (ICASSP)*. Barcelona, Spain, 2026, pp. 1846-1850  
+- **M. Casalbore, L. Lavagna, A. Rosato and M. Panella**  
+  *Time Series Anomaly Detection with Quantum Variational Methods and Set Covering*    
+  In *Proceedings of the 2026 IEEE International Conference on Acoustics, Speech and Signal  Processing (ICASSP)*. Barcelona, Spain, 2026, pp. 1846-1850   
   doi: 10.1109/ICASSP55912.2026.11464824  
   *Keywords:* quantum approximate optimization algorithm; quantum computing; time series.
 
-- **F. De Falco, L. Lavagna, A. Ceschini, & M. Panella**
-  *Enhancing QAOA Ansatz via Multi-Parameterized Layer and Blockwise Optimization*
-  In *Proceedings of the 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2026)*. Barcelona, Spain, 2026, pp. 20417-20421,
-  [https://doi.org/10.1109/ICASSP55912.2026.11461345](https://doi.org/10.1109/ICASSP55912.2026.11461345)
+- **F. De Falco, L. Lavagna, A. Ceschini, & M. Panella**  
+  *Enhancing QAOA Ansatz via Multi-Parameterized Layer and Blockwise Optimization*  
+  In *Proceedings of the 2026 IEEE International Conference on Acoustics, Speech and Signal  Processing (ICASSP 2026)*. Barcelona, Spain, 2026, pp. 20417-20421,  
+  [https://doi.org/10.1109/ICASSP55912.2026.11461345](https://doi.org/10.1109/ICASSP55912.2026.11461345)  
   *Keywords:* quantum approximate optimization algorithm; quantum computing.
 
 - **Lavagna, L., Ceschini, A., Rosato, A., & Panella, M.**  
