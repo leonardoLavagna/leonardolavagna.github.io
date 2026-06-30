@@ -44,6 +44,11 @@
  [https://doi.org/10.1109/ISCAS66217.2026.11562366](https://doi.org/10.1109/ISCAS66217.2026.11562366)
  *Keywords:* circuits and systems; quantum cryptography.
 
+- **M. Casalbore, L. Lavagna, A. Rosato and M. Panella**
+  *Time Series Anomaly Detection with Quantum Variational Methods and Set Covering*  
+  In *Proceedings of the 2026 IEEE International Conference on Acoustics, Speech and Signal  Processing (ICASSP)*. Barcelona, Spain, 2026, pp. 1846-1850  
+  doi: 10.1109/ICASSP55912.2026.11464824  
+  *Keywords:* quantum approximate optimization algorithm; quantum computing; time series.
 
 - **F. De Falco, L. Lavagna, A. Ceschini, & M. Panella**
   *Enhancing QAOA Ansatz via Multi-Parameterized Layer and Blockwise Optimization*
