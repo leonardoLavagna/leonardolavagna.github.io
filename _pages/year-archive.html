@@ -12,13 +12,33 @@ redirect_from:
 <style>
   .news-tools {
     display: grid;
-    grid-template-columns: 1fr 220px 180px auto;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 0.75rem;
     align-items: end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+  }
+
+  .news-tool-title {
+    grid-column: span 5;
+  }
+
+  .news-tool-month {
+    grid-column: span 3;
+  }
+
+  .news-tool-sort {
+    grid-column: span 2;
+  }
+
+  .news-tool-clear {
+    grid-column: span 2;
+  }
+
+  .news-tools > div {
+    min-width: 0;
   }
 
   .news-tools label {
@@ -32,6 +52,8 @@ redirect_from:
   .news-tools select,
   .news-tools button {
     width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 0.45rem 0.55rem;
     font-size: 0.9rem;
   }
@@ -50,15 +72,22 @@ redirect_from:
     margin-bottom: 1.25rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     .news-tools {
       grid-template-columns: 1fr;
+    }
+
+    .news-tool-title,
+    .news-tool-month,
+    .news-tool-sort,
+    .news-tool-clear {
+      grid-column: span 1;
     }
   }
 </style>
 
 <div class="news-tools" aria-label="News filters">
-  <div>
+  <div class="news-tool-title">
     <label for="news-title-search">Search by title</label>
     <input
       id="news-title-search"
@@ -68,12 +97,13 @@ redirect_from:
     >
   </div>
 
-  <div>
+  <div class="news-tool-month">
     <label for="news-month-filter">Filter by month</label>
     <select id="news-month-filter">
       <option value="">All months</option>
+      {% assign posts_by_date = site.posts | sort: "date" | reverse %}
       {% assign seen_months = "" %}
-      {% for post in site.posts %}
+      {% for post in posts_by_date %}
         {% assign month_value = post.date | date: "%Y-%m" %}
         {% assign month_label = post.date | date: "%B %Y" %}
         {% assign month_token = "|" | append: month_value | append: "|" %}
@@ -85,7 +115,7 @@ redirect_from:
     </select>
   </div>
 
-  <div>
+  <div class="news-tool-sort">
     <label for="news-sort">Sort</label>
     <select id="news-sort">
       <option value="newest">Newest first</option>
@@ -95,7 +125,7 @@ redirect_from:
     </select>
   </div>
 
-  <div>
+  <div class="news-tool-clear">
     <label>&nbsp;</label>
     <button id="news-clear-filters" type="button">Clear</button>
   </div>
@@ -104,7 +134,8 @@ redirect_from:
 <p id="news-count" class="news-count"></p>
 
 <div id="news-list">
-  {% for post in site.posts %}
+  {% assign posts_by_date = site.posts | sort: "date" | reverse %}
+  {% for post in posts_by_date %}
     <div
       class="news-post js-news-post"
       data-title="{{ post.title | strip_html | escape }}"
@@ -173,6 +204,7 @@ redirect_from:
         const matchesMonth = !selectedMonth || month === selectedMonth;
 
         const isVisible = matchesTitle && matchesMonth;
+
         post.hidden = !isVisible;
 
         if (isVisible) {
