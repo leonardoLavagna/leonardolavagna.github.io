@@ -31,7 +31,7 @@ My education started with a degree in Pure Mathematics, then I specialized in Da
      - **Visiting [@CERN](https://en.wikipedia.org/wiki/CERN) (3 months)**. I have been associated with the [ATLAS experiment](https://en.wikipedia.org/wiki/ATLAS_experiment) and worked in the [Quantum Technology Initiative](https://quantum.cern/) to develop quantum-enhanced algorithms for experimental data analysis. 
 
 ## Foreign Languages
-My motherlanguage is Italian, I am fluent in English, and I have a basic knowledge of German. Currently I'm studying Chinese and trying to remember the Franch I've learnt in school. 
+My motherlanguage is Italian, I am fluent in English, and I have a basic knowledge of German. Currently I'm also trying to remember the Franch I've learnt in school... 
   * 🇬🇧 **Cambridge English: Proficiency (level C2)**
   * 🇩🇪 **B1 Deutch Prüfung**
 
