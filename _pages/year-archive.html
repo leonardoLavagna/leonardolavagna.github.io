@@ -8,12 +8,201 @@ redirect_from:
 ---
 
 {% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+
+<style>
+  .news-tools {
+    display: grid;
+    grid-template-columns: 1fr 220px 180px auto;
+    gap: 0.75rem;
+    align-items: end;
+    margin: 1.5rem 0 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .news-tools label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .news-tools input,
+  .news-tools select,
+  .news-tools button {
+    width: 100%;
+    padding: 0.45rem 0.55rem;
+    font-size: 0.9rem;
+  }
+
+  .news-tools button {
+    cursor: pointer;
+  }
+
+  .news-count {
+    margin: 0.5rem 0 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .news-post {
+    margin-bottom: 1.25rem;
+  }
+
+  @media (max-width: 768px) {
+    .news-tools {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="news-tools" aria-label="News filters">
+  <div>
+    <label for="news-title-search">Search by title</label>
+    <input
+      id="news-title-search"
+      type="search"
+      placeholder="Type a title keyword..."
+      autocomplete="off"
+    >
+  </div>
+
+  <div>
+    <label for="news-month-filter">Filter by month</label>
+    <select id="news-month-filter">
+      <option value="">All months</option>
+      {% assign seen_months = "" %}
+      {% for post in site.posts %}
+        {% assign month_value = post.date | date: "%Y-%m" %}
+        {% assign month_label = post.date | date: "%B %Y" %}
+        {% assign month_token = "|" | append: month_value | append: "|" %}
+        {% unless seen_months contains month_token %}
+          <option value="{{ month_value }}">{{ month_label }}</option>
+          {% assign seen_months = seen_months | append: month_token %}
+        {% endunless %}
+      {% endfor %}
+    </select>
+  </div>
+
+  <div>
+    <label for="news-sort">Sort</label>
+    <select id="news-sort">
+      <option value="newest">Newest first</option>
+      <option value="oldest">Oldest first</option>
+      <option value="title-asc">Title A–Z</option>
+      <option value="title-desc">Title Z–A</option>
+    </select>
+  </div>
+
+  <div>
+    <label>&nbsp;</label>
+    <button id="news-clear-filters" type="button">Clear</button>
+  </div>
+</div>
+
+<p id="news-count" class="news-count"></p>
+
+<div id="news-list">
+  {% for post in site.posts %}
+    <div
+      class="news-post js-news-post"
+      data-title="{{ post.title | strip_html | escape }}"
+      data-title-search="{{ post.title | strip_html | downcase | escape }}"
+      data-date="{{ post.date | date: '%Y-%m-%d' }}"
+      data-month="{{ post.date | date: '%Y-%m' }}"
+    >
+      {% include archive-single.html %}
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("news-title-search");
+    const monthFilter = document.getElementById("news-month-filter");
+    const sortSelect = document.getElementById("news-sort");
+    const clearButton = document.getElementById("news-clear-filters");
+    const count = document.getElementById("news-count");
+    const list = document.getElementById("news-list");
+    const posts = Array.from(document.querySelectorAll(".js-news-post"));
+
+    function normalizeText(value) {
+      return (value || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function sortPosts(items) {
+      const mode = sortSelect.value;
+
+      return items.slice().sort(function (a, b) {
+        const titleA = normalizeText(a.dataset.title);
+        const titleB = normalizeText(b.dataset.title);
+        const dateA = new Date(a.dataset.date);
+        const dateB = new Date(b.dataset.date);
+
+        if (mode === "oldest") {
+          return dateA - dateB;
+        }
+
+        if (mode === "title-asc") {
+          return titleA.localeCompare(titleB);
+        }
+
+        if (mode === "title-desc") {
+          return titleB.localeCompare(titleA);
+        }
+
+        return dateB - dateA;
+      });
+    }
+
+    function applyNewsFilters() {
+      const query = normalizeText(searchInput.value.trim());
+      const selectedMonth = monthFilter.value;
+
+      let visibleCount = 0;
+
+      posts.forEach(function (post) {
+        const title = normalizeText(post.dataset.titleSearch);
+        const month = post.dataset.month;
+
+        const matchesTitle = !query || title.includes(query);
+        const matchesMonth = !selectedMonth || month === selectedMonth;
+
+        const isVisible = matchesTitle && matchesMonth;
+        post.hidden = !isVisible;
+
+        if (isVisible) {
+          visibleCount += 1;
+        }
+      });
+
+      sortPosts(posts).forEach(function (post) {
+        list.appendChild(post);
+      });
+
+      if (visibleCount === 1) {
+        count.textContent = "Showing 1 post";
+      } else {
+        count.textContent = "Showing " + visibleCount + " posts";
+      }
+    }
+
+    searchInput.addEventListener("input", applyNewsFilters);
+    monthFilter.addEventListener("change", applyNewsFilters);
+    sortSelect.addEventListener("change", applyNewsFilters);
+
+    clearButton.addEventListener("click", function () {
+      searchInput.value = "";
+      monthFilter.value = "";
+      sortSelect.value = "newest";
+      applyNewsFilters();
+      searchInput.focus();
+    });
+
+    applyNewsFilters();
+  });
+</script>
