@@ -16,13 +16,29 @@ A selection of talks and presentations I have given in different contexts.
 <style>
   .talk-tools {
     display: grid;
-    grid-template-columns: 1fr 160px auto;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 0.75rem;
     align-items: end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+  }
+
+  .talk-tool-title {
+    grid-column: span 8;
+  }
+
+  .talk-tool-year {
+    grid-column: span 2;
+  }
+
+  .talk-tool-clear {
+    grid-column: span 2;
+  }
+
+  .talk-tools > div {
+    min-width: 0;
   }
 
   .talk-tools label {
@@ -36,6 +52,8 @@ A selection of talks and presentations I have given in different contexts.
   .talk-tools select,
   .talk-tools button {
     width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 0.45rem 0.55rem;
     font-size: 0.9rem;
   }
@@ -54,15 +72,21 @@ A selection of talks and presentations I have given in different contexts.
     margin-bottom: 1.25rem;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 850px) {
     .talk-tools {
       grid-template-columns: 1fr;
+    }
+
+    .talk-tool-title,
+    .talk-tool-year,
+    .talk-tool-clear {
+      grid-column: span 1;
     }
   }
 </style>
 
 <div class="talk-tools" aria-label="Talk filters">
-  <div>
+  <div class="talk-tool-title">
     <label for="talk-title-search">Search by name</label>
     <input
       id="talk-title-search"
@@ -72,7 +96,7 @@ A selection of talks and presentations I have given in different contexts.
     >
   </div>
 
-  <div>
+  <div class="talk-tool-year">
     <label for="talk-year-filter">Year</label>
     <select id="talk-year-filter">
       <option value="">All years</option>
@@ -89,7 +113,7 @@ A selection of talks and presentations I have given in different contexts.
     </select>
   </div>
 
-  <div>
+  <div class="talk-tool-clear">
     <label>&nbsp;</label>
     <button id="talk-clear-filters" type="button">Clear</button>
   </div>
