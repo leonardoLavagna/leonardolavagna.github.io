@@ -21,9 +21,9 @@ I have worked as Data Analyst and Researcher in consulting firms active in biote
 ## Education
 My education started with a degree in Pure Mathematics, then I specialized in Data Science and now I'm doing research in the field of Quantum Computing.
   * **High School Diploma (Liceo Scientifico PNI)** at Liceo Scientifico Statale Farnesina of Rome
-    - **Stage INFN-LNF** summer stage at [Laboratori Nazionali di Frascati](https://w3.lnf.infn.it/?lang=en) working on Plank's constant measurements apparatuses.
+    - **Stage INFN-LNF** summer stage at [Laboratori Nazionali di Frascati](https://w3.lnf.infn.it/?lang=en) working on Plank's constant measurements apparatuses. A summary of my contributions in the stage can be found [here](https://leonardolavagna.github.io/talks/2013-06-30-talk-1)
   * **Degree in Mathematics** with a thesis on a mathematical model in fluidodynamics under the supervision of Prof. Paolo Buttà at Sapienza University of Rome. My thesis (in italian) is available [here](https://geometrino.files.wordpress.com/2022/03/modello_onde.pdf).
-      - **Erasmus** one semester at the [Johannes Gutenberg University of Mainz](https://homepage.uni-mainz.de/) (Germany) focusing on probability theory, complex geometry and analytical mechanics.
+      - **Erasmus** one semester at the [Johannes Gutenberg University of Mainz](https://homepage.uni-mainz.de/) (Germany) focusing on [statistical mechanics](https://leonardolavagna.github.io/talks/2019-01-29-talk-4), [complex geometry](https://leonardolavagna.github.io/talks/2018-10-29-talk-2) and [differential equations](https://leonardolavagna.github.io/talks/2019-01-25-talk-3). 
   * **Master of Science in Data Science** With a thesis on a novel variant of the Quantum Approximate Optimization Algorithm, under the supervision of Prof. Massimo Panella and Andrea Ceschini, at Sapienza University or Rome. My thesis was published [here](https://ieeexplore.ieee.org/document/10650075).
       - **Leonardo Labs Training camp** focusing on [Image Classification with real world Data Distributions](https://github.com/leonardoLavagna/Leonardo-Labs-Competition).
       - **AWS Training camp** focusing on High-performance cloud computing.
