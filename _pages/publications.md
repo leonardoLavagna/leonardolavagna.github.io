@@ -15,10 +15,10 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
 
 <style>
   .publication-tools {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.85rem;
-    align-items: flex-end;
+    align-items: end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
@@ -31,29 +31,34 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
   }
 
   .publication-tool-title {
-    flex: 1 1 230px;
+    grid-column: 1 / 2;
+    grid-row: 1;
   }
 
   .publication-tool-year {
-    flex: 0 1 130px;
+    grid-column: 2 / 3;
+    grid-row: 1;
   }
 
   .publication-tool-category {
-    flex: 0 1 170px;
+    grid-column: 3 / 4;
+    grid-row: 1;
   }
 
   .publication-tool-venue {
-    flex: 1 1 230px;
+    grid-column: 4 / 5;
+    grid-row: 1;
   }
 
   .publication-tool-sort {
-    flex: 0 1 155px;
+    grid-column: 1 / 2;
+    grid-row: 2;
   }
 
   .publication-tool-clear {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: flex-end;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    align-self: end;
   }
 
   .publication-tools label {
@@ -93,17 +98,55 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     margin-bottom: 1.25rem;
   }
 
+  @media (max-width: 900px) {
+    .publication-tools {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .publication-tool-title {
+      grid-column: 1 / 2;
+      grid-row: auto;
+    }
+
+    .publication-tool-year {
+      grid-column: 2 / 3;
+      grid-row: auto;
+    }
+
+    .publication-tool-category {
+      grid-column: 1 / 2;
+      grid-row: auto;
+    }
+
+    .publication-tool-venue {
+      grid-column: 2 / 3;
+      grid-row: auto;
+    }
+
+    .publication-tool-sort {
+      grid-column: 1 / 2;
+      grid-row: auto;
+    }
+
+    .publication-tool-clear {
+      grid-column: 2 / 3;
+      grid-row: auto;
+    }
+  }
+
   @media (max-width: 700px) {
     .publication-tools {
-      display: block;
+      grid-template-columns: 1fr;
     }
 
-    .publication-tools > div {
-      margin-bottom: 0.75rem;
-    }
-
-    .publication-tools > div:last-child {
-      margin-bottom: 0;
+    .publication-tool-title,
+    .publication-tool-year,
+    .publication-tool-category,
+    .publication-tool-venue,
+    .publication-tool-sort,
+    .publication-tool-clear {
+      grid-column: 1 / 2;
+      grid-row: auto;
     }
 
     .publication-tool-clear button {
