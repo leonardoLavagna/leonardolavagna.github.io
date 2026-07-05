@@ -15,18 +15,33 @@ A selection of talks and presentations I have given in different contexts.
 
 <style>
   .talk-tools {
-    display: grid;
-    grid-template-columns: minmax(260px, 1fr) 150px 90px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.85rem;
-    align-items: end;
+    align-items: flex-end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    box-sizing: border-box;
   }
 
   .talk-tools > div {
     min-width: 0;
+  }
+
+  .talk-tool-title {
+    flex: 1 1 320px;
+  }
+
+  .talk-tool-year {
+    flex: 0 1 160px;
+  }
+
+  .talk-tool-clear {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .talk-tools label {
@@ -52,8 +67,8 @@ A selection of talks and presentations I have given in different contexts.
     height: 2.45rem;
   }
 
-  .talk-tool-clear {
-    align-self: end;
+  .talk-tool-clear button {
+    width: 90px;
   }
 
   .talk-count {
@@ -68,7 +83,19 @@ A selection of talks and presentations I have given in different contexts.
 
   @media (max-width: 700px) {
     .talk-tools {
-      grid-template-columns: 1fr;
+      display: block;
+    }
+
+    .talk-tools > div {
+      margin-bottom: 0.75rem;
+    }
+
+    .talk-tools > div:last-child {
+      margin-bottom: 0;
+    }
+
+    .talk-tool-clear button {
+      width: 100%;
     }
   }
 </style>
