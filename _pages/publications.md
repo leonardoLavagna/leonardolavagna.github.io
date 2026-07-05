@@ -16,13 +16,41 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
 <style>
   .publication-tools {
     display: grid;
-    grid-template-columns: 1fr 140px 180px 1fr 170px auto;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
     gap: 0.75rem;
     align-items: end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+  }
+
+  .publication-tool-title {
+    grid-column: span 4;
+  }
+
+  .publication-tool-year {
+    grid-column: span 2;
+  }
+
+  .publication-tool-category {
+    grid-column: span 3;
+  }
+
+  .publication-tool-venue {
+    grid-column: span 4;
+  }
+
+  .publication-tool-sort {
+    grid-column: span 2;
+  }
+
+  .publication-tool-clear {
+    grid-column: span 1;
+  }
+
+  .publication-tools > div {
+    min-width: 0;
   }
 
   .publication-tools label {
@@ -36,6 +64,8 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
   .publication-tools select,
   .publication-tools button {
     width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 0.45rem 0.55rem;
     font-size: 0.9rem;
   }
@@ -54,9 +84,18 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     margin-bottom: 1.25rem;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     .publication-tools {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .publication-tool-title,
+    .publication-tool-year,
+    .publication-tool-category,
+    .publication-tool-venue,
+    .publication-tool-sort,
+    .publication-tool-clear {
+      grid-column: span 1;
     }
   }
 
