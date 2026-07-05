@@ -16,37 +16,13 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
 <style>
   .publication-tools {
     display: grid;
-    grid-template-columns: repeat(16, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
     align-items: end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
-  }
-
-  .publication-tool-title {
-    grid-column: span 4;
-  }
-
-  .publication-tool-year {
-    grid-column: span 2;
-  }
-
-  .publication-tool-category {
-    grid-column: span 3;
-  }
-
-  .publication-tool-venue {
-    grid-column: span 4;
-  }
-
-  .publication-tool-sort {
-    grid-column: span 2;
-  }
-
-  .publication-tool-clear {
-    grid-column: span 1;
   }
 
   .publication-tools > div {
@@ -84,16 +60,31 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     margin-bottom: 1.25rem;
   }
 
-  @media (max-width: 1100px) {
+  @media (min-width: 1200px) {
     .publication-tools {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(12, minmax(0, 1fr));
     }
 
-    .publication-tool-title,
-    .publication-tool-year,
-    .publication-tool-category,
-    .publication-tool-venue,
-    .publication-tool-sort,
+    .publication-tool-title {
+      grid-column: span 3;
+    }
+
+    .publication-tool-year {
+      grid-column: span 2;
+    }
+
+    .publication-tool-category {
+      grid-column: span 2;
+    }
+
+    .publication-tool-venue {
+      grid-column: span 3;
+    }
+
+    .publication-tool-sort {
+      grid-column: span 1;
+    }
+
     .publication-tool-clear {
       grid-column: span 1;
     }
@@ -107,7 +98,7 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
 </style>
 
 <div class="publication-tools" aria-label="Publication filters">
-  <div>
+  <div class="publication-tool-title">
     <label for="publication-title-search">Search by title</label>
     <input
       id="publication-title-search"
@@ -117,7 +108,7 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     >
   </div>
 
-  <div>
+  <div class="publication-tool-year">
     <label for="publication-year-filter">Year</label>
     <select id="publication-year-filter">
       <option value="">All years</option>
@@ -134,7 +125,7 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     </select>
   </div>
 
-  <div>
+  <div class="publication-tool-category">
     <label for="publication-category-filter">Category</label>
     <select id="publication-category-filter">
       <option value="">All categories</option>
@@ -146,17 +137,14 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     </select>
   </div>
 
-  <div>
-    <label for="publication-venue-search">Published in</label>
-    <input
-      id="publication-venue-search"
-      type="search"
-      placeholder="e.g. Data in Brief, ISCAS, IJCNN..."
-      autocomplete="off"
-    >
+  <div class="publication-tool-venue">
+    <label for="publication-venue-filter">Published in</label>
+    <select id="publication-venue-filter">
+      <option value="">All venues</option>
+    </select>
   </div>
 
-  <div>
+  <div class="publication-tool-sort">
     <label for="publication-sort">Sort</label>
     <select id="publication-sort">
       <option value="newest">Newest first</option>
@@ -167,7 +155,7 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     </select>
   </div>
 
-  <div>
+  <div class="publication-tool-clear">
     <label>&nbsp;</label>
     <button id="publication-clear-filters" type="button">Clear</button>
   </div>
@@ -185,7 +173,6 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
       data-date="{{ post.date | date: '%Y-%m-%d' }}"
       data-year="{{ post.date | date: '%Y' }}"
       data-venue="{{ post.venue | default: '' | strip_html | escape }}"
-      data-venue-search="{{ post.venue | default: '' | strip_html | downcase | escape }}"
     >
       {% include archive-single.html %}
     </div>
@@ -197,7 +184,7 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     const titleInput = document.getElementById("publication-title-search");
     const yearFilter = document.getElementById("publication-year-filter");
     const categoryFilter = document.getElementById("publication-category-filter");
-    const venueInput = document.getElementById("publication-venue-search");
+    const venueFilter = document.getElementById("publication-venue-filter");
     const sortSelect = document.getElementById("publication-sort");
     const clearButton = document.getElementById("publication-clear-filters");
     const count = document.getElementById("publication-count");
@@ -247,17 +234,46 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
       return categoryLabels[match[1].toUpperCase()] || "unknown";
     }
 
-    function cleanVenueForSearch(venue) {
-      return normalizeText(venue)
+    function cleanVenueLabel(venue) {
+      return (venue || "")
         .replace(/\s*\([^)]*\)\s*/g, " ")
         .replace(/\s*,?\s*\d{4}\s*$/g, " ")
         .replace(/\s+/g, " ")
         .trim();
     }
 
+    function populateVenueDropdown() {
+      const venues = new Map();
+
+      publications.forEach(function (publication) {
+        const rawVenue = publication.dataset.venue || "";
+        const cleanedVenue = cleanVenueLabel(rawVenue);
+        const normalizedVenue = normalizeText(cleanedVenue);
+
+        publication.dataset.cleanVenueLabel = cleanedVenue;
+        publication.dataset.cleanVenueSearch = normalizedVenue;
+        publication.dataset.fullVenueSearch =
+          normalizeText(rawVenue) + " " + normalizedVenue;
+
+        if (cleanedVenue && !venues.has(normalizedVenue)) {
+          venues.set(normalizedVenue, cleanedVenue);
+        }
+      });
+
+      Array.from(venues.entries())
+        .sort(function (a, b) {
+          return a[1].localeCompare(b[1]);
+        })
+        .forEach(function ([normalizedVenue, venueLabel]) {
+          const option = document.createElement("option");
+          option.value = normalizedVenue;
+          option.textContent = venueLabel;
+          venueFilter.appendChild(option);
+        });
+    }
+
     publications.forEach(function (publication) {
       const title = publication.dataset.title || "";
-      const venue = publication.dataset.venue || "";
 
       publication.dataset.publicationCode = getPublicationCode(title);
       publication.dataset.category = getCategoryFromTitle(title);
@@ -269,13 +285,9 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
         normalizeText(title) + " " +
         publication.dataset.cleanTitleSearch + " " +
         normalizeText(publication.dataset.publicationCode);
-
-      publication.dataset.cleanVenueSearch = cleanVenueForSearch(venue);
-
-      publication.dataset.fullVenueSearch =
-        normalizeText(venue) + " " +
-        publication.dataset.cleanVenueSearch;
     });
+
+    populateVenueDropdown();
 
     function sortPublications(items) {
       const mode = sortSelect.value;
@@ -316,7 +328,7 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
       const titleQuery = normalizeText(titleInput.value.trim());
       const selectedYear = yearFilter.value;
       const selectedCategory = categoryFilter.value;
-      const venueQuery = normalizeText(venueInput.value.trim());
+      const selectedVenue = venueFilter.value;
 
       let visibleCount = 0;
 
@@ -334,8 +346,8 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
           publication.dataset.category === selectedCategory;
 
         const matchesVenue =
-          !venueQuery ||
-          publication.dataset.fullVenueSearch.includes(venueQuery);
+          !selectedVenue ||
+          publication.dataset.cleanVenueSearch === selectedVenue;
 
         const isVisible =
           matchesTitle &&
@@ -364,14 +376,14 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     titleInput.addEventListener("input", applyPublicationFilters);
     yearFilter.addEventListener("change", applyPublicationFilters);
     categoryFilter.addEventListener("change", applyPublicationFilters);
-    venueInput.addEventListener("input", applyPublicationFilters);
+    venueFilter.addEventListener("change", applyPublicationFilters);
     sortSelect.addEventListener("change", applyPublicationFilters);
 
     clearButton.addEventListener("click", function () {
       titleInput.value = "";
       yearFilter.value = "";
       categoryFilter.value = "";
-      venueInput.value = "";
+      venueFilter.value = "";
       sortSelect.value = "newest";
       applyPublicationFilters();
       titleInput.focus();
