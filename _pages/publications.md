@@ -15,24 +15,45 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
 
 <style>
   .publication-tools {
-    display: grid;
-    grid-template-columns:
-      minmax(230px, 1.6fr)
-      minmax(120px, 0.75fr)
-      minmax(160px, 1fr)
-      minmax(230px, 1.5fr)
-      minmax(145px, 0.9fr)
-      90px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.85rem;
-    align-items: end;
+    align-items: flex-end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    box-sizing: border-box;
   }
 
   .publication-tools > div {
     min-width: 0;
+  }
+
+  .publication-tool-title {
+    flex: 1 1 230px;
+  }
+
+  .publication-tool-year {
+    flex: 0 1 130px;
+  }
+
+  .publication-tool-category {
+    flex: 0 1 170px;
+  }
+
+  .publication-tool-venue {
+    flex: 1 1 230px;
+  }
+
+  .publication-tool-sort {
+    flex: 0 1 155px;
+  }
+
+  .publication-tool-clear {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .publication-tools label {
@@ -58,8 +79,8 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     height: 2.45rem;
   }
 
-  .publication-tool-clear {
-    align-self: end;
+  .publication-tool-clear button {
+    width: 90px;
   }
 
   .publication-count {
@@ -72,27 +93,21 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     margin-bottom: 1.25rem;
   }
 
-  @media (max-width: 1200px) {
-    .publication-tools {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .publication-tool-clear {
-      grid-column: span 2;
-      justify-self: end;
-      width: 120px;
-    }
-  }
-
   @media (max-width: 700px) {
     .publication-tools {
-      grid-template-columns: 1fr;
+      display: block;
     }
 
-    .publication-tool-clear {
-      grid-column: span 1;
-      justify-self: stretch;
-      width: auto;
+    .publication-tools > div {
+      margin-bottom: 0.75rem;
+    }
+
+    .publication-tools > div:last-child {
+      margin-bottom: 0;
+    }
+
+    .publication-tool-clear button {
+      width: 100%;
     }
   }
 </style>
