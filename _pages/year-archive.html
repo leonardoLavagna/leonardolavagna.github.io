@@ -11,10 +11,10 @@ redirect_from:
 
 <style>
   .news-tools {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px 160px;
     gap: 0.85rem;
-    align-items: flex-end;
+    align-items: end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
@@ -27,21 +27,24 @@ redirect_from:
   }
 
   .news-tool-title {
-    flex: 1 1 320px;
+    grid-column: 1 / 2;
+    grid-row: 1;
   }
 
   .news-tool-month {
-    flex: 0 1 220px;
+    grid-column: 2 / 3;
+    grid-row: 1;
   }
 
   .news-tool-sort {
-    flex: 0 1 160px;
+    grid-column: 3 / 4;
+    grid-row: 1;
   }
 
   .news-tool-clear {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: flex-end;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    justify-self: start;
   }
 
   .news-tools label {
@@ -81,17 +84,17 @@ redirect_from:
     margin-bottom: 1.25rem;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 850px) {
     .news-tools {
-      display: block;
+      grid-template-columns: 1fr;
     }
 
-    .news-tools > div {
-      margin-bottom: 0.75rem;
-    }
-
-    .news-tools > div:last-child {
-      margin-bottom: 0;
+    .news-tool-title,
+    .news-tool-month,
+    .news-tool-sort,
+    .news-tool-clear {
+      grid-column: 1 / 2;
+      grid-row: auto;
     }
 
     .news-tool-clear button {
