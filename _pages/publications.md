@@ -16,8 +16,14 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
 <style>
   .publication-tools {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
+    grid-template-columns:
+      minmax(230px, 1.6fr)
+      minmax(120px, 0.75fr)
+      minmax(160px, 1fr)
+      minmax(230px, 1.5fr)
+      minmax(145px, 0.9fr)
+      90px;
+    gap: 0.85rem;
     align-items: end;
     margin: 1.5rem 0 1rem;
     padding: 1rem;
@@ -44,10 +50,16 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     box-sizing: border-box;
     padding: 0.45rem 0.55rem;
     font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   .publication-tools button {
     cursor: pointer;
+    height: 2.45rem;
+  }
+
+  .publication-tool-clear {
+    align-self: end;
   }
 
   .publication-count {
@@ -60,39 +72,27 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
     margin-bottom: 1.25rem;
   }
 
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) {
     .publication-tools {
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-    }
-
-    .publication-tool-title {
-      grid-column: span 3;
-    }
-
-    .publication-tool-year {
-      grid-column: span 2;
-    }
-
-    .publication-tool-category {
-      grid-column: span 2;
-    }
-
-    .publication-tool-venue {
-      grid-column: span 3;
-    }
-
-    .publication-tool-sort {
-      grid-column: span 1;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .publication-tool-clear {
-      grid-column: span 1;
+      grid-column: span 2;
+      justify-self: end;
+      width: 120px;
     }
   }
 
   @media (max-width: 700px) {
     .publication-tools {
       grid-template-columns: 1fr;
+    }
+
+    .publication-tool-clear {
+      grid-column: span 1;
+      justify-self: stretch;
+      width: auto;
     }
   }
 </style>
@@ -156,7 +156,6 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
   </div>
 
   <div class="publication-tool-clear">
-    <label>&nbsp;</label>
     <button id="publication-clear-filters" type="button">Clear</button>
   </div>
 </div>
