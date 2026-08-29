@@ -50,7 +50,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 ### Other
 
 All my (public) coding projects are available on my [GitHub profile](https://github.com/leonardoLavagna). Besides, apps, datasets, games, databases, etc... I have also worked on numerical analysis, computer vision, epidemic modeling etc...:
-- [Some comupter vision tools](https://github.com/leonardoLavagna/Computer-Vision): An image blurer used to blur car's plates
+- [Some comupter vision tools](https://github.com/leonardoLavagna/Computer-Vision): An image blurer used to blur car's plates,
 a face detection system, an image reconstruction method based on Matrix Completion (Alternating Least Square method) and a complete image classification system based on filters, convolution, and color histograms.
 - [Automatic note estraction](https://github.com/leonardoLavagna/Notes-Extraction-Tool/): basic signal processing tachniques (e.g. audio filtering and FFT) to transform an audio track into playable sheet (text) music.
 - [Socket programming](https://github.com/leonardoLavagna/Socket-Programming): basic implementations of a web server, a UDP pinger, a Mail Client and a Web Proxy.
