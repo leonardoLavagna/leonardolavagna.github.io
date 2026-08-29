@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Projects & Software"
-permalink: /applets/
+permalink: /projects-software/
 toc: false
 classes: wide
 ---
