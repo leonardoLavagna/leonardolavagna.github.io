@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Applets"
+title: "Projects & Software"
 permalink: /applets/
 toc: false
 classes: wide
