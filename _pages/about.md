@@ -12,7 +12,7 @@ I'm a [mathematician](https://www.youtube.com/watch?v=SeZ_gbBPUw0) specialized i
 
 
 # About
-This is my personal website where I share my research and other work-related activities: from my [CV](https://leonardolavagna.github.io/cv/) to my [publications](https://leonardolavagna.github.io/publications/) and [talks](https://leonardolavagna.github.io/talks/) as well as [news or updates](https://leonardolavagna.github.io/year-archive/). This website is associated with technical blog [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/) and the Italian non-technical blog [geometrino.wordpress.com](https://geometrino.wordpress.com/).
+This is my personal website where I share my research and other work-related activities: from my [CV](https://leonardolavagna.github.io/cv/) to my [research](/research/), including publications and talks as well as [news or updates](https://leonardolavagna.github.io/year-archive/). This website is associated with technical blog [lavagnaleo.wordpress.com](https://lavagnaleo.wordpress.com/) and the Italian non-technical blog [geometrino.wordpress.com](https://geometrino.wordpress.com/).
 
 ## Contacts 
 You can reach me at **leonardo.lavagna@uniroma1.it** or in person (please make an appointment via e-mail first!) at [Via Eudossiana 18](https://diet.web.uniroma1.it/en/how-reach-us).

@@ -1,0 +1,79 @@
+# Count distinct public resources; alternate dataset mirrors are not separate datasets.
+apps:
+  - name: Quantum Optimization
+    url: https://quantum-optimization-app.streamlit.app/
+  - name: Perturbative Methods in Quantum Mechanics
+    url: https://perturbative-methods-in-action.streamlit.app/
+  - name: Molecular Solubility Predictor
+    url: https://moleculesolubilityprediction.streamlit.app/
+  - name: DNA Sequence Explorer
+    url: https://nucleotidecount.streamlit.app/
+  - name: Smart Microfluidics Toolkit
+    url: https://smart-microfluidics.streamlit.app/
+datasets:
+  - name: Island dataset
+    url: https://www.kaggle.com/datasets/leolavagna/islands
+  - name: Smart Microfluidics
+    url: https://zenodo.org/records/17867478
+themes:
+  - name: Quantum optimization
+    description: Designing QAOA variants that balance expressive power, parameter training, and circuit depth. I study how graph symmetries and perturbations affect MaxCut, and apply quantum optimization to time-series anomaly detection and constrained vehicle dynamics.
+    links:
+      - label: QAOA design
+        url: /publication/2026-05-06-ICASSP2026
+      - label: Graph structure & MaxCut
+        url: /publication/2025-10-17-AVS1
+      - label: Vehicle dynamics talk
+        url: /talks/2026-06-12-talk-12
+  - name: Hybrid quantum-classical learning
+    description: Combining quantum circuits with classical learning architectures for multivariate time series, pattern completion, classification, and clustering. My work includes quantum-enhanced recurrent models and quantum hyperdimensional computing, alongside talks on generative modelling and knowledge distillation.
+    links:
+      - label: Quantum hyperdimensional computing
+        url: /publication/2025-11-17-IJCNN1
+      - label: Hybrid recurrent models
+        url: /publication/2024-11-25-QGRU
+      - label: Knowledge distillation talk
+        url: /talks/2024-12-29-talk-7
+  - name: Quantum algorithms & cryptanalysis
+    description: Studying Grover search and quantum walks within a common circuit framework for cryptanalysis. I examine how noise, circuit resources, and interactions with an environment change success probabilities and time-space trade-offs on near-term quantum devices.
+    links:
+      - label: Search & quantum walks
+        url: /publication/2026-06-30-ISCAS2026
+      - label: Circuit resource scaling
+        url: /publication/2026-06-30-ISCAS2026-2
+  - name: Quantum workflow orchestration
+    description: Making quantum-enhanced tasks usable on computing clusters through modular workflows and accessible interfaces. At CERN, I developed an orchestration framework using Streamlit, Kubernetes, and Argo Workflows for tasks such as circuit cutting and sample-based diagonalization.
+    links:
+      - label: CERN workflow talk
+        url: /talks/2026-05-21-talk-10
+  - name: Machine learning for biotechnology
+    description: Using experimental data and predictive models to guide microfluidic liposome formulation for nanomedicine. This work connects formulation and flow conditions with particle size and polydispersity, supported by independent wet-lab validation, curated datasets, and an open-source design toolkit.
+    links:
+      - label: Liposome formulation study
+        url: /publication/2025-11-12-IJP1
+      - label: Smart Microfluidics dataset
+        url: /publication/2026-03-09-DiB
+  - name: Quantum computing for drug discovery
+    status: Emerging direction
+    description: Exploring how quantum computing could contribute to drug-discovery problems, including molecular modelling and hybrid computational workflows. This direction brings my interests in quantum algorithms and biotechnology into a shared research programme.
+  - name: Quantum metrology
+    status: Emerging direction
+    description: Exploring quantum approaches to parameter estimation and precision measurement. Related foundations include my work on perturbative descriptions of quantum systems and an early experimental study of Planck's constant using LEDs.
+figures:
+  - title: Quantum computing & connected systems
+    image: /assets/images/research/quantum-context.webp
+    alt: An artistic illustration of quantum computing hardware alongside an interconnected engineering landscape.
+    caption: Computation, connections, and complex systems.
+  - title: Biotechnology & molecular discovery
+    image: /assets/images/research/biotechnology-context.webp
+    alt: An artistic illustration of translucent molecular structures and lipid vesicles in a softly lit environment.
+    caption: Molecules, data, and possibilities for discovery.
+applications:
+  - name: Telecommunication networks
+    description: Network design, routing, and resource allocation as settings for graph-based optimization and hybrid computational methods.
+  - name: Electrical networks & energy management
+    description: Planning and control of electrical networks, with optimization and predictive modelling for energy use, scheduling, and resource management.
+  - name: Information engineering
+    description: Signal processing, multivariate time-series modelling, anomaly detection, and the implementation of quantum-classical computational systems.
+  - name: Satellite constellations
+    description: Constellation design, connectivity, and coordination as large-scale optimization problems at the intersection of satellite systems and communication networks.

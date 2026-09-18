@@ -1,0 +1,5 @@
+<nav class="research-navigation" aria-label="Research pages">
+  <a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} aria-current="page"{% endif %}>Research overview</a>
+  <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} aria-current="page"{% endif %}>Publications</a>
+  <a href="{{ '/talks/' | relative_url }}"{% if page.url == '/talks/' %} aria-current="page"{% endif %}>Talks &amp; seminars</a>
+</nav>

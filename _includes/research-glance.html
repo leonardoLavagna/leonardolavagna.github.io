@@ -1,0 +1,64 @@
+{% assign research = site.data.research %}
+{% assign works = site.publications | map: "work_id" | compact | uniq %}
+{% assign journals = site.publications | where: "type", "journal" %}
+{% assign conferences = site.publications | where: "type", "conference" %}
+<section class="research-glance" aria-labelledby="research-glance-heading">
+  <h2 id="research-glance-heading">Research at a glance</h2>
+  <p class="research-glance__intro">Quantum algorithms, hybrid learning, and data-driven biotechnology—from computational methods to experimental applications.</p>
+  <ul class="research-glance__stats" aria-label="Research activity">
+    <li><a href="{{ '/publications/' | relative_url }}"><strong>{{ works | size }}</strong><span>Publications</span></a></li>
+    <li><a href="{{ '/publications/' | relative_url }}"><strong>{{ journals | size }}</strong><span>Journal papers</span></a></li>
+    <li><a href="{{ '/publications/' | relative_url }}"><strong>{{ conferences | size }}</strong><span>Conference papers</span></a></li>
+    <li><a href="{{ '/talks/' | relative_url }}"><strong>{{ site.talks | size }}</strong><span>Talks &amp; seminars</span></a></li>
+    <li><a href="{{ '/projects-software/#apps-and-datasets' | relative_url }}"><strong>{{ research.apps | size }}</strong><span>Research apps</span></a></li>
+    <li><a href="{{ '/projects-software/#apps-and-datasets' | relative_url }}"><strong>{{ research.datasets | size }}</strong><span>Datasets</span></a></li>
+  </ul>
+  <p class="research-glance__note">Based on the work listed on this site. Publications count distinct works; preprint and published versions count once. Journal papers include dataset articles.</p>
+  <h3>Research themes</h3>
+  <ul class="research-glance__themes">
+    {% for theme in research.themes %}
+    <li>
+      <article class="research-glance__theme">
+        {% if theme.status %}<span class="research-glance__status">{{ theme.status | escape }}</span>{% endif %}
+        <h4>{{ theme.name | escape }}</h4>
+        <p>{{ theme.description | escape }}</p>
+        {% if theme.links %}
+        <ul class="research-glance__theme-links" aria-label="Related work for {{ theme.name | escape }}">
+          {% for link in theme.links %}
+          <li><a href="{% include research-document-url.html url=link.url %}">{{ link.label | escape }} <span aria-hidden="true">&rarr;</span></a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+  <h3>Research in practice</h3>
+  <div class="research-glance__figures">
+    {% for figure in research.figures %}
+    <figure>
+      <h4>{{ figure.title | escape }}</h4>
+      <img src="{{ figure.image | relative_url }}" alt="{{ figure.alt | escape }}" width="1536" height="1024" loading="lazy">
+      <figcaption>{{ figure.caption | escape }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  <section class="research-glance__applications" aria-labelledby="research-applications-heading">
+    <h3 id="research-applications-heading">Applications</h3>
+    <p class="research-glance__applications-intro">Application domains connecting my work in quantum computing, optimization, and machine learning with engineering problems.</p>
+    <ul class="research-glance__application-grid">
+      {% for application in research.applications %}
+      <li>
+        <article>
+          <h4>{{ application.name | escape }}</h4>
+          <p>{{ application.description | escape }}</p>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <div class="research-glance__browse">
+    <a class="research-glance__explore" href="{{ '/publications/' | relative_url }}">Browse publications <span aria-hidden="true">&rarr;</span></a>
+    <a class="research-glance__explore" href="{{ '/talks/' | relative_url }}">Browse talks &amp; seminars <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>

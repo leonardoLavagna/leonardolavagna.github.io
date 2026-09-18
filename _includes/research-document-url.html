@@ -1,0 +1,7 @@
+{%- assign document_url = include.url -%}
+{%- assign document_tail = document_url | slice: -1, 1 -%}
+{%- assign document_filename = document_url | split: '/' | last -%}
+{%- unless document_tail == '/' or document_filename contains '.' -%}
+  {%- assign document_url = document_url | append: '.html' -%}
+{%- endunless -%}
+{{- document_url | relative_url -}}

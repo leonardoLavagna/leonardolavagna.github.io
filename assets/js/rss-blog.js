@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const feedUrl = "https://lavagnaleo.wordpress.com/feed";
   const container = document.getElementById("recent-posts");
+  if (!container) return;
 
   fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`)
     .then(response => response.json())

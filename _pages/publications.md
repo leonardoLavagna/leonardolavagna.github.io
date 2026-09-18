@@ -3,7 +3,10 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+research_section: true
 ---
+
+{% include research-navigation.html %}
 
 Here you can find a selection of publications. A complete list with all my scientific contributions can be found [here](/assets/files/publications.pdf) with corresponding BibTeX entries [here](https://gist.github.com/leonardoLavagna/e30c60bd37b3f04a1927913be0563097).
 

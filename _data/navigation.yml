@@ -13,11 +13,13 @@ main:
   - title: "News"
     url: /year-archive/
     
-  - title: "Publications"
-    url: /publications/   
-
-  - title: "Talks"
-    url: /talks/ 
+  - title: "Research"
+    url: /research/
+    children:
+      - title: "Publications"
+        url: /publications/
+      - title: "Talks"
+        url: /talks/
     
   - title: "Projects & Software"
     url: /projects-software/
