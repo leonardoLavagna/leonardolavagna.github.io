@@ -17,7 +17,7 @@ datasets:
     url: https://zenodo.org/records/17867478
 themes:
   - name: Quantum optimization
-    description: Designing QAOA variants that balance expressive power, parameter training, and circuit depth. I study how graph symmetries and perturbations affect MaxCut, and apply quantum optimization to time-series anomaly detection and constrained vehicle dynamics.
+    description: Designing QAOA variants that balance expressive power, parameter training, and circuit depth. I study how symmetries and perturbations affect combinatorial problems on graphs (e.g. MaxCut) solved by quantum algorithms, and apply quantum optimization to concrete use-cases, especially time-series anomaly detection and dynamical systems.
     links:
       - label: QAOA design
         url: /publication/2026-05-06-ICASSP2026
@@ -26,7 +26,7 @@ themes:
       - label: Vehicle dynamics talk
         url: /talks/2026-06-12-talk-12
   - name: Hybrid quantum-classical learning
-    description: Combining quantum circuits with classical learning architectures for multivariate time series, pattern completion, classification, and clustering. My work includes quantum-enhanced recurrent models and quantum hyperdimensional computing, alongside talks on generative modelling and knowledge distillation.
+    description: Combining quantum circuits with classical learning architectures for multivariate time series, pattern completion, classification, and clustering. My work includes quantum-enhanced recurrent models and quantum hyperdimensional computing, alongside generative modelling and knowledge distillation.
     links:
       - label: Quantum hyperdimensional computing
         url: /publication/2025-11-17-IJCNN1
@@ -47,7 +47,7 @@ themes:
       - label: CERN workflow talk
         url: /talks/2026-05-21-talk-10
   - name: Machine learning for biotechnology
-    description: Using experimental data and predictive models to guide microfluidic liposome formulation for nanomedicine. This work connects formulation and flow conditions with particle size and polydispersity, supported by independent wet-lab validation, curated datasets, and an open-source design toolkit.
+    description: Using experimental data and predictive models to guide microfluidic liposome formulation for nanomedicine, connecting formulation and flow conditions with particle size and polydispersity, supported by independent wet-lab validation, curated datasets, and an open-source design toolkits.
     links:
       - label: Liposome formulation study
         url: /publication/2025-11-12-IJP1
@@ -55,7 +55,7 @@ themes:
         url: /publication/2026-03-09-DiB
   - name: Quantum computing for drug discovery
     status: Emerging direction
-    description: Exploring how quantum computing could contribute to drug-discovery problems, including molecular modelling and hybrid computational workflows. This direction brings my interests in quantum algorithms and biotechnology into a shared research programme.
+    description: Exploring how quantum computing could contribute to drug-discovery problems, including molecular modelling and drug discovery. This direction brings my interests in quantum algorithms and biotechnology into a shared research programme.
   - name: Quantum metrology
     status: Emerging direction
     description: Exploring quantum approaches to parameter estimation and precision measurement. Related foundations include my work on perturbative descriptions of quantum systems and an early experimental study of Planck's constant using LEDs.
