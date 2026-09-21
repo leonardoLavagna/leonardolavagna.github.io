@@ -63,11 +63,11 @@ figures:
   - title: Quantum computing & connected systems
     image: /assets/images/research/quantum-context.webp
     alt: An artistic illustration of quantum computing hardware alongside an interconnected engineering landscape.
-    caption: Computation, connections, and complex systems.
+    caption: Machine learning and quantum computing for optimization, networking, communication and complex systems.
   - title: Biotechnology & molecular discovery
     image: /assets/images/research/biotechnology-context.webp
     alt: An artistic illustration of translucent molecular structures and lipid vesicles in a softly lit environment.
-    caption: Molecules, data, and possibilities for discovery.
+    caption: Machine learning and quantum computing for molecule design, materials, and nano-structures.
 applications:
   - name: Telecommunication networks
     description: Network design, routing, and resource allocation as settings for graph-based optimization and hybrid computational methods.
