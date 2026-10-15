@@ -32,7 +32,7 @@ To support this, all changes to the underlying code appear as a closed issue wit
 
 ### Research at a glance
 
-The Research overview at `/research/` uses `_includes/research-glance.html` and a scoped stylesheet
+The Research overview at `/research/overview/` uses `_includes/research-glance.html` and a scoped stylesheet
 at `assets/css/research-glance.css`. Resource and theme entries live in
 `_data/research.yml`; count distinct datasets once even if they have multiple mirrors.
 
@@ -47,6 +47,7 @@ in the data file when a more representative publication or talk becomes availabl
 Research is the main navigation entry. Publications (`/publications/`) and talks
 (`/talks/`) retain their existing URLs and share `_includes/research-navigation.html`
 with the overview. Set `research_section: true` on these pages to load their styling.
+The overview is accessible by its URL only and is omitted from both navigation menus.
 
 The main Research menu uses native `<details>` with data-driven child links.
 Its dropdown opens on mouse hover, Enter/Space or Arrow Down from the keyboard,

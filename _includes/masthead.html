@@ -18,7 +18,9 @@
               <details class="masthead-dropdown">
                 <summary>{{ link.title | escape }}</summary>
                 <ul class="masthead-dropdown__links">
+                  {% if link.url %}
                   <li><a href="{{ domain }}{{ link.url }}">{{ link.title | escape }} overview</a></li>
+                  {% endif %}
                   {% for child in link.children %}
                   <li><a href="{{ child.url | relative_url }}">{{ child.title | escape }}</a></li>
                   {% endfor %}

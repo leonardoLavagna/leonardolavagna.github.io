@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Research"
-permalink: /research/
+permalink: /research/overview/
 excerpt: "Research themes, publications, talks, and scientific tools"
 author_profile: true
 research_section: true
