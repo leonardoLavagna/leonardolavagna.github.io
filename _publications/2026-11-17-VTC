@@ -1,0 +1,15 @@
+---
+type: article
+work_id: 2026-11-17-AMS
+status: published
+title: "[C11] A Quantum Method for Constrained Vehicle Dynamics and Green-Wave Optimization"
+collection: publications
+permalink: /publication/2026-11-17-VTC
+excerpt: 'In this paper we present a hybrid quantum–classical method for simulating velocity profiles of busses in a priority lane for green-wave optimization.'
+date: 2026-11-17
+venue: 'VTC'
+paperurl: 'https://ieeexplore.ieee.org/document/11757225'
+citation: 'L. Lavagna, D. Vignarca, S. Arrigoni, E. Sabbioni, A. Rosato and M. Panella, "A Quantum Method for Constrained Vehicle Dynamics and Green-Wave Optimization," 2026 IEEE 103rd Vehicular Technology Conference (VTC2026-Spring), Nice, France, 2026, pp. 1-5, doi: 10.1109/VTC2026-Spring68026.2026.11757225.'
+---
+
+Within the framework of Advanced Driver Assistance Systems, this paper addresses the problem of optimizing velocity profiles matching green waves for connected vehicles travelling along fixed trajectories. We propose a mathematical model and a quantum algorithm, that incorporate vehicle kinematics, physical constraints, and traffic light states, comparing theoretical benchmarks against real-world data from an instrumented trolleybus running in Milan (Italy).
