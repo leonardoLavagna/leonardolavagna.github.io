@@ -1,14 +1,14 @@
 ---
-title: "Recitations and Projects for the course of Quantum Computing and Neural Networks"
+title: "Recitations and Projects for the courses of Quantum Computing and Neural Networks and Advanced Neural Networks for Industrial Engineering"
 collection: teaching
-type: "Recitations and Projects for a Graduate course"
-permalink: /teaching/2026-QCNN
-venue: "Sapienza University of Rome, Master Degrees in Electronics Engineering and Telecommunication Engineering"
+type: "Recitations and Projects for Graduate courses"
+permalink: /teaching/2026-QCNN-ANNIE
+venue: "Sapienza University of Rome, Master Degrees in Electronics Engineering and Telecommunication Engineering, Master Degree in Industrial/Management Engineering"
 date: 2026-09-25
 location: "Rome, Italy"
 ---
 
-On this page, you can find materials related to the recitation sessions and course projects for [Quantum Computing and Neural Networks](https://sites.google.com/uniroma1.it/massimopanella-eng/teaching/qcnn?authuser=0), a course offered within the [Master's Degree programmes in Electronics Engineering and Telecommunications Engineering at Sapienza University of Rome](https://corsidilaurea.uniroma1.it/en/course/33511), held by Professor Massimo Panella, PhD, with the support of the [NESYA Lab](https://sites.google.com/view/nesya-it). In particular, this page provides supplementary materials covering selected topics in quantum computing, including complementary theoretical concepts, laboratory sessions, project ideas, and related resources.
+On this page, you can find materials related to the recitation sessions and course projects for [Quantum Computing and Neural Networks](https://sites.google.com/uniroma1.it/massimopanella-eng/teaching/qcnn?authuser=0), a course offered within the [Master's Degree programmes in Electronics Engineering and Telecommunications Engineering at Sapienza University of Rome](https://corsidilaurea.uniroma1.it/en/course/33511), and for [Advanced Neural Networks for Industrial Engineering](https://sites.google.com/uniroma1.it/massimopanella-eng/teaching/nnie?authuser=0), a course offered within the [Master Degree in Industrial/Management Engineering](https://corsidilaurea.uniroma1.it/en/course/33512). Both courses are held by Professor Massimo Panella, PhD, with the support of the [NESYA Lab](https://sites.google.com/view/nesya-it). In particular, this page provides supplementary materials covering selected topics in quantum computing, including complementary theoretical concepts, laboratory sessions, project ideas, and related resources.
 
 ⚠️ The notebooks are accessible only within the "uniroma1" domain. Thus, to access the material you must use your institutional email and credentials. 
 
@@ -31,7 +31,27 @@ For this part you can refer to (one of the) following manuals and monographs. Fu
 **[Nie10]** M. A. Nielsen et al: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Sections 1.1, 1.4, 5.1, 5.3, 5.4.  
 **[Aar18]** S. Aaronson: [Introduction to Quantum Information Science Lecture Notes](https://www.scottaaronson.com/qclec.pdf) (2018) Chapters 18, 19 and 20.      
 **[Hid21]** J. Hidary: [Quantum Computing: An Applied approach](https://books.google.it/books/about/Quantum_Computing_An_Applied_Approach.html?id=nkKoxQEACAAJ&redir_esc=y) (2021) Chapters 2 and 8.  
-**[Baa23]** B. E. Baaquie et al: [Quantum Computers, Theory and Algorithms](https://books.google.it/books/about/Quantum_Computers.html?id=p_O2zwEACAAJ&redir_esc=y) (2023) Chapters 9, 10, 12 and 13.  
+**[Baa23]** B. E. Baaquie et al: [Quantum Computers, Theory and Algorithms](https://books.google.it/books/about/Quantum_Computers.html?id=p_O2zwEACAAJ&redir_esc=y) (2023) Sections 8.4, 8.5 and Chapters 9, 10, 12 and 13.  
+**[Pas23]** D. Pastorello: [Concise Guide to Quantum Machine Learning](https://books.google.sm/books?id=_dKkEAAAQBAJ) (2023) Sections 3.3 and 4.1.  
 **[Koch25]** A. F. Kochum et al: [Lecture Notes on Quantum Computing](https://arxiv.org/pdf/2311.08445) (2025) Chapter 4 and Tutorial 2.  
-**[Wat25]** J. Watrous [Understanding Quantum Information and Computation](https://arxiv.org/abs/2507.11536) (2025) Chapter 5.   
+**[Wat25]** J. Watrous [Understanding Quantum Information and Computation](https://arxiv.org/abs/2507.11536) (2025) Chapters 5 and 7.   
 **[deW26]** R. de Wolf: [Quantum Computing: Lecture Notes](https://arxiv.org/abs/1907.09415) (2026) Chapters 2, 3, 4, 5 and 6.  
+
+## 2. Quantum properties as computing resources: from the Stern-Gerlach Experiment to Bell's inequalities
+
+During the course we have underlined multiple times that superposition and entanglement play a crucial role in [quantum information science](https://en.wikipedia.org/wiki/Quantum_information_science). In this set of materials we explore the connection between these quantum-mechanical properties and computational resources. In this sense we want also to point to another key difference between classical computing and contemporary quantum information processing: in the classical setting we can write and implement an algorithm without having to know the physics of, say, the [transistor](https://en.wikipedia.org/wiki/Transistor), in the quantum setting instead, since key parts of the algorithms we want to write and implement are strictly connected to the quantum properties of the underlying hardware, we cannot completely abstract from it. In particular, we will explore the computational consequences of the [EPR paradox](https://en.wikipedia.org/wiki/Einstein%E2%80%93Podolsky%E2%80%93Rosen_paradox) and [Bell's inequalities](https://en.wikipedia.org/wiki/Bell%27s_theorem) with related discussions about the experimental setting and hardware constraints that motivate certain desirable properties of quantum algorithmic operations. 
+
+- [Tutorial 2: the Stern-Gerlach Experiment and the Spin](https://colab.research.google.com/drive/1BNxd_j8SJheqveMOcJzrwbBXuOJj9w1R?usp=sharing)
+- [Project 2: the EPR paradox and Bell's inequalities](https://colab.research.google.com/drive/1aUo3vf4BRLmABHRigp1X4-yS5sg2MeNs?usp=sharing)
+
+For this part you can refer to the following manuals and monographs. Further references are provided within each notebook.
+
+**[Nie10]** M. A. Nielsen et al: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Sections 1.5, 2.6, and Chapter 7.  
+**[Aar18]** S. Aaronson: [Introduction to Quantum Information Science Lecture Notes](https://www.scottaaronson.com/qclec.pdf) (2018) Sections 5.3, 14.1 and Chapter 13.  
+**[Hid21]** J. Hidary: [Quantum Computing: An Applied approach](https://books.google.it/books/about/Quantum_Computing_An_Applied_Approach.html?id=nkKoxQEACAAJ&redir_esc=y) (2021) Sections 7.4, Chapters 5 and 8.  
+**[Baa23]** B. E. Baaquie et al: [Quantum Computers, Theory and Algorithms](https://books.google.it/books/about/Quantum_Computers.html?id=p_O2zwEACAAJ&redir_esc=y) (2023) Sections 4.8, 4.12, 5.1, 5.2, 5.7 and Chapter 7.  
+**[Pas23]** D. Pastorello: [Concise Guide to Quantum Machine Learning](https://books.google.sm/books?id=_dKkEAAAQBAJ) (2023) Chapters 1 and 2.  
+**[Wat25]** J. Watrous [Understanding Quantum Information and Computation](https://arxiv.org/abs/2507.11536) (2025) Chapter 4.   
+**[deW26]** R. de Wolf: [Quantum Computing: Lecture Notes](https://arxiv.org/abs/1907.09415) (2026) Chapter 17.  
+
+We also encourage you to follow the first couple of lessons [here](https://www.youtube.com/playlist?list=PL701CD168D02FF56F) and [here](https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr) where you can find many ideas discussed in the above notebooks. 
