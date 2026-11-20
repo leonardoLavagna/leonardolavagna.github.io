@@ -12,12 +12,12 @@ On this page, you can find materials related to the recitation sessions and cour
 
 ⚠️ The notebooks are accessible only within the "uniroma1" domain. Thus, to access the material you must use your institutional email and credentials. 
 
-📢 To pass the recitation you should either present a Tutorial having solved all the standard exercises therein (i.e., those not marked with an arrow ↩︎) or carry out one of the proposed Projects solving all the standard problems therein (i.e., those not marked with an arrow ↩︎). In both cases you should "own" the material you present, take responsibility for it and being able to answer technical questions about its contents.
+📢 To pass the recitation you should either present a Tutorial having solved all the standard exercises therein (i.e., those not marked with an arrow ↩︎) or carry out one of the proposed Projects solving all the standard problems therein (i.e., those not marked with an arrow ↩︎). In both cases you should "own" the material you present, take responsibility for it and being able to answer technical questions about its contents.moreover, Tutorials and Projects are usually strictly mutually related, so, we suggest you to check and analyze both materials even if you plan on solving only the exercises in a Tutorial or only the problems in a Project.
 
 🕚 Office hours: Fridays 11-12.30 Room 110, first floor, building B in the complex of the Engineering Faculty or via meet (link in google classroom). You can also book an appointment writing an email to leonardo.lavagna@uniroma1.it.
 
 
-## From the Deutsch-Joza algorithm to Simon's problem
+## (1) From the Deutsch-Joza algorithm to Simon's problem
 
 As we discussed throughout the course, [quantum computing](https://en.wikipedia.org/wiki/Quantum_computing) has the potential to overcome certain classical computational bottlenecks using principles such as superposition, entanglement, amplitude interference and amplification. In this set of materials we will walk through a number of fundamental quantum algorithms that have been developed in the early ears of quantum computing and where the first to establish provable advantages against classical counterparts. Even if some of these algorithms require [large-scale fault-tolerant quantum computers](https://en.wikipedia.org/wiki/Fault_tolerant_quantum_computing) that are currently being developed and are years away from being available, analyzing them is still a good exercise to deepen the understanding about the inner workings of quantum computational devices from the software perspective, to master key techniques that have been generalized for a plethora of applications and theoretical explorations, but also to use those variants that can be deployed today to prove advantages in the [near-term quantum computers](https://en.wikipedia.org/wiki/Noisy_intermediate-scale_quantum_computing) (see, for instance, [here](https://arxiv.org/abs/1704.00690) and [here](https://arxiv.org/abs/1904.01502)).
 
@@ -40,7 +40,7 @@ For this part you can refer to (one of the) following manuals and monographs. Fu
 **[deW26]** R. de Wolf: [Quantum Computing: Lecture Notes](https://arxiv.org/abs/1907.09415) (2026) Chapters 2, 3, 4, 5 and 6.  
 
 
-## The Stern-Gerlach Experiment and Bell's inequalities
+## (2) The Stern-Gerlach Experiment and Bell's inequalities
 
 During the course we have underlined multiple times that superposition and entanglement play a crucial role in [quantum information science](https://en.wikipedia.org/wiki/Quantum_information_science). In this set of materials we explore the connection between these quantum-mechanical properties and computational resources. In this sense we want also to point to another key difference between classical computing and contemporary quantum information processing: in the classical setting we can write and implement an algorithm without having to know the physics of, say, the [transistor](https://en.wikipedia.org/wiki/Transistor), in the quantum setting instead, since key parts of the algorithms we want to write and implement are strictly connected to the quantum properties of the underlying hardware, we cannot completely abstract from it. In particular, we will explore the computational consequences of the [EPR paradox](https://en.wikipedia.org/wiki/Einstein%E2%80%93Podolsky%E2%80%93Rosen_paradox) and [Bell's inequalities](https://en.wikipedia.org/wiki/Bell%27s_theorem) with related discussions about the experimental setting and hardware constraints that motivate certain desirable properties of quantum algorithmic operations. 
 
@@ -63,7 +63,7 @@ For this part you can refer to the following manuals and monographs. Further ref
 We also encourage you to follow the first couple of lessons [here](https://www.youtube.com/playlist?list=PL701CD168D02FF56F) and [here](https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr) where you can find many ideas discussed in the above notebooks. 
 
 
-## Quantum telepathy and magic squares games
+## (3) Quantum telepathy and magic squares games
 
 Following our discussion of the EPR paradox and Bell's inequalities in the previous set of materials, we now turn to a slightly different question: can quantum entanglement be used not only to produce correlations that cannot be explained classically, but also to accomplish tasks that are impossible to complete with certainty using classical resources? This brings us to the idea of [quantum pseudo-telepathy](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy), where two separated players, who are not allowed to communicate during a game, can nevertheless exploit previously shared entangled states to coordinate their answers. Of course, no information is actually transmitted between the players, but the correlations produced by their local measurements can lead to rather surprising results. We will investigate one of the most interesting examples of this phenomenon, the [Mermin-Peres Magic Square Game](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy#The_Mermin%E2%80%93Peres_magic_square_game) and then extend our investigation to a different, although related, family of mathematical objects known as [quantum latin squares](https://arxiv.org/abs/2501.00196). These topics open a window view on [(quantum) game theory](https://en.wikipedia.org/wiki/Quantum_game_theory) and related [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning) applications.
 
@@ -79,7 +79,7 @@ For this part you can refer to the following papers and manuals. Further referen
 **[Nat26]** H. Natur et al.: [Quantum Coordination and Nonlocal Games: Theory and Applications](https://arxiv.org/abs/2608.09540) (2026)
 
 
-## Quantum decision trees and Random Forests
+## (4) Quantum decision trees and Random Forests
 
 Throughout the course, we have discussed how quantum computing can provide alternative approaches to computational problems by exploiting superposition, entanglement and interference. In this set of materials, we will move towards [machine learning](https://en.wikipedia.org/wiki/Machine_learning), investigating how some well-established classical learning algorithms can be reformulated or extended within the quantum computational framework. We will start with [decision trees](https://en.wikipedia.org/wiki/Decision_tree_learning), one of the simplest and most intuitive approaches to supervised learning, where a prediction is obtained through a sequence of decisions that progressively partition the input data according to selected features. Despite their relatively simple structure, decision trees introduce several important concepts, such as information gain, entropy, impurity measures and the trade-off between model complexity and generalization. We will then extend this discussion to [random forests](https://en.wikipedia.org/wiki/Random_forest), where multiple decision trees are combined into an ensemble to improve predictive performance and reduce the sensitivity of individual models to the training data. 
 
