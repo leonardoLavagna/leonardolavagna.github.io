@@ -28,7 +28,7 @@ On this page, you can find materials (pertaining to quantum computing) related t
 
 🕚 **Office hours:** Fridays 11-12.30 Room 110, first floor, building B in the complex of the Engineering Faculty or via meet (link in google classroom). You can also book an appointment writing an email to *leonardo.lavagna@uniroma1.it*.
 
-⚠️ Remember to check my homepage (the Activity Box) for days I am Out of Office!
+⚠️ **Remember to check my homepage (the Activity Box) for days I am Out of Office** as it can happen that I have some commitments that I cannot be absent from and may overlap with the the office hours.
 
 
 ## (1) From the Deutsch-Joza algorithm to Simon's problem 
