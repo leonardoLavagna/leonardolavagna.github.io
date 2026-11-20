@@ -54,7 +54,7 @@ For this part you can refer to the following manuals and monographs. Further ref
 **[Nie10]** M. A. Nielsen et al: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Sections 1.5, 2.6, and Chapter 7.  
 **[Bru13]** N. Brunner et al.: [Bell nonlocality](https://arxiv.org/abs/1303.2849) (2013)
 **[Aar18]** S. Aaronson: [Introduction to Quantum Information Science Lecture Notes](https://www.scottaaronson.com/qclec.pdf) (2018) Sections 5.3, 14.1 and Chapter 13.  
-**[Hid21]** J. Hidary: [Quantum Computing: An Applied approach](https://books.google.it/books/about/Quantum_Computing_An_Applied_Approach.html?id=nkKoxQEACAAJ&redir_esc=y) (2021) Sections 7.4, Chapters 5 and 8.  
+**[Hid21]** J. Hidary: [Quantum Computing: An Applied approach](https://books.google.it/books/about/Quantum_Computing_An_Applied_Approach.html?id=nkKoxQEACAAJ&redir_esc=y) (2021) Sections 7.4, Chapters 5 and 8 (except Section 8.6).  
 **[Baa23]** B. E. Baaquie et al: [Quantum Computers, Theory and Algorithms](https://books.google.it/books/about/Quantum_Computers.html?id=p_O2zwEACAAJ&redir_esc=y) (2023) Sections 4.8, 4.12, 5.1, 5.2, 5.7 and Chapter 7.  
 **[Pas23]** D. Pastorello: [Concise Guide to Quantum Machine Learning](https://books.google.sm/books?id=_dKkEAAAQBAJ) (2023) Chapters 1 and 2.  
 **[Wat25]** J. Watrous [Understanding Quantum Information and Computation](https://arxiv.org/abs/2507.11536) (2025) Chapter 4.   
@@ -113,5 +113,13 @@ For this part you can refer to the following papers and manuals. Further referen
 
 **[Por13]** R. Portugal: [Quantum Walks and Search Algorithms](https://books.google.ch/books?id=0F5qDwAAQBAJ) (2013).  
 **[Gir16]** P.R. Giri et al.: [A Review on Quantum Search Algorithms](https://arxiv.org/abs/1602.02730) (2016).  
+**[Nie10]** M. A. Nielsen et al: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Sections 1.4.5 and Chapter 6.  
+**[Aar18]** S. Aaronson: [Introduction to Quantum Information Science Lecture Notes](https://www.scottaaronson.com/qclec.pdf) (2018) Chapters 22, 23 and 24.   
+**[Hid21]** J. Hidary: [Quantum Computing: An Applied approach](https://books.google.it/books/about/Quantum_Computing_An_Applied_Approach.html?id=nkKoxQEACAAJ&redir_esc=y) (2021) Chapter 2 and Section 8.6.  
+**[Baa23]** B. E. Baaquie et al: [Quantum Computers, Theory and Algorithms](https://books.google.it/books/about/Quantum_Computers.html?id=p_O2zwEACAAJ&redir_esc=y) (2023) Chapter 11.  
+**[Pas23]** D. Pastorello: [Concise Guide to Quantum Machine Learning](https://books.google.sm/books?id=_dKkEAAAQBAJ) (2023) Sections 3.3 and 4.2.  
+**[Koch25]** A. F. Kochum et al: [Lecture Notes on Quantum Computing](https://arxiv.org/pdf/2311.08445) (2025) Chapter 2.   
+**[Wat25]** J. Watrous [Understanding Quantum Information and Computation](https://arxiv.org/abs/2507.11536) (2025) Chapter 8.     
+**[deW26]** R. de Wolf: [Quantum Computing: Lecture Notes](https://arxiv.org/abs/1907.09415) (2026) Section 2.4, Chapters 7 and 8.  
 
-We strongly suggest you to watch [this amazing youtube video](https://www.youtube.com/watch?v=RQWpF2Gb-gU).
+We also strongly suggest you to watch [this amazing youtube video](https://www.youtube.com/watch?v=RQWpF2Gb-gU).
