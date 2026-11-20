@@ -96,4 +96,3 @@ For this part you can refer to the following papers and manuals. Further referen
 **[Has09]** T. Hastie et al.: [The Elements of Statistical Learning Data Mining, Inference, and Prediction](https://link.springer.com/book/10.1007/978-0-387-84858-7) (2009) Chapter 8.  
 **[Xie17]** Z. Xie et al.: [A Quantum-Inspired Ensemble Method and Quantum-Inspired Forest Regressors](https://arxiv.org/abs/1711.08117) (2017).  
 **[Sch21]** M. Schuld, et al.: [Machine Learning with Quantum Computers](https://link.springer.com/book/10.1007/978-3-030-83098-4) (2021) Sections 2.1, 2.2, 2.5, 4.5, 5.1, 5.2, 5.4, 6.1, 6.2.  
-**[Kha26]** K. Khadiev et al.: [Quantum Random Forest for the Regression Problem](https://arxiv.org/abs/2603.22790) (2026).  
