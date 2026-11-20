@@ -72,6 +72,8 @@ Following our discussion of the EPR paradox and Bell's inequalities in the previ
 
 For this part you can refer to the following papers and manuals. Further references are provided within each notebook.
 
-**[Hol19]** A. S. Holevo: [Quantum Systems, Channels, Information: A Mathematical Introduction](https://books.google.it/books/about/Quantum_Systems_Channels_Information.html?id=RYlExAEACAAJ&redir_esc=y) (2019) Section 3.2.2
-**[Bal22]** P. Ball: [Researchers Use Quantum 'Telepathy' to Win an 'Impossible' Game](https://www.scientificamerican.com/article/researchers-use-quantum-telepathy-to-win-an-impossible-game/) (2022)  
+**[Hol19]** A. S. Holevo: [Quantum Systems, Channels, Information: A Mathematical Introduction](https://books.google.it/books/about/Quantum_Systems_Channels_Information.html?id=RYlExAEACAAJ&redir_esc=y) (2019) Section 3.2.2  
+**[Bal22]** P. Ball: [Researchers Use Quantum 'Telepathy' to Win an 'Impossible' Game](https://www.scientificamerican.com/article/researchers-use-quantum-telepathy-to-win-an-impossible-game/) (2022)   
 **[Sil23]** : V. Silva: [Quantum Computing by Practice: Python Programming in the Cloud with Qiskit and IBM-Q](https://www.oreilly.com/library/view/quantum-computing-by/9781484299913/) (2023) Chapter 8.
+**[Ozy26]** M. M. Özyılmaz et al.: [Nonlocal Games Revisited: A Representation-Theoretic Path from Bell Locality to Quantum Pseudo-Telepathy](https://arxiv.org/abs/2604.09458) (2026)
+**[Nat26]** H. Natur et al.: [Quantum Coordination and Nonlocal Games: Theory and Applications](https://arxiv.org/abs/2608.09540) (2026)
