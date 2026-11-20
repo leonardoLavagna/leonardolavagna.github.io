@@ -77,3 +77,23 @@ For this part you can refer to the following papers and manuals. Further referen
 **[Sil23]** : V. Silva: [Quantum Computing by Practice: Python Programming in the Cloud with Qiskit and IBM-Q](https://www.oreilly.com/library/view/quantum-computing-by/9781484299913/) (2023) Chapter 8.  
 **[Ozy26]** M. M. Özyılmaz et al.: [Nonlocal Games Revisited: A Representation-Theoretic Path from Bell Locality to Quantum Pseudo-Telepathy](https://arxiv.org/abs/2604.09458) (2026)  
 **[Nat26]** H. Natur et al.: [Quantum Coordination and Nonlocal Games: Theory and Applications](https://arxiv.org/abs/2608.09540) (2026)
+
+
+## Quantum decision trees and Random Forests
+
+Throughout the course, we have discussed how quantum computing can provide alternative approaches to computational problems by exploiting superposition, entanglement and interference. In this set of materials, we will move towards [machine learning](https://en.wikipedia.org/wiki/Machine_learning), investigating how some well-established classical learning algorithms can be reformulated or extended within the quantum computational framework. We will start with [decision trees](https://en.wikipedia.org/wiki/Decision_tree_learning), one of the simplest and most intuitive approaches to supervised learning, where a prediction is obtained through a sequence of decisions that progressively partition the input data according to selected features. Despite their relatively simple structure, decision trees introduce several important concepts, such as information gain, entropy, impurity measures and the trade-off between model complexity and generalization. We will then extend this discussion to [random forests](https://en.wikipedia.org/wiki/Random_forest), where multiple decision trees are combined into an ensemble to improve predictive performance and reduce the sensitivity of individual models to the training data. 
+
+Starting from these classical constructions, we will investigate how similar ideas can be extended to [quantum machine learning](https://en.wikipedia.org/wiki/Quantum_machine_learning), focusing on quantum decision trees and quantum random forests. An interesting question is whether quantum computers can provide advantages not only in representing and processing information, but also in the learning procedures used to construct predictive models. To explore this possibility, we will discuss different approaches proposed in the literature. We will also investigate how ensemble-learning strategies can be generalized to combine quantum models, and how these approaches compare with their classical counterparts in terms of predictive accuracy, computational complexity and resource requirements. Of course, replacing parts of a classical learning algorithm with quantum operations does not automatically provide a [computational advantage](https://arxiv.org/abs/2311.05559). In particular, the cost of encoding classical data into quantum states, the number of measurements required to obtain predictions, and the limitations of contemporary quantum hardware can significantly affect the overall performance. 
+
+- [Tutorial 4: Quantum Decision Trees](https://colab.research.google.com/drive/1Odg3udhil1GO5iGijwX2akGXMC3ZgPJD?usp=sharing)
+- [Project 4: Quantum Random Forests](https://colab.research.google.com/drive/1YH9JOChMUzMRIyPKsQwpK_rZ4EXHaRYz?usp=sharing)
+
+For this part you can refer to the following papers and manuals. Further references are provided within each notebook.
+
+**[Bre84]** L. Breiman et al.: [Classification and Regression Trees](https://books.google.it/books/about/Classification_and_Regression_Trees.html?id=JwQx-WOmSyQC&redir_esc=y) (1984).  
+**[Qui86]** J. R. Quinlan: [Induction of decision trees](https://link.springer.com/article/10.1023/A:1022643204877) (1986).  
+**[Bre01]** L. Breiman: [Random Forests](https://link.springer.com/article/10.1023/A:1010933404324) (2001).  
+**[Has09]** T. Hastie et al.: [The Elements of Statistical Learning Data Mining, Inference, and Prediction](https://link.springer.com/book/10.1007/978-0-387-84858-7) (2009) Chapter 8.  
+**[Xie17]** Z. Xie et al.: [A Quantum-Inspired Ensemble Method and Quantum-Inspired Forest Regressors](https://arxiv.org/abs/1711.08117) (2017).  
+**[Sch21]** M. Schuld, et al.: [Machine Learning with Quantum Computers](https://link.springer.com/book/10.1007/978-3-030-83098-4) (2021) Sections 2.1, 2.2, 2.5, 4.5, 5.1, 5.2, 5.4, 6.1, 6.2.  
+**[Kha26]** K. Khadiev et al.: [Quantum Random Forest for the Regression Problem](https://arxiv.org/abs/2603.22790) (2026).  
