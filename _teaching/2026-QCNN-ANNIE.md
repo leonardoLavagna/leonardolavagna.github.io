@@ -89,7 +89,7 @@ Starting from the same quantum resources, we will also investigate another inter
 
 For this part you can refer to the following papers and manuals. Further references are provided within each notebook.
 
-**[Pet07]** D. Petz: [Quantum Information Theory and Quantum Statistics](Quantum Information Theory and Quantum Statistics) (2007) Sections 4.1 and 4.2.  
+**[Pet07]** D. Petz: [Quantum Information Theory and Quantum Statistics](https://books.google.it/books?id=Tu2Ztb2PXqoC) (2007) Sections 4.1 and 4.2.  
 **[Nie10]** M. A. Nielsen et al: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Section 1.3.7.  
 **[Hol19]** A. S. Holevo: [Quantum Systems, Channels, Information: A Mathematical Introduction](https://books.google.it/books/about/Quantum_Systems_Channels_Information.html?id=RYlExAEACAAJ&redir_esc=y) (2019) Section 3.2.2  
 **[Hid21]** J. Hidary: [Quantum Computing: An Applied approach](https://books.google.it/books/about/Quantum_Computing_An_Applied_Approach.html?id=nkKoxQEACAAJ&redir_esc=y) (2021) Chapter 7.    
