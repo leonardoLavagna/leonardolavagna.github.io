@@ -27,6 +27,7 @@ On this page, you can find materials (pertaining to quantum computing) related t
 📢 **To pass the recitation you should:** either present a Tutorial having solved all the standard exercises therein (i.e., those not marked with an arrow ↩︎) or carry out one of the proposed Projects solving all the standard problems therein (i.e., those not marked with an arrow ↩︎). In both cases you should "own" the material you present, take responsibility for it and being able to answer technical questions about its contents. Moreover, Tutorials and Projects are usually strictly mutually related, so, we suggest you to check and analyze both materials even if you plan on solving only the exercises in a Tutorial or only the problems in a Project.
 
 🕚 **Office hours:** Fridays 11-12.30 Room 110, first floor, building B in the complex of the Engineering Faculty or via meet (link in google classroom). You can also book an appointment writing an email to *leonardo.lavagna@uniroma1.it*.
+  ⤷ Remember to check my homepage (the Activity Box) for days I am Out of Office!
 
 
 ## (1) From the Deutsch-Joza algorithm to Simon's problem 
