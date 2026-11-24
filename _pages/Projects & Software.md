@@ -19,6 +19,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | [Molecular Solubility Predictor](https://moleculesolubilityprediction.streamlit.app/)  |  |  
 | [DNA Sequence Explorer](https://nucleotidecount.streamlit.app/)  |  |  
 | [Smart Microfluidics Toolkit](https://smart-microfluidics.streamlit.app/)  |  |  
+| [Quantum Optimization and SAT Problems](https://quantum-optimization-and-sat-problems.streamlit.app/) |  |  
 
 </div>
 
