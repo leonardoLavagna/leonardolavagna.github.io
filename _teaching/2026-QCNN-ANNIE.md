@@ -43,7 +43,7 @@ Now, using such an oralce seems like "cheating". Indeed, if $f$ is unknown, how 
 - [Project 1.1: The Deutsch-Jozsa algorithm as a Quantum Feature Extractor](https://colab.research.google.com/drive/1V9LcswUA0jXCQgyzAVBE9x-Twa1yJ6Mw?usp=sharing)
 - [Project 1.2: the Bernstein-Vazirani Algorithm and Simon's problem](https://colab.research.google.com/drive/1BhkHwLeZZaCyQd3kp10kVBfLYgeOiYXA?usp=sharing).
 
-For this part you can refer to following manuals and monographs. Further references are provided within each notebook.
+For this part you can refer to following manuals, papers and monographs. Further references are provided within each notebook.
 
 **[Nie10]** M. A. Nielsen et al: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Sections 1.1, 1.4, 5.1, 5.3, 5.4.  
 **[Aar18]** S. Aaronson: [Introduction to Quantum Information Science Lecture Notes](https://www.scottaaronson.com/qclec.pdf) (2018) Chapters 18, 19 and 20.      
@@ -65,7 +65,7 @@ The first idea we discuss is related to superposition and the [double-slit exper
 - [Project 2.1: the EPR paradox and Bell's inequalities](https://colab.research.google.com/drive/1aUo3vf4BRLmABHRigp1X4-yS5sg2MeNs?usp=sharing)
 - [Project 2.2: Quantum Representations, Readouts, and Learning](https://colab.research.google.com/drive/1_40uF0xnEP0vLWU_F9mv4CmB1unj3ELt?usp=sharing)
 
-For this part you can refer to the following manuals and monographs. Further references are provided within each notebook.
+For this part you can refer to following manuals, papers and monographs. Further references are provided within each notebook.
 
 **[Aar08]** S. Aaronson: [The limits of Quantum](https://www.cs.virginia.edu/~robins/The_Limits_of_Quantum_Computers.pdf) (2008)
 **[Nie10]** M. A. Nielsen et al: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Sections 1.5, 2.6, and Chapter 7.  
@@ -91,7 +91,7 @@ In this sense, starting from the same quantum resources discussed above, we will
 - [Project 3.1: Quantum Latin Squares and Nonlocal Correlations](https://drive.google.com/file/d/1gSLRLYnGUCoMNcCqi56srl2NGv5HYsTR/view?usp=sharing)
 - [Project 3.2: Quantum Teleportation and Superdense coding](https://colab.research.google.com/drive/11v5fminwMGjuvFHpihaaMe-m47zPuAxc?usp=sharing)
 
-For this part you can refer to the following papers and manuals. Further references are provided within each notebook.
+For this part you can refer to following manuals, papers and monographs. Further references are provided within each notebook.
 
 **[Pet07]** D. Petz: [Quantum Information Theory and Quantum Statistics](https://books.google.it/books?id=Tu2Ztb2PXqoC) (2007) Sections 4.1 and 4.2.  
 **[Nie10]** M. A. Nielsen et al: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Section 1.3.7.  
@@ -112,7 +112,7 @@ Starting from these classical constructions, we will investigate how similar ide
 - [Tutorial 4: Quantum Decision Trees](https://colab.research.google.com/drive/1Odg3udhil1GO5iGijwX2akGXMC3ZgPJD?usp=sharing)
 - [Project 4.1: Quantum Random Forests](https://colab.research.google.com/drive/1YH9JOChMUzMRIyPKsQwpK_rZ4EXHaRYz?usp=sharing)
 
-For this part you can refer to the following papers and manuals. Further references are provided within each notebook.
+For this part you can refer to following manuals, papers and monographs. Further references are provided within each notebook.
 
 **[Bre84]** L. Breiman et al.: [Classification and Regression Trees](https://books.google.it/books/about/Classification_and_Regression_Trees.html?id=JwQx-WOmSyQC&redir_esc=y) (1984).  
 **[Qui86]** J. R. Quinlan: [Induction of decision trees](https://link.springer.com/article/10.1023/A:1022643204877) (1986).  
@@ -136,7 +136,7 @@ To explore these ideas, we will consider the popular [Sudoku puzzle](https://en.
 - [Tutorial 5: Grover's algorithm](https://colab.research.google.com/drive/1ljPifWZkThtboki47OlE_XZSQjbncBXI?usp=sharing)
 - [Project 5.1: Solving sudoku (and constraint satisfaction problems) on a quantum computer with Grover's algorithm](https://colab.research.google.com/drive/1VrIUoceNzgwTECR_nDUwhyvnBBDFVwly?usp=sharing)
 
-For this part you can refer to the following papers and manuals. Further references are provided within each notebook.
+For this part you can refer to following manuals, papers and monographs. Further references are provided within each notebook.
 
 **[Por13]** R. Portugal: [Quantum Walks and Search Algorithms](https://books.google.ch/books?id=0F5qDwAAQBAJ) (2013).  
 **[Gir16]** P.R. Giri et al.: [A Review on Quantum Search Algorithms](https://arxiv.org/abs/1602.02730) (2016).  
@@ -159,7 +159,7 @@ A second direction brings us back to the role of [quantum interference](https://
 - [Project 6.1: The Solvay-Kitaev algorithm and the Gottesman-Knill Theorem](https://colab.research.google.com/drive/1D4qZ35_y4Q8Lb3W2Do4u01ta7knen0Wd?usp=sharing)
 - [Project 6.2: The Vaidman’s Bomb and the Quantum Zeno Effect](https://colab.research.google.com/drive/16EibTIcSZH7BHcQjMvaN8jjX0WBgonYL?usp=sharing)
 
-For this part you can refer to following manuals and monographs.
+For this part you can refer to following manuals, papers and monographs.
 
 
 **[Kwi99]]** P.G. Kwiat et al.: [High-efficiency quantum interrogation measurements via the quantum Zeno effect](https://arxiv.org/abs/quant-ph/9909083) (1999).  
