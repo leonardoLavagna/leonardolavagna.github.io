@@ -159,6 +159,8 @@ A second direction brings us back to the role of [quantum interference](https://
 - [Project 6.1: The Solvay-Kitaev algorithm and the Gottesman-Knill Theorem](https://colab.research.google.com/drive/1D4qZ35_y4Q8Lb3W2Do4u01ta7knen0Wd?usp=sharing)
 - [Project 6.2: The Vaidman’s Bomb and the Quantum Zeno Effect](https://colab.research.google.com/drive/16EibTIcSZH7BHcQjMvaN8jjX0WBgonYL?usp=sharing)
 
+For this part you can refer to following manuals and monographs.
+
 **[Kwi99]]** P.G. Kwiat et al.: [High-efficiency quantum interrogation measurements via the quantum Zeno effect](https://arxiv.org/abs/quant-ph/9909083) (1999).  
 **[Xu23]** X. Xu et al.: [A Herculean task: Classical simulation of quantum computers](https://arxiv.org/abs/2302.08880) (2023).  
 **[You23]** K. Young et al.: [Simulating Quantum Computations on Classical Machines: A Survey](https://arxiv.org/abs/2311.16505) (2023).  
