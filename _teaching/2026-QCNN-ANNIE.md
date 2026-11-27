@@ -162,7 +162,7 @@ A second direction brings us back to the role of [quantum interference](https://
 For this part you can refer to following manuals, papers and monographs.
 
 
-**[Kwi99]]** P.G. Kwiat et al.: [High-efficiency quantum interrogation measurements via the quantum Zeno effect](https://arxiv.org/abs/quant-ph/9909083) (1999).  
+**[Kwi99]** P.G. Kwiat et al.: [High-efficiency quantum interrogation measurements via the quantum Zeno effect](https://arxiv.org/abs/quant-ph/9909083) (1999).  
 **[Nie10]** M. A. Nielsen and I. L. Chuang: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Sections 4.5.1–4.5.3, 10.5.1–10.5.4, and Appendix 3.  
 **[Aar18]** S. Aaronson: [Introduction to Quantum Information Science Lecture Notes](https://www.scottaaronson.com/qclec.pdf) (2018) Sections 4.3, 4.4, 16.2.3, and Chapter 28, particularly Sections 28.1 and 28.1.1.  
 **[Hid21]** J. D. Hidary: [Quantum Computing: An Applied Approach](https://link.springer.com/book/10.1007/978-3-030-83274-2) (2021) Sections 3.3 and 3.4.  
