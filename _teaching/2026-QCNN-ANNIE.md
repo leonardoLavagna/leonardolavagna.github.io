@@ -161,6 +161,13 @@ A second direction brings us back to the role of [quantum interference](https://
 
 For this part you can refer to following manuals and monographs.
 
+
 **[Kwi99]]** P.G. Kwiat et al.: [High-efficiency quantum interrogation measurements via the quantum Zeno effect](https://arxiv.org/abs/quant-ph/9909083) (1999).  
+**[Nie10]** M. A. Nielsen and I. L. Chuang: [Quantum Computation and Quantum Information](https://books.google.it/books/about/Quantum_Computation_and_Quantum_Informat.html?id=-s4DEy7o-a0C&redir_esc=y) (2010) Sections 4.5.1–4.5.3, 10.5.1–10.5.4, and Appendix 3.  
+**[Aar18]** S. Aaronson: [Introduction to Quantum Information Science Lecture Notes](https://www.scottaaronson.com/qclec.pdf) (2018) Sections 4.3, 4.4, 16.2.3, and Chapter 28, particularly Sections 28.1 and 28.1.1.  
+**[Hid21]** J. D. Hidary: [Quantum Computing: An Applied Approach](https://link.springer.com/book/10.1007/978-3-030-83274-2) (2021) Sections 3.3 and 3.4.  
 **[Xu23]** X. Xu et al.: [A Herculean task: Classical simulation of quantum computers](https://arxiv.org/abs/2302.08880) (2023).  
-**[You23]** K. Young et al.: [Simulating Quantum Computations on Classical Machines: A Survey](https://arxiv.org/abs/2311.16505) (2023).  
+**[You23]** K. Young et al.: [Simulating Quantum Computations on Classical Machines: A Survey](https://arxiv.org/abs/2311.16505) (2023).    
+**[Koch25]** A. F. Kockum et al.: [Lecture Notes on Quantum Computing](https://arxiv.org/pdf/2311.08445) (2025) Sections 1.5, 1.6, 3.5, 3.6, and Tutorial 1, Sections 1–3.  
+**[Wat25]** J. Watrous: [Understanding Quantum Information and Computation](https://arxiv.org/abs/2507.11536) (2025) Sections 14.1 and 14.3, particularly pp. 422–423.  
+**[deW26]** R. de Wolf: [Quantum Computing: Lecture Notes](https://arxiv.org/abs/1907.09415) (2026) Sections 2.2 and 20.1–20.5.
