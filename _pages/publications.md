@@ -4,6 +4,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 research_section: true
+publication_archive: true
 ---
 
 {% include research-navigation.html %}
@@ -234,7 +235,7 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
       data-year="{{ post.date | date: '%Y' }}"
       data-venue="{{ post.venue | default: '' | strip_html | escape }}"
     >
-      {% include archive-single.html %}
+      {% include publication-card.html %}
     </div>
   {% endfor %}
 </div>

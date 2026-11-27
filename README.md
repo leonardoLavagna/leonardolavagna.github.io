@@ -18,11 +18,44 @@ See more info at https://academicpages.github.io/
 
 ## To run locally (not on GitHub Pages, to serve on your own computer)
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+Use Ruby 3.3 and Bundler. On a Mac with Homebrew Ruby 3.3, first run
+`export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"` in your terminal.
+
+```sh
+bundle config set --local path vendor/bundle
+bundle install
+bundle exec jekyll serve --config _config.yml,_config.dev.yml --host 127.0.0.1
+```
+
+Open <http://localhost:4000/publications/>. Jekyll rebuilds when source files
+change; refresh the browser to see the result. Local gems, Bundler configuration,
+lockfile, caches and `_site/` output are ignored by Git. To check the site without
+starting a server, run `bundle exec jekyll build --config _config.yml,_config.dev.yml`.
+
+### Publication figures
+
+Each `_publications/` entry has a `figure` record containing a PNG image, a smaller
+WebP thumbnail of the same figure, alt text, a short caption and image
+dimensions. `source_pdf`, `source_page` and `source_figure` identify the original
+paper figure. Assets live in `assets/images/publications/<paper>/`.
+
+The publication list reads this metadata through `_includes/publication-card.html`.
+An explicit `{% include publication-figure.html %}` in the publication body places
+the larger figure within its description. Move that include to adjust placement.
+Every list entry has the same small 4:3 frame to the left of its text, including
+on mobile. Optional `figure.thumbnail_crop` metadata (`x`, `y`, `width`, `height`
+in full-size image pixels) selects a meaningful subfigure using an SVG viewport.
+Provide `thumbnail_alt` to describe that selection. Images retain their proportions;
+complete panels are preferred over cutting through labels or plot axes.
+The larger figure links to its full-size PNG, with the theme's existing
+image viewer providing enlargement when JavaScript is enabled.
+
+`_data/publication_figure_sources.json` records the source PDF hashes, page numbers,
+crop coordinates and selection rationale. The supplied PDFs stay outside the
+repository; only extracted figure assets are included. For a replacement, update
+both derivatives from the same source crop and keep the dimensions, caption and
+alt text in the publication metadata in sync. Publications without a `figure`
+record still render as text entries.
 
 # Changelog -- bugfixes and enhancements
 

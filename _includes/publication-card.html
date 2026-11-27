@@ -1,0 +1,49 @@
+{% assign publication_title = post.title | markdownify | remove: '<p>' | remove: '</p>' %}
+{% capture publication_url %}{% include research-document-url.html url=post.url %}{% endcapture %}
+
+<article class="publication-card{% if post.figure.image %} publication-card--illustrated{% endif %}" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  {% if post.figure.image %}
+    <a class="publication-card__preview" href="{{ publication_url }}" aria-label="View publication: {{ post.title | strip_html | escape }}">
+      {% if post.figure.thumbnail_crop %}
+        {% assign crop = post.figure.thumbnail_crop %}
+        {% assign crop_id = post.path | slugify | prepend: 'publication-crop-' %}
+        <svg viewBox="{{ crop.x }} {{ crop.y }} {{ crop.width }} {{ crop.height }}" role="img" aria-label="{{ post.figure.thumbnail_alt | default: post.figure.alt | escape }}" focusable="false">
+          <defs>
+            <clipPath id="{{ crop_id }}" clipPathUnits="userSpaceOnUse">
+              <rect x="{{ crop.x }}" y="{{ crop.y }}" width="{{ crop.width }}" height="{{ crop.height }}" />
+            </clipPath>
+          </defs>
+          <image href="{{ post.figure.thumbnail | default: post.figure.image | relative_url }}" width="{{ post.figure.width }}" height="{{ post.figure.height }}" clip-path="url(#{{ crop_id }})" />
+        </svg>
+      {% else %}
+      <img
+        src="{{ post.figure.thumbnail | default: post.figure.image | relative_url }}"
+        alt="{{ post.figure.thumbnail_alt | default: post.figure.alt | escape }}"
+        width="{{ post.figure.thumbnail_width | default: post.figure.width }}"
+        height="{{ post.figure.thumbnail_height | default: post.figure.height }}"
+        loading="lazy"
+        decoding="async"
+        itemprop="image"
+      >
+      {% endif %}
+    </a>
+  {% endif %}
+
+  <div class="publication-card__body">
+    <h2 class="publication-card__title" itemprop="headline">
+      <a href="{{ post.link | default: publication_url }}">{{ publication_title }}</a>
+      {% if post.link %}<a href="{{ publication_url }}" rel="permalink" aria-label="Publication details"><i class="fa fa-link" aria-hidden="true"></i></a>{% endif %}
+    </h2>
+    <p class="publication-card__venue">Published in <i>{{ post.venue }}</i>, <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y' }}</time></p>
+    {% if post.excerpt %}
+      <div class="publication-card__summary" itemprop="description">{{ post.excerpt | markdownify }}</div>
+    {% endif %}
+    {% if post.citation %}
+      <p class="publication-card__citation">Recommended citation: {{ post.citation }}</p>
+    {% endif %}
+    <div class="publication-card__links">
+      <a href="{{ publication_url }}">Read more</a>
+      {% if post.paperurl %}<a href="{{ post.paperurl }}">Read paper <span aria-hidden="true">&rarr;</span></a>{% endif %}
+    </div>
+  </div>
+</article>

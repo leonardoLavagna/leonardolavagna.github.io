@@ -1,0 +1,12 @@
+{% if page.figure.image %}
+<figure class="publication-figure">
+  <a class="publication-figure__link" href="{{ page.figure.image | relative_url }}" aria-label="Open full-size figure: {{ page.figure.alt | escape }}">
+    <img src="{{ page.figure.image | relative_url }}" alt="{{ page.figure.alt | escape }}" width="{{ page.figure.width }}" height="{{ page.figure.height }}" loading="lazy" decoding="async">
+    <span class="publication-figure__enlarge">View full size</span>
+  </a>
+  <figcaption>
+    {{ page.figure.caption | escape }}
+    {% if page.figure.source_figure %}<span class="publication-figure__source">{{ page.figure.source_figure | escape }} from the paper.</span>{% endif %}
+  </figcaption>
+</figure>
+{% endif %}

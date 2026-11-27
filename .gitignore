@@ -1,2 +1,9 @@
 _site/
 
+# Local Jekyll dependencies and generated caches
+.bundle/
+vendor/bundle/
+.sass-cache/
+.jekyll-cache/
+Gemfile.lock
+

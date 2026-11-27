@@ -1,0 +1,291 @@
+[
+  {
+    "publication": "2024-08-29-SYM-QAOA.md",
+    "pdf": "2024_arxiv2408.15413.pdf",
+    "sha256": "c38d6112af803fa6483da6645d9f5792ec6dc62f4ae128a59e01493b1fb05d25",
+    "page": 20,
+    "figure": "Figure 6",
+    "crop_points": [
+      125,
+      235,
+      485,
+      500
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2024-arxiv2408.15413/figure.png",
+    "thumbnail": "/assets/images/publications/2024-arxiv2408.15413/preview.webp",
+    "selection_reason": "Shows the link between the graph perturbations and the quantum circuit directly."
+  },
+  {
+    "publication": "2024-09-09-LMA-QAOA.md",
+    "pdf": "2024_ijcnn.pdf",
+    "sha256": "8c053c7413cd499b8da5121289a4e29b8a651d9cdce460a3b5411b814645a848",
+    "page": 4,
+    "figure": "Figure 2",
+    "crop_points": [
+      47,
+      545,
+      302,
+      678
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2024-ijcnn/figure.png",
+    "thumbnail": "/assets/images/publications/2024-ijcnn/preview.webp",
+    "selection_reason": "The method-specific schematic represents the central contribution better than a generic benchmark plot."
+  },
+  {
+    "publication": "2024-11-25-QGRU.md",
+    "pdf": "2024_mslp.pdf",
+    "sha256": "d839f19d96a95a6bac5b07830e0a91f74229cd4b7543381bf944d1a58afbf677",
+    "page": 3,
+    "figure": "Figure 3",
+    "crop_points": [
+      88,
+      69,
+      265,
+      242
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2024-mslp/figure.png",
+    "thumbnail": "/assets/images/publications/2024-mslp/preview.webp",
+    "selection_reason": "Clear architecture diagram of the proposed model, with all three quantum modules visible."
+  },
+  {
+    "publication": "2025-10-17-AVS1.md",
+    "pdf": "2025_avs.pdf",
+    "sha256": "e0b4b8818bfb09826030b171a078bc9ca4da8fa8f3b42b6b285aa9c0fd9042e5",
+    "page": 4,
+    "figure": "Figure 1",
+    "crop_points": [
+      337,
+      486,
+      537,
+      652
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2025-avs/figure.png",
+    "thumbnail": "/assets/images/publications/2025-avs/preview.webp",
+    "selection_reason": "Simple graph transformations remain recognizable at thumbnail size and explain the article subject."
+  },
+  {
+    "publication": "2025-11-17-IJCNN2.md",
+    "pdf": "2025_ijcnn1.pdf",
+    "sha256": "76ba509f797fc6d9899cc8fe44a7689ede8958254a2cccb68b5c3404c895916a",
+    "page": 6,
+    "figure": "Figure 4",
+    "crop_points": [
+      310,
+      328,
+      566,
+      479
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2025-ijcnn1/figure.png",
+    "thumbnail": "/assets/images/publications/2025-ijcnn1/preview.webp",
+    "selection_reason": "Concrete and colorful visualization of the proposed anomaly-detection method."
+  },
+  {
+    "publication": "2025-11-17-IJCNN1.md",
+    "pdf": "2025_ijcnn2.pdf",
+    "sha256": "5bbb3876488924eb332831997e05894a9f30b7888517095ca95727a7cc385be3",
+    "page": 7,
+    "figure": "Figure 2",
+    "crop_points": [
+      93,
+      276,
+      254,
+      406
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2025-ijcnn2/figure.png",
+    "thumbnail": "/assets/images/publications/2025-ijcnn2/preview.webp",
+    "selection_reason": "Illustrates the architecture applied to a concrete biological classification task."
+  },
+  {
+    "publication": "2025-11-12-IJP1.md",
+    "pdf": "2025_ijp.pdf",
+    "sha256": "81dc6540ce1e9f93b9e124a322219f6b08bff72582aa0ff636c4ca6f91e28f6f",
+    "page": 3,
+    "figure": "Figure 1",
+    "crop_points": [
+      62,
+      488,
+      533,
+      711
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2025-ijp/figure.png",
+    "thumbnail": "/assets/images/publications/2025-ijp/preview.webp",
+    "selection_reason": "The full-study workflow is a highly legible, representative visual summary."
+  },
+  {
+    "publication": "2025-07-02-ISCAS25.md",
+    "pdf": "2025_iscas.pdf",
+    "sha256": "eb02e902671844ee0eafb39866beb34c2b6f9e124cf5d5a50a6b31f0b364eeb7",
+    "page": 3,
+    "figure": "Figure 2",
+    "crop_points": [
+      309,
+      168,
+      566,
+      380
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2025-iscas/figure.png",
+    "thumbnail": "/assets/images/publications/2025-iscas/preview.webp",
+    "selection_reason": "Combines intuitive cycle diagrams with the associated probability distributions."
+  },
+  {
+    "publication": "2025-10-3-PERTURB1.md",
+    "pdf": "2025_ps.pdf",
+    "sha256": "5ec124c3cec4e27779ea56afbb7a4f45bcfd705a24c5b789a6ea91a82d1b4a0b",
+    "page": 8,
+    "figure": "Figure 1",
+    "crop_points": [
+      208,
+      66,
+      464,
+      349
+    ],
+    "coordinate_system": "PDF points from top-left",
+    "image": "/assets/images/publications/2025-ps/figure.png",
+    "thumbnail": "/assets/images/publications/2025-ps/preview.webp",
+    "selection_reason": "A conceptual illustration of perturbation theory that remains distinctive at small sizes."
+  },
+  {
+    "publication": "2026-10-13-AMS.md",
+    "pdf": "2026_ams.pdf",
+    "sha256": "36ab9f7215762ae5dce391aa3eff0ad60898fa77791a91bf5751942e0b44bd96",
+    "page": 12,
+    "figure": "Figure 4",
+    "crop_points": [
+      131,
+      176,
+      466,
+      381
+    ],
+    "coordinate_system": "PDF points measured from the top-left of the visible crop box",
+    "image": "/assets/images/publications/2026-ams/figure.png",
+    "thumbnail": "/assets/images/publications/2026-ams/preview.webp",
+    "selection_reason": "A compact summary of the central finite-budget comparison; the complete plot preserves all four curves and the legend."
+  },
+  {
+    "publication": "2026-03-09-DiB.md",
+    "pdf": "2026_dib.pdf",
+    "sha256": "d815d384f68a2eecd25f970930e7704de84f09346b29c1edad188f5dc5e1e820",
+    "page": 5,
+    "figure": "Figure 2",
+    "crop_points": [
+      36,
+      38,
+      398,
+      173
+    ],
+    "coordinate_system": "PDF points measured from the top-left of the visible crop box",
+    "image": "/assets/images/publications/2026-dib/figure.png",
+    "thumbnail": "/assets/images/publications/2026-dib/preview.webp",
+    "selection_reason": "A visually distinct overview of the dataset structure, more legible at thumbnail size than the multi-panel feature histograms."
+  },
+  {
+    "publication": "2026-06-30-ICASSP2026p1.md",
+    "pdf": "2026_icassp1.pdf",
+    "sha256": "f667697879537006e7c9e085608d12aa198e0c82621b1496a432f1fde29b0554",
+    "page": 3,
+    "figure": "Figure 1",
+    "crop_points": [
+      315,
+      72,
+      561,
+      160
+    ],
+    "coordinate_system": "PDF points measured from the top-left of the visible crop box",
+    "image": "/assets/images/publications/2026-icassp1/figure.png",
+    "thumbnail": "/assets/images/publications/2026-icassp1/preview.webp",
+    "selection_reason": "The paper's sole figure illustrates its set-covering inference mechanism in a concise schematic."
+  },
+  {
+    "publication": "2026-06-30-ICASSP2026p2.md",
+    "pdf": "2026_icassp2.pdf",
+    "sha256": "6a345b05c866cb2672992784b6fee9c3f0fcf4b50b250b30dccf94f8d3dcd653",
+    "page": 2,
+    "figure": "Figure 1",
+    "crop_points": [
+      85,
+      66,
+      532,
+      220
+    ],
+    "coordinate_system": "PDF points measured from the top-left of the visible crop box",
+    "image": "/assets/images/publications/2026-icassp2/figure.png",
+    "thumbnail": "/assets/images/publications/2026-icassp2/preview.webp",
+    "selection_reason": "The overview directly communicates the proposed architecture and separates quantum and classical stages."
+  },
+  {
+    "publication": "2026-06-30-ISCAS2026p1.md",
+    "pdf": "2026_iscas1.pdf",
+    "sha256": "2603820c4fc3465517246f7ae55cf57844e18363dd56105c0d982a06408319a1",
+    "page": 3,
+    "figure": "Figure 4",
+    "crop_points": [
+      310,
+      51.8,
+      560,
+      116.8
+    ],
+    "coordinate_system": "PDF points measured from the top-left of the visible crop box",
+    "image": "/assets/images/publications/2026-iscas1/figure.png",
+    "thumbnail": "/assets/images/publications/2026-iscas1/preview.webp",
+    "selection_reason": "This is the paper's main unified circuit, rather than an introductory example or a single benchmark result."
+  },
+  {
+    "publication": "2026-06-30-ISCAS2026p2.md",
+    "pdf": "2026_iscas2.pdf",
+    "sha256": "8e654220d1869997279331b5c4f624b51e304fe486291f0ba3fecd19bd471033",
+    "page": 2,
+    "figure": "Figure 1",
+    "crop_points": [
+      313,
+      179.8,
+      557,
+      278.8
+    ],
+    "coordinate_system": "PDF points measured from the top-left of the visible crop box",
+    "image": "/assets/images/publications/2026-iscas2/figure.png",
+    "thumbnail": "/assets/images/publications/2026-iscas2/preview.webp",
+    "selection_reason": "A simple visual explanation of the modeling distinction behind the resource-scaling analysis."
+  },
+  {
+    "publication": "2026-11-17-VTC.md",
+    "pdf": "2026_vtc.pdf",
+    "sha256": "e395f87fd8c5eea27748b311c175b6ceba02b6c8ce76fbc495665b682277fc41",
+    "page": 5,
+    "figure": "Figure 5",
+    "crop_points": [
+      103,
+      48,
+      509,
+      166
+    ],
+    "coordinate_system": "PDF points measured from the top-left of the visible crop box",
+    "image": "/assets/images/publications/2026-vtc/figure.png",
+    "thumbnail": "/assets/images/publications/2026-vtc/preview.webp",
+    "selection_reason": "The full result figure connects the quantum method directly to vehicle dynamics and the green-wave application."
+  },
+  {
+    "publication": "2026-10-23-WCCI1.md",
+    "pdf": "2026_wcci1.pdf",
+    "sha256": "4aac7a107c1a4954805c0ce16a885585870d0c7b576b6f330a5b4d9756a05753",
+    "page": 4,
+    "figure": "Figure 2",
+    "crop_points": [
+      46,
+      49,
+      566,
+      160
+    ],
+    "coordinate_system": "PDF points measured from the top-left of the visible crop box",
+    "image": "/assets/images/publications/2026-wcci1/figure.png",
+    "thumbnail": "/assets/images/publications/2026-wcci1/preview.webp",
+    "selection_reason": "The final detection output provides an immediate visual example of the method on multivariate time series."
+  }
+]
