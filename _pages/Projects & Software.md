@@ -32,7 +32,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 | [Look-and-Say Game (Italian version)](https://decadimendo-audioattivo.streamlit.app/) — based on [Conway’s classic](https://en.wikipedia.org/wiki/Look-and-say_sequence) | [Random and quantum walks with Arduino](https://github.com/leonardoLavagna/open_diet)   |  
 | [C-based chess](https://github.com/leonardoLavagna/Games/tree/main/chess): implementation, from scratch, of the game of chess in C++. To run it you need a local copy of the code. More information [here](https://github.com/leonardoLavagna/Games/blob/main/chess/documentation.md). |  |  
 | Other classic games (mostly in C): [hangman](https://github.com/leonardoLavagna/Games/tree/main/hangman), [nim](https://github.com/leonardoLavagna/Games/tree/main/nim), [tic-tac-toe](https://github.com/leonardoLavagna/Games/tree/main/tic_tac_toe) and others... More information [here](https://github.com/leonardoLavagna/Games/tree/main).  |  |  
-|[Sudoku solver](https://github.com/leonardoLavagna/Games/tree/main/sudoku_solver): A program (in Italian) to automatically solve sudokus. You can run the code on [here](https://www.onlinegdb.com/IxcNlN-wH) ore use the command line. To input any sudoku proceed raw by raw putting 0 when a number is not given. |  |  
+|[Sudoku solver](https://github.com/leonardoLavagna/Games/tree/main/sudoku_solver): A program (in Italian) to automatically solve sudokus. You can run the code on [here](https://www.onlinegdb.com/IxcNlN-wH) or use the command line. To input any sudoku proceed row by row putting 0 when a number is not given. |  |  
 
 </div>
 
@@ -53,7 +53,7 @@ This is a curated collection of experimental projects spanning mathematics, mach
 All my (public) coding projects are available on my [GitHub profile](https://github.com/leonardoLavagna). Besides, apps, datasets, games, databases, etc... I have also worked on numerical analysis, computer vision, epidemic modeling etc...:
 - [Some computer vision tools](https://github.com/leonardoLavagna/Computer-Vision): An image blurring tool used to blur car's plates,
 a face detection system, an image reconstruction method based on Matrix Completion (Alternating Least Squares method) and a complete image classification system based on filters, convolution, and color histograms.
-- [Automatic note estraction](https://github.com/leonardoLavagna/Notes-Extraction-Tool/): basic signal processing techniques (e.g. audio filtering and FFT) to transform an audio track into playable sheet (text) music.
+- [Automatic note extraction](https://github.com/leonardoLavagna/Notes-Extraction-Tool/): basic signal processing techniques (e.g. audio filtering and FFT) to transform an audio track into playable sheet (text) music.
 - [Socket programming](https://github.com/leonardoLavagna/Socket-Programming): basic implementations of a web server, a UDP pinger, a Mail Client and a Web Proxy.
 - [Waves simulation tools](https://github.com/leonardoLavagna/Waves-Simulation): a variety of tools to approach some problems related to wave equations (with applications mainly in seismology). 
 

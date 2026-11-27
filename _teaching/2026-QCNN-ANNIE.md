@@ -10,17 +10,60 @@ location: "Rome, Italy"
 
 On this page, you can find materials related to the recitation sessions and course projects for [Quantum Computing and Neural Networks](https://sites.google.com/uniroma1.it/massimopanella-eng/teaching/qcnn?authuser=0), a course offered within the [Master's Degree programmes in Electronics Engineering and Telecommunications Engineering at Sapienza University of Rome](https://corsidilaurea.uniroma1.it/en/course/33511), and for [Advanced Neural Networks for Industrial Engineering](https://sites.google.com/uniroma1.it/massimopanella-eng/teaching/nnie?authuser=0), a course offered within the [Master Degree in Industrial/Management Engineering](https://corsidilaurea.uniroma1.it/en/course/33512). Both courses are held by [Professor Massimo Panella, PhD](https://massimopanella.site.uniroma1.it/), with the support of the [NESYA Lab](https://sites.google.com/view/nesya-it). In particular, this page provides supplementary materials covering selected topics in quantum computing, including complementary theoretical concepts, laboratory sessions, project ideas, and related resources.
 
+<style>
+  .page__content .teaching-section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 1rem;
+    margin: 2.5em 0 0.625em;
+    padding-bottom: 0.625em;
+    border-bottom: 1px solid #f2f3f3;
+  }
+
+  .page__content .teaching-section-heading h2 {
+    flex: 1 1 18rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .page__content .teaching-section-top {
+    margin: 0;
+    font-size: 0.75em;
+    white-space: nowrap;
+  }
+
+  .teaching-section-top a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+</style>
+
 <nav aria-labelledby="contents" markdown="1">
+
+<div class="teaching-section-heading" markdown="1">
 
 ## Contents
 {:.no_toc}
+
+<p class="teaching-section-top"><a href="#top" aria-label="Return to the top of the page">↑ Back to top</a></p>
+
+</div>
 
 * Table of contents
 {:toc}
 
 </nav>
 
+<div class="teaching-section-heading" markdown="1">
+
 ## Logistics
+{: id="logistics"}
+
+<p class="teaching-section-top"><a href="#top" aria-label="Return to the top of the page">↑ Back to top</a></p>
+
+</div>
 
 ⚠️ **The notebooks are accessible only within the "uniroma1" domain.** Thus, to access the material you must use your institutional email and credentials. 
 
@@ -28,16 +71,23 @@ On this page, you can find materials related to the recitation sessions and cour
 
 🕚 **Office hours:** Fridays 11-12.30 Room 110, first floor, building B in the complex of the Engineering Faculty or via meet (link in google classroom). You can also book an appointment writing an email to *leonardo.lavagna@uniroma1.it*.
 
-⚠️ **Remember to check my homepage (the Activity Box) for days I am Out of Office** as it can happen that I have some commitments that I cannot be absent from and may overlap with the the office hours.
+⚠️ **Remember to check my homepage (the Activity Box) for days I am Out of Office** as it can happen that I have some commitments that I cannot be absent from and may overlap with the office hours.
 
 
-## (1) From the Deutsch-Joza algorithm to Simon's problem 
+<div class="teaching-section-heading" markdown="1">
 
-As we discussed throughout the course, [quantum computing](https://en.wikipedia.org/wiki/Quantum_computing) has the potential to [overcome certain classical computational bottlenecks using principles such as superposition, entanglement, amplitude interference and amplification](https://www.smbc-comics.com/comic/the-talk-3). In this set of materials we will walk through a number of fundamental quantum algorithms that have been developed in the early ears of quantum computing and where the first to establish provable advantages against classical counterparts. Even if some of these algorithms require [large-scale fault-tolerant quantum computers](https://en.wikipedia.org/wiki/Fault_tolerant_quantum_computing) that are currently being developed and are years away from being available, analyzing them is still a good exercise to deepen the understanding about the inner workings of quantum computational devices from the software perspective, to master key techniques that have been generalized for a plethora of applications and theoretical explorations, but also to use those variants that can be deployed today to prove advantages in the [near-term quantum computers](https://en.wikipedia.org/wiki/Noisy_intermediate-scale_quantum_computing) (see, for instance, [here](https://arxiv.org/abs/1704.00690) and [here](https://arxiv.org/abs/1904.01502)).
+## (1) From the Deutsch-Jozsa algorithm to Simon's problem 
+{: id="1-from-the-deutsch-jozsa-algorithm-to-simons-problem"}
+
+<p class="teaching-section-top"><a href="#top" aria-label="Return to the top of the page">↑ Back to top</a></p>
+
+</div>
+
+As we discussed throughout the course, [quantum computing](https://en.wikipedia.org/wiki/Quantum_computing) has the potential to [overcome certain classical computational bottlenecks using principles such as superposition, entanglement, amplitude interference and amplification](https://www.smbc-comics.com/comic/the-talk-3). In this set of materials we will walk through a number of fundamental quantum algorithms that have been developed in the early years of quantum computing and were the first to establish provable advantages against classical counterparts. Even if some of these algorithms require [large-scale fault-tolerant quantum computers](https://en.wikipedia.org/wiki/Fault_tolerant_quantum_computing) that are currently being developed and are years away from being available, analyzing them is still a good exercise to deepen the understanding about the inner workings of quantum computational devices from the software perspective, to master key techniques that have been generalized for a plethora of applications and theoretical explorations, but also to use those variants that can be deployed today to prove advantages in the [near-term quantum computers](https://en.wikipedia.org/wiki/Noisy_intermediate-scale_quantum_computing) (see, for instance, [here](https://arxiv.org/abs/1704.00690) and [here](https://arxiv.org/abs/1904.01502)).
 
 We will start with the [oracle model](https://en.wikipedia.org/wiki/Oracle_machine) where parts of an algorithm are seen as given "black-boxes" that can be queried with [O(1)](https://en.wikipedia.org/wiki/Big_O_notation) effort (check also [this paper](https://arxiv.org/abs/cs/0504048) and [this foundational framework](https://arxiv.org/abs/1610.08251)). In these cases, the oracle provides access to a function that is unknown to us, but, at the same time, provides a way of building a new function which can query the oracle to determine the relationship between certain input-output pairs. This is the same idea used in classical computing to "embed" an irreversible computation into a reversible one: for every irreversible [Boolean gate](https://en.wikipedia.org/wiki/Logic_gate) $f:\\{0,1\\}^n\to \\{0,1\\}^m$ (e.g., $f=AND$) the extended function $G_f:\\{0,1\\}^{n+m}\to \\{0,1\\}^{n+m}$ with $m$ [ancillae](https://en.wikipedia.org/wiki/Ancilla_bit) and the XOR gate $\oplus$ such that $G_f(x,y)=(x,y \oplus f(x))$ is bijective with inverse $G^{-1}_f=G_f$ (indeed, $(y \oplus  f(x)) \oplus f(x)= y$). In the quantum setting, this idea translates to the oracle [unitary](https://en.wikipedia.org/wiki/Unitary_operator) $U_f\lvert x\rangle \lvert y\rangle = \lvert x\oplus f(y)\rangle$. 
 
-Now, using such an oralce seems like "cheating". Indeed, if $f$ is unknown, how can we build the [quantum circuit](https://en.wikipedia.org/wiki/Quantum_circuit) that implements $U_f$? How can we know if this is an "efficient" circuit? A preliminary answer is that, in the oracle model, querying $U_f$ provides a lower bound on the number of steps needed for the quantum algorithm to solve a certain problem encoded by $f$. This lower bound can then be compared with the number of steps a classical algorithm would require, thus providing a mean to estimate possible advantages. We refer to the notebooks below to investigate further this aspect and to see how the oracle construction helps solving classically hard problems with a quantum computer and how it impacts [quantum machine learning](https://en.wikipedia.org/wiki/Quantum_machine_learning).
+Now, using such an oracle seems like "cheating". Indeed, if $f$ is unknown, how can we build the [quantum circuit](https://en.wikipedia.org/wiki/Quantum_circuit) that implements $U_f$? How can we know if this is an "efficient" circuit? A preliminary answer is that, in the oracle model, querying $U_f$ provides a lower bound on the number of steps needed for the quantum algorithm to solve a certain problem encoded by $f$. This lower bound can then be compared with the number of steps a classical algorithm would require, thus providing a mean to estimate possible advantages. We refer to the notebooks below to investigate further this aspect and to see how the oracle construction helps solving classically hard problems with a quantum computer and how it impacts [quantum machine learning](https://en.wikipedia.org/wiki/Quantum_machine_learning).
 
 - [Tutorial 1: the Deutsch-Jozsa algorithm](https://colab.research.google.com/drive/1pILHAN3bBQZauXMDXp8tdejoz1You1P9?usp=sharing).
 - [Project 1.1: The Deutsch-Jozsa algorithm as a Quantum Feature Extractor](https://colab.research.google.com/drive/1V9LcswUA0jXCQgyzAVBE9x-Twa1yJ6Mw?usp=sharing)
@@ -50,16 +100,23 @@ For this part you can refer to following manuals, papers and monographs. Further
 **[Hid21]** J. Hidary: [Quantum Computing: An Applied approach](https://books.google.it/books/about/Quantum_Computing_An_Applied_Approach.html?id=nkKoxQEACAAJ&redir_esc=y) (2021) Chapters 2 and 8.  
 **[Baa23]** B. E. Baaquie et al: [Quantum Computers, Theory and Algorithms](https://books.google.it/books/about/Quantum_Computers.html?id=p_O2zwEACAAJ&redir_esc=y) (2023) Sections 8.4, 8.5 and Chapters 9, 10, 12 and 13.  
 **[Pas23]** D. Pastorello: [Concise Guide to Quantum Machine Learning](https://books.google.sm/books?id=_dKkEAAAQBAJ) (2023) Sections 3.3 and 4.1.  
-**[Koch25]** A. F. Kochum et al: [Lecture Notes on Quantum Computing](https://arxiv.org/pdf/2311.08445) (2025) Chapter 4 and Tutorial 2.  
+**[Koch25]** A. F. Kockum et al: [Lecture Notes on Quantum Computing](https://arxiv.org/pdf/2311.08445) (2025) Chapter 4 and Tutorial 2.  
 **[Wat25]** J. Watrous [Understanding Quantum Information and Computation](https://arxiv.org/abs/2507.11536) (2025) Chapters 5 and 7.   
 **[deW26]** R. de Wolf: [Quantum Computing: Lecture Notes](https://arxiv.org/abs/1907.09415) (2026) Chapters 2, 3, 4, 5 and 6.  
 
 
+<div class="teaching-section-heading" markdown="1">
+
 ## (2) The Stern-Gerlach Experiment and Bell's inequalities
+{: id="2-the-stern-gerlach-experiment-and-bells-inequalities"}
+
+<p class="teaching-section-top"><a href="#top" aria-label="Return to the top of the page">↑ Back to top</a></p>
+
+</div>
 
 During the course we have underlined multiple times that [superposition](https://en.wikipedia.org/wiki/Quantum_superposition) and [entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement) play a crucial role in [quantum information science](https://en.wikipedia.org/wiki/Quantum_information_science). In this set of materials we explore the connection between these quantum-mechanical properties and computational resources. In this sense we want also to point to another key difference between classical computing and contemporary quantum information processing: in the classical setting we can write and implement an algorithm without having to know the physics of, say, the [transistor](https://en.wikipedia.org/wiki/Transistor), in the quantum setting instead, since key parts of the algorithms we want to write and implement are strictly connected to the quantum properties of the underlying hardware, we cannot completely abstract from it. In particular, we will explore the computational consequences of the [EPR paradox](https://en.wikipedia.org/wiki/Einstein%E2%80%93Podolsky%E2%80%93Rosen_paradox) and [Bell's inequalities](https://en.wikipedia.org/wiki/Bell%27s_theorem) with related discussions about the experimental setting and hardware constraints that motivate certain desirable properties of quantum algorithmic operations. 
 
-The first idea we discuss is related to superposition and the [double-slit experiment](https://en.wikipedia.org/wiki/Double-slit_experiment), introducing the simplest two-level object that can be engineered to carry out quantum information processing: the [spin](https://en.wikipedia.org/wiki/Spin_(physics)). This object and its properties where among the first to be harnessed to build the [first quantum computer prototypes](https://en.wikipedia.org/wiki/Timeline_of_quantum_computing_and_communication). Then, we discuss the role of entanglement, studying how a simple set two-qubit entangled states (i.e., [Bell pairs](https://en.wikipedia.org/wiki/Bell_state)) can yield unexpected results and themselves harnessed for quantum computing purposes. On the other hand, we will also see how traditional physics experiments that have demonstrated the unintuitive implications of quantum mechanics can be implemented and reproduced by simple quantum algorithms in the circuit model. We conclude this set of materials going back to some aspects discussed in (1) about the quantum machine learning implications of quantum objects (encodings, feature maps, oracles, etc...) in the context of the experiments and properties introduced in the following tutorial. 
+The first idea we discuss is related to superposition and the [double-slit experiment](https://en.wikipedia.org/wiki/Double-slit_experiment), introducing the simplest two-level object that can be engineered to carry out quantum information processing: the [spin](https://en.wikipedia.org/wiki/Spin_(physics)). This object and its properties were among the first to be harnessed to build the [first quantum computer prototypes](https://en.wikipedia.org/wiki/Timeline_of_quantum_computing_and_communication). Then, we discuss the role of entanglement, studying how a simple set two-qubit entangled states (i.e., [Bell pairs](https://en.wikipedia.org/wiki/Bell_state)) can yield unexpected results and themselves harnessed for quantum computing purposes. On the other hand, we will also see how traditional physics experiments that have demonstrated the unintuitive implications of quantum mechanics can be implemented and reproduced by simple quantum algorithms in the circuit model. We conclude this set of materials going back to some aspects discussed in (1) about the quantum machine learning implications of quantum objects (encodings, feature maps, oracles, etc...) in the context of the experiments and properties introduced in the following tutorial. 
 
 - [Tutorial 2: the Stern-Gerlach Experiment and the Spin](https://colab.research.google.com/drive/1BNxd_j8SJheqveMOcJzrwbBXuOJj9w1R?usp=sharing)
 - [Project 2.1: the EPR paradox and Bell's inequalities](https://colab.research.google.com/drive/1aUo3vf4BRLmABHRigp1X4-yS5sg2MeNs?usp=sharing)
@@ -81,7 +138,14 @@ For this part you can refer to following manuals, papers and monographs. Further
 We also encourage you to follow the first couple of lessons [here](https://www.youtube.com/playlist?list=PL701CD168D02FF56F) and [here](https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr) where you can find many ideas discussed in the above notebooks. 
 
 
+<div class="teaching-section-heading" markdown="1">
+
 ## (3) Quantum nonlocality, square games, pseudo-telepathy and teleportation
+{: id="3-quantum-nonlocality-square-games-pseudo-telepathy-and-teleportation"}
+
+<p class="teaching-section-top"><a href="#top" aria-label="Return to the top of the page">↑ Back to top</a></p>
+
+</div>
 
 Following our discussion of the EPR paradox and Bell's inequalities in (2), we now turn to a slightly different question: can [quantum entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement) be used not only to produce [correlations](https://en.wikipedia.org/wiki/Quantum_correlation) that cannot be explained classically, but also to accomplish tasks that are impossible to complete with certainty using classical resources? This brings us to the idea of [quantum pseudo-telepathy](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy), where two separated players, who are not allowed to communicate during a game, can nevertheless exploit previously shared entangled states to coordinate their answers. Of course, no information is actually transmitted between the players, but the correlations produced by their local measurements can lead to rather surprising results. We will investigate one of the most interesting examples of this phenomenon, the [Mermin-Peres Magic Square Game](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy#The_Mermin%E2%80%93Peres_magic_square_game) and then extend our investigation to a different, although related, family of mathematical objects known as [quantum latin squares](https://arxiv.org/abs/2501.00196). These topics open a window view on [(quantum) game theory](https://en.wikipedia.org/wiki/Quantum_game_theory) and related [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning) applications. Notice that, these explorations also show the connection between the theory of [quantum computation](https://en.wikipedia.org/wiki/Quantum_computing) and the adjacent field of [quantum communication](https://en.wikipedia.org/wiki/Quantum_network).
 
@@ -103,11 +167,18 @@ For this part you can refer to following manuals, papers and monographs. Further
 **[Nat26]** H. Natur et al.: [Quantum Coordination and Nonlocal Games: Theory and Applications](https://arxiv.org/abs/2608.09540) (2026)
 
 
+<div class="teaching-section-heading" markdown="1">
+
 ## (4) Quantum decision trees and Random Forests
+{: id="4-quantum-decision-trees-and-random-forests"}
+
+<p class="teaching-section-top"><a href="#top" aria-label="Return to the top of the page">↑ Back to top</a></p>
+
+</div>
 
 Throughout the course, we have discussed how [quantum computing](https://en.wikipedia.org/wiki/Quantum_computing) can provide alternative approaches to computational problems. In this set of materials, we will move towards [machine learning](https://en.wikipedia.org/wiki/Machine_learning), investigating how some well-established [classical learning algorithms](https://en.wikipedia.org/wiki/Machine_learning) can be reformulated or extended within the quantum computational framework. We will start with [decision trees](https://en.wikipedia.org/wiki/Decision_tree_learning), one of the simplest and most intuitive approaches to [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning), where a prediction is obtained through a sequence of decisions that progressively partition the input data according to selected features. Despite their relatively simple structure, decision trees introduce several important concepts, such as [information gain](https://en.wikipedia.org/wiki/Information_gain_(decision_tree)) and [impurity measures](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity) and the trade-off between model complexity and generalization. We will then extend this discussion to [random forests](https://en.wikipedia.org/wiki/Random_forest), where multiple decision trees are combined into an [ensemble](https://en.wikipedia.org/wiki/Ensemble_learning) to improve predictive performance and reduce the sensitivity of individual models to the training data. 
 
-Starting from these classical constructions, we will investigate how similar ideas can be extended to quantum machine learning, focusing on a possible (simplified) quantum version of decision trees and random forests. An interesting question is whether quantum computers can provide advantages not only in representing and processing information, but also in the learning procedures used to construct predictive models. To explore this possibility, we will discuss different approaches proposed in the literature. We will also investigate how ensemble-learning strategies can be generalized to combine quantum models, and how these approaches compare with their classical counterparts in terms of predictive [accuracy](https://en.wikipedia.org/wiki/Accuracy_and_precision), [computational complexity] and resource requirements. Of course, replacing parts of a classical learning algorithm with quantum operations does not automatically provide a [computational advantage](https://arxiv.org/abs/2311.05559). In particular, the cost of encoding classical data into quantum states, the number of measurements required to obtain predictions, and the limitations of contemporary quantum hardware can significantly affect the overall performance. 
+Starting from these classical constructions, we will investigate how similar ideas can be extended to quantum machine learning, focusing on a possible (simplified) quantum version of decision trees and random forests. An interesting question is whether quantum computers can provide advantages not only in representing and processing information, but also in the learning procedures used to construct predictive models. To explore this possibility, we will discuss different approaches proposed in the literature. We will also investigate how ensemble-learning strategies can be generalized to combine quantum models, and how these approaches compare with their classical counterparts in terms of predictive [accuracy](https://en.wikipedia.org/wiki/Accuracy_and_precision), [computational complexity](https://en.wikipedia.org/wiki/Computational_complexity) and resource requirements. Of course, replacing parts of a classical learning algorithm with quantum operations does not automatically provide a [computational advantage](https://arxiv.org/abs/2311.05559). In particular, the cost of encoding classical data into quantum states, the number of measurements required to obtain predictions, and the limitations of contemporary quantum hardware can significantly affect the overall performance. 
 
 - [Tutorial 4: Quantum Decision Trees](https://colab.research.google.com/drive/1Odg3udhil1GO5iGijwX2akGXMC3ZgPJD?usp=sharing)
 - [Project 4.1: Quantum Random Forests](https://colab.research.google.com/drive/1YH9JOChMUzMRIyPKsQwpK_rZ4EXHaRYz?usp=sharing)
@@ -127,9 +198,16 @@ ask themselves](https://iopscience.iop.org/article/10.1088/1367-2630/abac39) (20
 **[Sch21]** M. Schuld, et al.: [Machine Learning with Quantum Computers](https://link.springer.com/book/10.1007/978-3-030-83098-4) (2021) Sections 2.1, 2.2, 2.5, 4.5, 5.1, 5.2, 5.4, 6.1, 6.2.  
 
 
-## (5) Grover's algorithm, Sudoku and (constrained) SAT problems
+<div class="teaching-section-heading" markdown="1">
 
-Following our discussion in (1) of the oracle model through the Deutsch-Jozsa, Bernstein-Vazirani and Simon's algorithms, we now turn to another fundamental result in quantum computing: [Grover's search algorithm](https://en.wikipedia.org/wiki/Grover%27s_algorithm). While the previous algorithms exploit quantum interference to extract information about certain properties of an unknown function, Grover's algorithm addresses a slightly different problem: given a function that allows us to recognize a solution, can we find that solution more efficiently than by checking all possible candidates? In the classical setting, searching an unstructured space of $N$ elements requires [$O(N)$](https://en.wikipedia.org/wiki/Big_O_notation) queries in the worst case, whereas Grover's algorithm reduces this complexity to $O(\sqrt{N})$quantum queries when there is a unique marked element. The idea is to use a quantum oracle to mark the desired solutions through a phase change and then repeatedly apply an [amplitude amplification](https://en.wikipedia.org/wiki/Amplitude_amplification) procedure that increases their probability of being measured. An interesting aspect of this construction is that the oracle does not need to know the solution in advance, but only how to recognize it. This brings us back to a question we raised when introducing the oracle model: if we assume that querying the oracle requires constant effort, are we really accounting for the computational cost of solving the problem? Indeed, while Grover's algorithm provides a provable quadratic advantage in query complexity, implementing the corresponding oracle as a reversible quantum circuit may itself require a considerable amount of computational resources. We will therefore investigate both the mathematical principles behind amplitude amplification and the practical implications of constructing and executing such an algorithm on a quantum computer.
+## (5) Grover's algorithm, Sudoku and (constrained) SAT problems
+{: id="5-grovers-algorithm-sudoku-and-constrained-sat-problems"}
+
+<p class="teaching-section-top"><a href="#top" aria-label="Return to the top of the page">↑ Back to top</a></p>
+
+</div>
+
+Following our discussion in (1) of the oracle model through the Deutsch-Jozsa, Bernstein-Vazirani and Simon's algorithms, we now turn to another fundamental result in quantum computing: [Grover's search algorithm](https://en.wikipedia.org/wiki/Grover%27s_algorithm). While the previous algorithms exploit quantum interference to extract information about certain properties of an unknown function, Grover's algorithm addresses a slightly different problem: given a function that allows us to recognize a solution, can we find that solution more efficiently than by checking all possible candidates? In the classical setting, searching an unstructured space of $N$ elements requires [$O(N)$](https://en.wikipedia.org/wiki/Big_O_notation) queries in the worst case, whereas Grover's algorithm reduces this complexity to $O(\sqrt{N})$ quantum queries when there is a unique marked element. The idea is to use a quantum oracle to mark the desired solutions through a phase change and then repeatedly apply an [amplitude amplification](https://en.wikipedia.org/wiki/Amplitude_amplification) procedure that increases their probability of being measured. An interesting aspect of this construction is that the oracle does not need to know the solution in advance, but only how to recognize it. This brings us back to a question we raised when introducing the oracle model: if we assume that querying the oracle requires constant effort, are we really accounting for the computational cost of solving the problem? Indeed, while Grover's algorithm provides a provable quadratic advantage in query complexity, implementing the corresponding oracle as a reversible quantum circuit may itself require a considerable amount of computational resources. We will therefore investigate both the mathematical principles behind amplitude amplification and the practical implications of constructing and executing such an algorithm on a quantum computer.
 
 To explore these ideas, we will consider the popular [Sudoku puzzle](https://en.wikipedia.org/wiki/Sudoku), which provides an interesting example of a [constraint satisfaction problem](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem). The objective is to assign a value to each empty cell of a grid while satisfying a set of constraints involving rows, columns and subgrids. From the computational perspective, Sudoku is particularly interesting because, while finding a valid assignment may require exploring a large number of possibilities, checking whether a candidate satisfies the rules is relatively straightforward. We can therefore construct a [Boolean function](https://en.wikipedia.org/wiki/Boolean_function) that evaluates these constraints and use it to implement the oracle required by Grover's algorithm. In the accompanying notebooks, we will start from small Sudoku instances, translate their rules into reversible Boolean operations and construct a quantum circuit that marks valid assignments before applying amplitude amplification to identify a solution. This will also allow us to revisit the role of [ancillary](https://en.wikipedia.org/wiki/Ancilla_bit) qubits, [reversible computation](https://en.wikipedia.org/wiki/Reversible_computing) and [phase kickback](https://en.wikipedia.org/wiki/Phase_kickback), which we have already encountered in the course, and to understand how apparently simple logical constraints can translate into relatively complex quantum circuits. Of course, this does not mean that quantum computers are necessarily better at solving Sudoku than classical ones. In fact, contemporary classical solvers can exploit the structure of the puzzle through [constraint propagation](https://en.wikipedia.org/wiki/Constraint_programming), [backtracking](https://en.wikipedia.org/wiki/Backtracking) and other specialized techniques, rather than blindly searching through all possible assignments. Nevertheless, the example provides a useful opportunity to distinguish between theoretical quantum advantages and practical computational performance, and to investigate how Grover's algorithm can be generalized to other [combinatorial search](https://en.wikipedia.org/wiki/Combinatorial_search) and [optimization problems](https://en.wikipedia.org/wiki/Optimization_problem) where the size of the solution space makes [exhaustive enumeration](https://en.wikipedia.org/wiki/Brute-force_search) particularly expensive.
 
@@ -145,18 +223,25 @@ For this part you can refer to following manuals, papers and monographs. Further
 **[Hid21]** J. Hidary: [Quantum Computing: An Applied approach](https://books.google.it/books/about/Quantum_Computing_An_Applied_Approach.html?id=nkKoxQEACAAJ&redir_esc=y) (2021) Chapter 2 and Section 8.6.  
 **[Baa23]** B. E. Baaquie et al: [Quantum Computers, Theory and Algorithms](https://books.google.it/books/about/Quantum_Computers.html?id=p_O2zwEACAAJ&redir_esc=y) (2023) Chapter 11.  
 **[Pas23]** D. Pastorello: [Concise Guide to Quantum Machine Learning](https://books.google.sm/books?id=_dKkEAAAQBAJ) (2023) Sections 3.3 and 4.2.  
-**[Koch25]** A. F. Kochum et al: [Lecture Notes on Quantum Computing](https://arxiv.org/pdf/2311.08445) (2025) Chapter 2.   
+**[Koch25]** A. F. Kockum et al: [Lecture Notes on Quantum Computing](https://arxiv.org/pdf/2311.08445) (2025) Chapter 2.   
 **[Wat25]** J. Watrous [Understanding Quantum Information and Computation](https://arxiv.org/abs/2507.11536) (2025) Chapter 8.     
 **[deW26]** R. de Wolf: [Quantum Computing: Lecture Notes](https://arxiv.org/abs/1907.09415) (2026) Section 2.4, Chapters 7 and 8.  
 
 We also strongly suggest you to watch [this amazing youtube video](https://www.youtube.com/watch?v=RQWpF2Gb-gU).
 
+<div class="teaching-section-heading" markdown="1">
+
 ## (6) Miscellanea
+{: id="6-miscellanea"}
+
+<p class="teaching-section-top"><a href="#top" aria-label="Return to the top of the page">↑ Back to top</a></p>
+
+</div>
 
 In this last set of materials, we propose some open-ended projects that extend the discussions in (1)–(5) and require a more solid theoretical understanding. We will first revisit two questions that naturally arise when working with [quantum circuits](https://en.wikipedia.org/wiki/Quantum_circuit): how can a finite collection of [elementary gates](https://en.wikipedia.org/wiki/List_of_quantum_logic_gates) be sufficient to implement [quantum algorithms](https://en.wikipedia.org/wiki/Quantum_algorithm), and under which conditions can these algorithms be efficiently simulated on a classical computer? The [Solovay-Kitaev algorithm](https://arxiv.org/abs/quant-ph/0505030) addresses the first question by providing a constructive procedure for approximating arbitrary single-qubit operations using sequences of gates from a suitable finite universal gate set, with an efficient dependence on the desired accuracy. This connects the abstract description of an algorithm in terms of unitary transformations to the actual operations available for its implementation. On the other hand, the [Gottesman-Knill theorem](https://arxiv.org/abs/quant-ph/0406196) shows that circuits built from [Clifford gates](https://en.wikipedia.org/wiki/Clifford_gate), acting on [stabilizer](https://en.wikipedia.org/wiki/Stabilizer_code) input states and followed by [measurements](https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics) in the computational basis, can be efficiently simulated classically, even when they generate entanglement. These results provide complementary perspectives on the capabilities of [quantum computers](https://en.wikipedia.org/wiki/Quantum_computing): one explains how a restricted collection of operations can support [universal quantum computation](https://en.wikipedia.org/wiki/Quantum_Turing_machine), while the other identifies an important family of quantum processes that remain classically tractable. In particular, this will allow us to revisit the role of entanglement discussed in (2) and (3), and to understand why its presence alone does not guarantee a computational advantage.
 
-A second direction brings us back to the role of [quantum interference](https://en.wikipedia.org/wiki/Wave_interference#Quantum_interference) and measurement, which we have encountered both in the algorithms and in the foundational experiments discussed throughout the course. We will consider the [Elitzur-Vaidman bomb tester](https://arxiv.org/abs/hep-th/9305002), a thought experiment in which an idealized bomb is triggered by the absorption of a single photon. Surprisingly, placing this object in one arm of an interferometer makes it possible, in some trials, to establish that the bomb is functional without causing it to explode. The key idea is that the possibility of absorption changes the interference pattern, allowing a suitable detection outcome to reveal the presence of the object even though no absorption occurred in that successful trial. This introduces the notion of interaction-free measurement and raises interesting questions about the relationship between obtaining information and disturbing a physical system. We will then connect this construction to the quantum [Zeno effect](https://en.wikipedia.org/wiki/Zeno%27s_paradoxes), whereby sufficiently frequent measurements can inhibit transitions that would otherwise occur during the evolution of a quantum system. In suitably designed interrogation protocols, this effect can be used to reduce the probability of absorption while increasing the probability of successfully detecting the object. Together, these topics provide an opportunity to investigate measurement as an active ingredient of quantum information processing and to connect the mathematical description of quantum operations with the physical mechanisms through which information is acquired.
-- [Project 6.1: The Solvay-Kitaev algorithm and the Gottesman-Knill Theorem](https://colab.research.google.com/drive/1D4qZ35_y4Q8Lb3W2Do4u01ta7knen0Wd?usp=sharing)
+A second direction brings us back to the role of [quantum interference](https://en.wikipedia.org/wiki/Wave_interference#Quantum_interference) and measurement, which we have encountered both in the algorithms and in the foundational experiments discussed throughout the course. We will consider the [Elitzur-Vaidman bomb tester](https://arxiv.org/abs/hep-th/9305002), a thought experiment in which an idealized bomb is triggered by the absorption of a single photon. Surprisingly, placing this object in one arm of an interferometer makes it possible, in some trials, to establish that the bomb is functional without causing it to explode. The key idea is that the possibility of absorption changes the interference pattern, allowing a suitable detection outcome to reveal the presence of the object even though no absorption occurred in that successful trial. This introduces the notion of interaction-free measurement and raises interesting questions about the relationship between obtaining information and disturbing a physical system. We will then connect this construction to the quantum [Zeno effect](https://en.wikipedia.org/wiki/Quantum_Zeno_effect), whereby sufficiently frequent measurements can inhibit transitions that would otherwise occur during the evolution of a quantum system. In suitably designed interrogation protocols, this effect can be used to reduce the probability of absorption while increasing the probability of successfully detecting the object. Together, these topics provide an opportunity to investigate measurement as an active ingredient of quantum information processing and to connect the mathematical description of quantum operations with the physical mechanisms through which information is acquired.
+- [Project 6.1: The Solovay-Kitaev algorithm and the Gottesman-Knill Theorem](https://colab.research.google.com/drive/1D4qZ35_y4Q8Lb3W2Do4u01ta7knen0Wd?usp=sharing)
 - [Project 6.2: The Vaidman’s Bomb and the Quantum Zeno Effect](https://colab.research.google.com/drive/16EibTIcSZH7BHcQjMvaN8jjX0WBgonYL?usp=sharing)
 
 For this part you can refer to following manuals, papers and monographs.
